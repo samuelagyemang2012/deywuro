@@ -87,10 +87,20 @@
 
 <!--Dashboard-->
 <div data-role="page" id="dashboard">
-    <div data-role="header" style="background-color: #8E0D0E">
+    <div data-role="header" style="background-color: #8E0D0E; border: none">
         <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
-        <!--<a href="index.html" class="ui-btn ui-btn-icon-right" data-transition="flip"></a>-->
+
+        <a href="#mypanel" style="background-color: #8E0D0E; border: none"><i data-transition="flip"><i
+                class="fa fa-bars"></i></i> </a>
     </div>
+
+    <div data-role="panel" data-position="left" data-display="overlay" id="mypanel" style="background-color: #eeeeee">
+        <ul class="list-group">
+            <li onclick="change_page('#contacts','pop')" class="list-group-item"
+                style="font-family: Quicksand; background-color: #8E0D0E; color: #fff">Contacts
+            </li>
+        </ul>
+    </div><!-- /panel -->
 
     <div data-role="content" id="mybalance">
         <h4 id="bal">jasdkjsada</h4>
@@ -117,21 +127,8 @@
             <a data-role="button" id="sendbtn" style="background-color: #8E0D0E;color: #fff" onclick="">Send</a>
         </div>
 
-        <div data-role="footer" data-position="fixed" style="border: none; background-color: #fff">
-            <div class="row">
-                <div class="col-xs-6"></div>
-
-                <div class="col-xs-6">
-                    <div class="align-right">
-                        <a href="" data-role="button" style="background-color: #8E0D0E"
-                           class="ui-btn" onclick="change_page('#contacts','slide')">
-                            <i style="color: #ffffff; font-size: 20px;" class="fa fa-address-book"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
+
 </div>
 
 <div data-role="page" id="contacts">

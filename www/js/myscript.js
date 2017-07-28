@@ -56,14 +56,14 @@ function login() {
 
                 if (response.message == "Successful Login") {
 
-                    //load_contacts();
-                    //
-                    //$.cookie('username', username);
-                    //$.cookie('password', password);
-                    //$.cookie('balance', response.bal);
-                    //balance = $.cookie('balance');
-                    //
-                    //$("#mybalance").html('<h4 id="bal" style="font-family: Quicksand" class="align-center"><b style="color: #8E0D0E">Balance: &nbsp; </b>GHC 1200</h4><hr>');
+                    load_contacts();
+
+                    $.cookie('username', username);
+                    $.cookie('password', password);
+                    $.cookie('balance', response.bal);
+                    balance = $.cookie('balance');
+
+                    $("#mybalance").html('<h4 id="bal" style="font-family: Quicksand" class="align-center"><b style="color: #8E0D0E">Balance: &nbsp; </b>GHC 1200</h4><hr>');
 
                     setTimeout(
                         function () {
