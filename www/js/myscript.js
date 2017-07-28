@@ -127,8 +127,8 @@ function contacts_success(contacts) {
 
                     //$.cookie('i' + contacts[i].id, '' + contacts[id].id);
 
-                    build += "<div class='col-xs-12' id='" + contacts[i].phoneNumbers[j].value + "'onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + ")'>";
-                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].phoneNumbers[j].value + "'>";
+                    build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "+", "+" + contacts[i].id + ")'>";
+                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
                     //build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
                     build += "<p><b style='color: #8E0D0E'>" + name + "</b></p>";
                     build += "<p><b style='color: #8E0D0E'>" + number + "</b></p>";
@@ -153,23 +153,24 @@ function to_contacts_page() {
     change_page("#contacts", "pop");
 }
 
-function select_contacts(num) {
+function select_contacts(num, id) {
 
-    var bool = $("#i" + num).val();
-
-    if (bool == "false") {
-
-        $("#" + num).css("background-color", "#EF9E9A");
-        $("#i" + num).val("true");
-        insert(num);
-
-    } else {
-
-        $("#" + num).css("background-color", "#EEEEEE");
-        $("#i" + num).val("false");
-        del(num);
-
-    }
+    alert("number: " + num + "id: " + id);
+    //var bool = $("#i" + num).val();
+    //
+    //if (bool == "false") {
+    //
+    //    $("#" + num).css("background-color", "#EF9E9A");
+    //    $("#i" + num).val("true");
+    //    insert(num);
+    //
+    //} else {
+    //
+    //    $("#" + num).css("background-color", "#EEEEEE");
+    //    $("#i" + num).val("false");
+    //    del(num);
+    //
+    //}
 }
 
 function insert(data) {
