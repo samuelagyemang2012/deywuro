@@ -1,4 +1,7 @@
-//var live_contacts =
+document.addEventListener("deviceready", function () {
+    alert("123");
+    alert(navigator.contacts);
+}, true);
 
 $(function () {
     $("[data-role=header]").toolbar();
