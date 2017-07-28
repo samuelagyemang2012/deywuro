@@ -127,7 +127,7 @@ function contacts_success(contacts) {
 
                     //$.cookie('i' + contacts[i].id, '' + contacts[id].id);
 
-                    build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "+", "+" + contacts[i].id + ")'>";
+                    build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
                     build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
                     //build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
                     build += "<p><b style='color: #8E0D0E'>" + name + "</b></p>";
