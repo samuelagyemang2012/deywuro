@@ -1,9 +1,9 @@
-var live_contacts =
+//var live_contacts =
 
-    $(function () {
-        $("[data-role=header]").toolbar();
-        //$("[data-role=popup]").popup().enhanceWithin();
-    });
+$(function () {
+    $("[data-role=header]").toolbar();
+    //$("[data-role=popup]").popup().enhanceWithin();
+});
 
 function send_request(url) {
     "use strict";
