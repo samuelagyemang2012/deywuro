@@ -155,28 +155,29 @@ function to_contacts_page() {
 
 function select_contacts(num, id) {
 
-    alert("number: " + num + "id: " + id);
-    //var bool = $("#i" + num).val();
+    //alert("number: " + num + "id: " + id);
+
+    var bool = $("#i" + id).val();
     //
-    //if (bool == "false") {
-    //
-    //    $("#" + num).css("background-color", "#EF9E9A");
-    //    $("#i" + num).val("true");
-    //    insert(num);
-    //
-    //} else {
-    //
-    //    $("#" + num).css("background-color", "#EEEEEE");
-    //    $("#i" + num).val("false");
-    //    del(num);
-    //
-    //}
+    if (bool == "false") {
+
+        $("#" + id).css("background-color", "#EF9E9A");
+        $("#i" + id).val("true");
+        insert(num);
+
+    } else {
+        //
+        $("#" + id).css("background-color", "#EEEEEE");
+        $("#i" + id).val("false");
+        del(num);
+
+    }
 }
 
 function insert(data) {
 
     if (live_contacts.indexOf(data) == -1) {
-        live_contacts.push(str1);
+        live_contacts.push(data);
     }
 }
 
@@ -186,4 +187,16 @@ function del(data) {
 
     live_contacts.splice(index);
 
+}
+
+function get_numbers() {
+    var numbers = '';
+
+    for (var i = 0; i < live_contacts.length; i++) {
+        numbers += live_contacts[i] + ';';
+    }
+
+    $("#numbers").val(numbers);
+
+    change_page('#dashboard', 'pop');
 }
