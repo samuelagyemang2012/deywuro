@@ -39,8 +39,8 @@ function login() {
     username = $("#username").val();
     password = $("#password").val();
 
-    if(username.length ==0 || password.length == 0){
-        popout('loginfail2','pop');
+    if (username.length == 0 || password.length == 0) {
+        popout('loginfail2', 'pop');
     }
 
     ////not null
@@ -126,8 +126,8 @@ function contacts_success(contacts) {
 
                     //$.cookie('i' + contacts[i].id, '' + contacts[id].id);
 
-                    build += "<div class='col-xs-12' id='" + contacts[i].id + "'onclick='select_contacts(" + contacts[i].id + ",false)'>";
-                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "' onload='hide(" + contacts[i].id + ")'>";
+                    build += "<div class='col-xs-12' id='" + contacts[i].id + "'onclick='select_contacts(" + contacts[i].id + ")'>";
+                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
                     //build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
                     build += "<p><b style='color: #8E0D0E'>" + name + "</b></p>";
                     build += "<p><b style='color: #8E0D0E'>" + number + "</b></p>";
@@ -152,26 +152,19 @@ function to_contacts_page() {
     change_page("#contacts", "pop");
 }
 
-function select_contacts(id, bool) {
+function select_contacts(id) {
 
-    if (bool == false) {
-        //
+    var bool = $("#i" + id).val();
+
+    if (bool == "false") {
+
         $("#" + id).css("background-color", "#EF9E9A");
-        bool = true;
+        $("#i" + id).val("true");
 
-        //push
-
-        alert(id);
-        return;
-    }
-
-    if (bool == true) {
+    } else {
         //
         $("#" + id).css("background-color", "#FFFFFF");
-        bool = false;
+        $("#i" + id).val("false");
 
-        //delete
-
-        return;
     }
 }
