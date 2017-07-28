@@ -1,0 +1,76 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.samuel.findme"
+        }
+    }
+}
