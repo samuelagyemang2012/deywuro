@@ -3,6 +3,7 @@
 //    alert(navigator.contacts);
 //}, true);
 
+//array to store contacts
 var live_contacts = [];
 
 $(function () {
@@ -21,10 +22,20 @@ function send_request(url) {
     return result;
 }
 
+/*
+ Changes a page
+ page: id of page eg. #loginpage
+ transition: animation to play when changing page eg. slide
+ */
 function change_page(page, transition) {
     $.mobile.pageContainer.pagecontainer("change", page, {transition: transition});
 }
 
+/*
+ Displays a popout
+ page: id of popout eg. loginpagepopout
+ transition: animation to play when displaying the pop up eg. slide
+ */
 function popout(id, transition) {
     $("#" + id).popup("open", {transition: transition});
 }
@@ -33,10 +44,15 @@ function popout_close(id, transition) {
     $("#" + id).popup("close", {transition: transition});
 }
 
+/*
+ Logs the user in
+
+ */
 function login() {
 
     var url, username, password, balance;
 
+    //get user's username and password
     username = $("#username").val();
     password = $("#password").val();
 
@@ -47,6 +63,7 @@ function login() {
     ////not null
     if (username.length > 0 && password.length > 0) {
 
+        //login api
         $.get("http://deywuro.com:12111/api/login",
             {
                 username: username,
@@ -59,12 +76,14 @@ function login() {
 
                     load_contacts();
 
+                    //store details in cookies
                     $.cookie('username', username);
                     $.cookie('password', password);
                     $.cookie('balance', response.bal);
                     balance = $.cookie('balance');
 
-                    $("#mybalance").html('<h4 id="bal" style="font-family: Quicksand" class="align-center"><b style="color: #8E0D0E">Balance: &nbsp; </b>GHC 1200</h4><hr>');
+                    //update balance section of dashboard page
+                    $("#mybalance").html('<h4 id="bal" style="font-family: Quicksand" class="align-center"><b style="color: #8E0D0E">Balance: &nbsp; </b>' + balance + '</h4><hr>');
 
                     setTimeout(
                         function () {
@@ -82,6 +101,9 @@ function login() {
     }
 }
 
+/*
+ load contacts from phone
+ */
 function load_contacts() {
 
     var obj = new ContactFindOptions();
@@ -92,6 +114,9 @@ function load_contacts() {
     navigator.contacts.find([navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.phoneNumbers], contacts_success, contacts_failed, obj);
 }
 
+/*
+ Sucess function
+ */
 function contacts_success(contacts) {
 
     var build;
@@ -145,14 +170,20 @@ function contacts_success(contacts) {
     $("#mycontacts").html(build);
 }
 
+/*
+ error functions
+ */
 function contacts_failed(msgObject) {
     alert("Failed to access contact list:" + JSON.stringify(msgObject));
 }
 
-function to_contacts_page() {
-    change_page("#contacts", "pop");
-}
+//function to_contacts_page() {
+//    change_page("#contacts", "pop");
+//}
 
+/*
+ Gets a particular number, highlights it and pushes it to the live_contacts array
+ */
 function select_contacts(num, id) {
 
     //alert("number: " + num + "id: " + id);
@@ -161,34 +192,53 @@ function select_contacts(num, id) {
     //
     if (bool == "false") {
 
+        //if number is not selected, highlight background of number field and insert it into the live_contacts array
         $("#" + id).css("background-color", "#EF9E9A");
         $("#i" + id).val("true");
+
+        //insert into the live_contacts array
         insert(num);
 
     } else {
-        //
+        //if number is selected, unhighlight the number field and delete it from the live_contacts array
         $("#" + id).css("background-color", "#EEEEEE");
         $("#i" + id).val("false");
+
+        //delete from the live_contacts array
         del(num);
 
     }
 }
 
+/*
+ Inserts a number into the live_contacts array
+ data: number
+ */
 function insert(data) {
 
+    //if number doesn't exist in array, add it
     if (live_contacts.indexOf(data) == -1) {
         live_contacts.push(data);
     }
 }
 
+/*
+ Deletes a number from the live_contacts array
+ data: number
+ */
 function del(data) {
 
+    //Get index of that number
     var index = live_contacts.indexOf(data);
 
+    //remove it from the live_contacts array
     live_contacts.splice(index);
 
 }
 
+/*
+Fetch all numbers from the live_contacts array and paste it in the numbers textarea. Change page back to the dashboard page
+ */
 function get_numbers() {
     var numbers = '';
 
