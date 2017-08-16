@@ -1,165 +1,260 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
-<!--cascas-->
 <head>
-    <title>Place searches</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
+    <title>nativeDroid II - jQueryMobile Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="./css/jquery.mobile.flatui.css"/>
-    <link rel="stylesheet" href="./css/jquery.mobile.theme.css"/>
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
+    <link rel="stylesheet" href="./css/waves.min.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+    <link rel="stylesheet" href="./css/nativedroid2.color.deep-orange.css"/>
+    <link rel="stylesheet" href="./css/nativedroid2.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 
-    <script src="./js/jquery.js"></script>
-    <script src="./js/jquery-mobile.js"></script>
-    <!--<script src="./js/jquery-ui.js"></script>-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./js/myscript.js"></script>
-    <script src="cordova.js"></script>
-    <script src="./js/jquery.cookie.js"></script>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
 </head>
 
 <body>
 
-<!--Login page-->
+<!--Login Page-->
 <div data-role="page" id="loginpage">
-    <div data-role="header" style="background-color: #8E0D0E">
 
-        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
-        <!--<a href="index.html" data-transition="flip"></a>-->
+    <div data-role="header" data-position="fixed">
+        <!--<a href="#bottomsheetblock" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
+        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>-->
+        <h1 style="opacity: 0">Header & Footer</h1>
     </div>
 
-    <div data-role="popup" id="loginfail2" class="ui-content" style="background-color: white; border: none">
-        <h4 style="color: crimson">Please fill out all fields !</h4>
-    </div>
-
-    <div data-role="popup" id="loginfail" class="ui-content" style="background-color: white; border: none">
-        <h4 style="color: crimson">Wrong username or password.</h4>
-    </div>
-    <br><br><br><br><br>
     <div data-role="content">
-        <!---->
-        <div class="align-center">
-            <img id="images" src="" style="max-width: 100%">
+        <br><br><br><br><br><br><br><br>
+
+        <div>
+            <div>
+                <!--<img src="./img/logo.png">-->
+            </div>
+
+            <div>
+                <input type="text" name="name2" id="username" value="" data-clear-btn="true"
+                       placeholder="Username">
+            </div>
+            <br>
+
+            <div>
+                <input type="text" name="name2" id="password" value="" data-clear-btn="true"
+                       placeholder="Password">
+            </div>
+
+            <div>
+                <a onclick="toast('Fetching Contacts')"
+                   class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
+            </div>
         </div>
+    </div>
 
-        <div data-role="content">
-            <!--<br>-->
-            <!--<br>-->
-            <div class="align-center">
-                <!--<img src="img/genesys.png">-->
-                <!--<hr>-->
-            </div>
-
-            <div class="align-center">
-                <!--<h4>Login here !</h4>-->
-            </div>
-
-            <br>
-            <br>
-
-            <div>
-                <input type="text" id="username" placeholder="Username" style="color: #8E0D0E; text-align: center"
-                       required>
-            </div>
-            <!---->
-            <div>
-                <input type="password" id="password" placeholder="Password" style="color: #8E0D0E; text-align: center"
-                       required>
-            </div>
-            <br>
-            <!---->
-            <div>
-                <a data-role="button" id="loginbutton" style="border:none; background-color: #8E0D0E;color: #fff"
-                   onclick="login()">Login</a>
-            </div>
-            <!---->
-            <!--<div class="align-center">-->
-            <!--<h5>Sign up <a href="#signuppage" data-transition="slide" style="color: #8E0D0E">here !</a></h5>-->
-            <!--</div>-->
-        </div>
+    <div data-role="footer" data-position="fixed">
+        <h1 style="opacity: 0">Header & Footer</h1>
     </div>
 </div>
+<!--End Login page-->
 
 <!--Dashboard-->
 <div data-role="page" id="dashboard">
-    <div data-role="header" style="background-color: #8E0D0E; border: none">
-        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
-
-        <a href="#mypanel" style="background-color: #8E0D0E; border: none">
-            <i style="color: #ffffff" class="fa fa-bars"></i>
-        </a>
+    <div data-role="header" data-position="fixed">
+        <!--<a href="#bottomsheetblock" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
+        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <h1 style="opacity: 1">Dashboard</h1>
     </div>
 
-    <div data-role="panel" data-position="left" data-display="overlay" id="mypanel" style="background-color: #eeeeee">
-        <ul class="list-group">
-            <li onclick="change_page('#contacts','pop')" class="list-group-item"
-                style="font-family: Quicksand; background-color: #8E0D0E; color: #fff">Contacts
-            </li>
-        </ul>
-    </div><!-- /panel -->
+    <div data-role="content">
+        <br><br><br><br>
 
-    <div data-role="content" id="mybalance">
-        <h4 id="bal">jasdkjsada</h4>
+        <div class="ct-chart ct-perfect-fourth"></div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
+            <thead>
+            <th>Total SMS Sent</th>
+            <th>Total SMS Delivered</th>
+            <th>Total SMS Acknowledged</th>
+            <th>Total SMS Expired</th>
+            </thead>
+
+            <tbody>
+            <tr>
+                <td>400</td>
+                <td>100</td>
+                <td>25</td>
+                <td>25</td>
+            </tr>
+            </tbody>
+
+        </table>
     </div>
 
-    <div data-role="content" id="dcontent">
+    <div data-role="footer" data-position="fixed">
 
-        <div class="align-center">
-            <h4 style="font-family: Quicksand; font-weight: bold; color: #8E0D0E">Contacts</h4>
-
-            <textarea type="tel" id="numbers" rows="4"></textarea>
-
-        </div>
-
-        <div class="align-center">
-            <h4 style="font-family: Quicksand; font-weight: bold; color: #8E0D0E">Message</h4>
-
-            <textarea type="tel" id="message" rows="6"></textarea>
-        </div>
-
-        <br>
-        <br>
-        <div class="align-center">
-            <a data-role="button" id="sendbtn" style="background-color: #8E0D0E;color: #fff" onclick="">Send</a>
-        </div>
-
-    </div>
-
-
-</div>
-
-<div data-role="page" id="contacts">
-    <div data-role="header" style="background-color: #8E0D0E">
-
-        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
-        <!--<a href="index.html" data-transition="flip"></a>-->
-    </div>
-
-    <div data-role="content" id="mycontacts" style="background-color: #eeeeee">
-
-    </div>
-
-    <div style="position: fixed" data-role="footer" data-position="fixed" data-visible-on-page-show="true">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-9"></div>
-
-                <div class="col-xs-3">
-                    <a data-role="button" id="done" style="background-color: #8E0D0E;color: #fff" onclick="get_numbers()">Done</a>
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box">
+                    <a onclick="drawGauge(400,100,25,25)" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-desktop-mac zmdi-hc-2x '></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-comment zmdi-hc-2x'></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-account zmdi-hc-2x'></i></a>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
+<!--end dashboard-->
 
+<!--Message page-->
+<div data-role="page" id="messagepage">
+    <div data-role="header" data-position="fixed">
+        <!--<a href="#bottomsheetblock" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
+        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <h1 style="opacity: 1">SMS</h1>
+    </div>
 
+    <div data-role="content">
+        <br>
+        <div>
+            <h3 style="color: #FF5722">Contacts</h3>
+            <textarea cols="40" rows="8" name="textarea2" id="contacts" placeholder=""></textarea>
+        </div>
+        <br><br>
+
+        <div>
+            <h3 style="color: #FF5722">Message</h3>
+            <textarea cols="40" rows="8" name="textarea2" id="message" placeholder="Write something here"></textarea>
+        </div>
+        <br><br>
+
+        <div>
+            <a href="#"
+               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Send</a>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-desktop-mac zmdi-hc-2x '></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-comment zmdi-hc-2x'></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-account zmdi-hc-2x'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end message page-->
+
+<!--Contacts page-->
+<div data-role="page" id="contactspage">
+    <div data-role="header" data-position="fixed">
+        <!--<a href="#bottomsheetblock" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
+        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <h1 style="opacity: 1">Contacts</h1>
+    </div>
+
+    <div data-role="content">
+
+        <ul data-role="listview" data-icon="false">
+            <li data-role="list-divider">
+                <!--Contacts-->
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Ethel Chancy</h2>
+                    <p>233542688902</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Lorean Gainer</h2>
+                    <p>lorean87@mail.com</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <h2>Juliet Gieseke</h2>
+                    <p>flowerpower69@rainbow.com</p>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box">
+                    <a onclick="drawGauge(400,100,25,25)" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-desktop-mac zmdi-hc-2x '></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-comment zmdi-hc-2x'></i></a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-account zmdi-hc-2x'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end contacts page-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="./js/waves.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script src="./js/nativedroid2.js"></script>
+<script src="./js/nd2settings.js"></script>
+<script src="./js/myscript.js"></script>
+<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 </body>
 
 </html>

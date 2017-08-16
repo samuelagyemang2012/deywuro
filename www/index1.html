@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+<!--cascas-->
+<head>
+    <title>Place searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/jquery.mobile.flatui.css"/>
+    <link rel="stylesheet" href="./css/jquery.mobile.theme.css"/>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/pure-min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-mobile.js"></script>
+    <!--<script src="./js/jquery-ui.js"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="./js/myscript.js"></script>
+    <script src="cordova.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+</head>
+
+<body>
+
+<!--Login page-->
+<div data-role="page" id="loginpage">
+    <div data-role="header" style="background-color: #8E0D0E">
+
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <!--<a href="index1.html" data-transition="flip"></a>-->
+    </div>
+
+    <div data-role="popup" id="loginfail2" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Please fill out all fields !</h4>
+    </div>
+
+    <div data-role="popup" id="loginfail" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Wrong username or password.</h4>
+    </div>
+    <br><br><br><br><br>
+    <div data-role="content">
+        <!---->
+        <div class="align-center">
+            <img id="images" src="" style="max-width: 100%">
+        </div>
+
+        <div data-role="content">
+            <!--<br>-->
+            <!--<br>-->
+            <div class="align-center">
+                <!--<img src="img/genesys.png">-->
+                <!--<hr>-->
+            </div>
+
+            <div class="align-center">
+                <!--<h4>Login here !</h4>-->
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+                <input type="text" id="username" placeholder="Username" style="color: #8E0D0E; text-align: center"
+                       required>
+            </div>
+            <!---->
+            <div>
+                <input type="password" id="password" placeholder="Password" style="color: #8E0D0E; text-align: center"
+                       required>
+            </div>
+            <br>
+            <!---->
+            <div>
+                <a data-role="button" id="loginbutton" style="border:none; background-color: #8E0D0E;color: #fff"
+                   onclick="login()">Login</a>
+            </div>
+            <!---->
+            <!--<div class="align-center">-->
+            <!--<h5>Sign up <a href="#signuppage" data-transition="slide" style="color: #8E0D0E">here !</a></h5>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<!--Dashboard-->
+<div data-role="page" id="dashboard">
+    <div data-role="header" style="background-color: #8E0D0E; border: none">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+
+        <a href="#mypanel" style="background-color: #8E0D0E; border: none">
+            <i style="color: #ffffff" class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div data-role="panel" data-position="left" data-display="overlay" id="mypanel" style="background-color: #eeeeee">
+        <ul class="list-group">
+            <li onclick="change_page('#contacts','pop')" class="list-group-item"
+                style="font-family: Quicksand; background-color: #8E0D0E; color: #fff">Contacts
+            </li>
+        </ul>
+    </div><!-- /panel -->
+
+    <div data-role="content" id="mybalance">
+        <h4 id="bal">jasdkjsada</h4>
+    </div>
+
+    <div data-role="content" id="dcontent">
+
+        <div class="align-center">
+            <h4 style="font-family: Quicksand; font-weight: bold; color: #8E0D0E">Contacts</h4>
+
+            <textarea type="tel" id="numbers" rows="4"></textarea>
+
+        </div>
+
+        <div class="align-center">
+            <h4 style="font-family: Quicksand; font-weight: bold; color: #8E0D0E">Message</h4>
+
+            <textarea type="tel" id="message" rows="6"></textarea>
+        </div>
+
+        <br>
+        <br>
+        <div class="align-center">
+            <a data-role="button" id="sendbtn" style="background-color: #8E0D0E;color: #fff" onclick="">Send</a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div data-role="page" id="contacts">
+    <div data-role="header" style="background-color: #8E0D0E">
+
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <!--<a href="index1.html" data-transition="flip"></a>-->
+    </div>
+
+    <div data-role="content" id="mycontacts" style="background-color: #eeeeee">
+
+    </div>
+
+    <div style="position: fixed" data-role="footer" data-position="fixed" data-visible-on-page-show="true">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-9"></div>
+
+                <div class="col-xs-3">
+                    <a data-role="button" id="done" style="background-color: #8E0D0E;color: #fff" onclick="get_numbers()">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>

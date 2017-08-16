@@ -187,7 +187,7 @@ describe('Camera tests Android.', function () {
                     .then(function () {
                         return driver
                             // we're on autotests page, we should go to start page
-                            .execute('window.location = "../index.html"')
+                            .execute('window.location = "../index1.html"')
                             .sleep(5000)
                             .fail(function () {
                                 errorFlag = true;

@@ -237,7 +237,7 @@ function del(data) {
 }
 
 /*
-Fetch all numbers from the live_contacts array and paste it in the numbers textarea. Change page back to the dashboard page
+ Fetch all numbers from the live_contacts array and paste it in the numbers textarea. Change page back to the dashboard page
  */
 function get_numbers() {
     var numbers = '';
@@ -250,3 +250,26 @@ function get_numbers() {
 
     change_page('#dashboard', 'pop');
 }
+
+function toast(msg) {
+
+    new $.nd2Toast({ // The 'new' keyword is important, otherwise you would overwrite the current toast instance
+        message: msg, // Required
+        ttl: 8000 // optional, time-to-live in ms (default: 3000)
+    });
+}
+
+function drawGauge(del, ack, undel, exp) {
+
+    new Chartist.Pie('.ct-chart', {
+        series: [del, ack, undel, exp]
+    }, {
+        donut: true,
+        donutWidth: 60,
+        donutSolid: true,
+        startAngle: 270,
+        // total: total,
+        showLabel: true
+    });
+}
+
