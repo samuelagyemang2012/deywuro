@@ -1,12 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <link rel="stylesheet" href="./css/jquery.mobile.min.css"/>
     <link rel="stylesheet" href="./css/waves.min.css"/>
     <link rel="stylesheet" href="./css/animate.css"/>
     <link rel="stylesheet" href="./css/nativedroid2.color.deep-orange.css"/>
     <link rel="stylesheet" href="./css/nativedroid2.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
 
     <meta charset="utf-8"/>
     <meta name="format-detection" content="telephone=no"/>
@@ -25,39 +31,9 @@
     <script src="./js/nativedroid2.js"></script>
     <script src="./js/nd2settings.js"></script>
     <script type="text/javascript" src="./js/myscript.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <!--<script type="text/javascript" src="./js/index.js"></script>-->
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
-
-    <!--olldll-->
-    <!--<title>nativeDroid II - jQueryMobile Template</title>-->
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>-->
-
-    <!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>-->
-    <!--<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>-->
-    <!--<link rel="stylesheet" href="./css/waves.min.css"/>-->
-    <!--<link rel="stylesheet" href="./css/animate.css"/>-->
-    <!--<link rel="stylesheet" href="./css/nativedroid2.color.deep-orange.css"/>-->
-    <!--<link rel="stylesheet" href="./css/nativedroid2.css"/>-->
-    <!--<link rel="stylesheet"-->
-          <!--href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">-->
-    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">-->
-
-    <!--&lt;!&ndash;<meta name="mobile-web-app-capable" content="yes">&ndash;&gt;-->
-    <!--&lt;!&ndash;<meta name="apple-mobile-web-app-capable" content="yes"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<meta name="apple-mobile-web-app-status-bar-style" content="black"/>&ndash;&gt;-->
-
-    <!--<script src="./js/jquery.js"></script>-->
-    <!--&lt;!&ndash;<script src="./js/jquery.js"></script>&ndash;&gt;-->
-    <!--<script src="./js/jquery-ui.js"></script>-->
-    <!--&lt;!&ndash;<script src="./js/jquery-mobile.js"></script>&ndash;&gt;-->
-    <!--<script src="./js/jquery-mobile.js"></script>-->
-    <!--<script src="./js/waves.min.js"></script>-->
-    <!--<script src="./js/wow.min.js"></script>-->
-    <!--<script src="./js/nativedroid2.js"></script>-->
-    <!--<script src="./js/nd2settings.js"></script>-->
-    <!--<script src="./js/myscript.js"></script>-->
-    <!--<script src="cordova.js"></script>-->
-    <!--<script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>-->
 </head>
 
 <body>
@@ -146,19 +122,19 @@
                 <div class="box">
                     <a onclick="drawGauge(400,100,25,25)" class="ui-btn ui-mini nd2-btn-icon-block"><i
                             style="color: #FF5722"
-                            class='zmdi zmdi-desktop-mac zmdi-hc-2x '></i></a>
+                            class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-comment zmdi-hc-2x'></i></a>
+                                                                             class='zmdi zmdi-comment zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-account zmdi-hc-2x'></i></a>
+                                                                             class='zmdi zmdi-account zmd-lg'></i></a>
                 </div>
             </div>
         </div>
@@ -176,7 +152,7 @@
     </div>
 
     <div data-role="content">
-        <br>
+        <br><br>
         <div>
             <h3 style="color: #FF5722">Contacts</h3>
             <textarea cols="40" rows="8" name="textarea2" id="contacts" placeholder=""></textarea>
@@ -201,19 +177,19 @@
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-desktop-mac zmdi-hc-2x '></i></a>
+                                                                             class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-comment zmdi-hc-2x'></i></a>
+                                                                             class='zmdi zmdi-comment zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-account zmdi-hc-2x'></i></a>
+                                                                             class='zmdi zmdi-account zmd-lg'></i></a>
                 </div>
             </div>
         </div>
@@ -265,19 +241,19 @@
                 <div class="box">
                     <a onclick="drawGauge(400,100,25,25)" class="ui-btn ui-mini nd2-btn-icon-block"><i
                             style="color: #FF5722"
-                            class='zmdi zmdi-desktop-mac zmdi-hc-2x '></i></a>
+                            class='zmdi zmdi-desktop-mac zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-comment zmdi-hc-2x'></i></a>
+                                                                             class='zmdi zmdi-comment zmdi-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
                     <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-account zmdi-hc-2x'></i></a>
+                                                                             class='zmdi zmdi-account zmdi-lg'></i></a>
                 </div>
             </div>
         </div>
