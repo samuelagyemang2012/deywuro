@@ -148,6 +148,7 @@ function contacts_success(contacts) {
     }
 
     build += "</ul>";
+    alert("done");
     // build += "</div>";
 
     $("#mycontacts").html(build);
