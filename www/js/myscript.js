@@ -262,7 +262,7 @@ function get_stats() {
                         change_page("#dashboard", "pop");
                     }, 800);
 
-                toast("Fetching your statistics", 3000);
+                toast("Fetching your statistics", 1500);
 
                 setTimeout(
                     function () {

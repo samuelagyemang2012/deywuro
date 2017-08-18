@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/chartist.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +38,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -81,11 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="267" column="33" selection-start-line="267" selection-start-column="33" selection-end-line="267" selection-end-column="33" />
+            <state relative-caret-position="297">
+              <caret line="264" column="52" selection-start-line="264" selection-start-column="52" selection-end-line="264" selection-end-column="52" />
               <folding>
                 <element signature="e#188#284#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -99,9 +98,9 @@
                 <element signature="n#!!block;n#del#0" expanded="false" />
                 <element signature="n#!!block;n#get_numbers#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
-                <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-                <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-                <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+                <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+                <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+                <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
               </folding>
             </state>
           </provider>
@@ -166,9 +165,9 @@
         <option value="$PROJECT_DIR$/www/index1.html" />
         <option value="$PROJECT_DIR$/www/css/material-design-iconic-font.min.css" />
         <option value="$PROJECT_DIR$/www/js/chartist.min.js" />
-        <option value="$PROJECT_DIR$/www/js/myscript.js" />
         <option value="$PROJECT_DIR$/www/css/chartist.min.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -1238,7 +1237,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480203385415</updated>
-      <workItem from="1502875944397" duration="45924000" />
+      <workItem from="1502875944397" duration="46200000" />
     </task>
     <task id="LOCAL-00001" summary="test-placesServices">
       <created>1480486559601</created>
@@ -1513,22 +1512,29 @@
       <option name="project" value="LOCAL" />
       <updated>1503050215995</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="k">
+      <created>1503050523552</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1503050523552</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45924000" />
+    <option name="totallyTimeSpent" value="46200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1620,9 +1626,9 @@
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1660,9 +1666,9 @@
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1714,9 +1720,9 @@
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1753,9 +1759,9 @@
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1792,9 +1798,9 @@
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1831,9 +1837,9 @@
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1986,30 +1992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="267" column="33" selection-start-line="267" selection-start-column="33" selection-end-line="267" selection-end-column="33" />
-          <folding>
-            <element signature="e#188#284#0" expanded="false" />
-            <element signature="n#!!block;n#send_request#0" expanded="false" />
-            <element signature="n#!!block;n#change_page#0" expanded="false" />
-            <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
-            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#insert#0" expanded="false" />
-            <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
-            <element signature="n#!!block;n#toast#0" expanded="false" />
-            <marker date="1503048052758" expanded="true" signature="3662:3672" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3887:3901" ph="..." />
-            <marker date="1503048052758" expanded="true" signature="3972:3986" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/css/chartist.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -2054,6 +2036,30 @@
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1503050467073" expanded="false" signature="6190:6522" ph="..." />
             <marker date="1503050467073" expanded="false" signature="8486:8823" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="264" column="52" selection-start-line="264" selection-start-column="52" selection-end-line="264" selection-end-column="52" />
+          <folding>
+            <element signature="e#188#284#0" expanded="false" />
+            <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#popout#0" expanded="false" />
+            <element signature="n#!!block;n#popout_close#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0" expanded="false" />
+            <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#toast#0" expanded="false" />
+            <marker date="1503050790460" expanded="true" signature="3662:3672" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3887:3901" ph="..." />
+            <marker date="1503050790460" expanded="true" signature="3972:3986" ph="..." />
           </folding>
         </state>
       </provider>
