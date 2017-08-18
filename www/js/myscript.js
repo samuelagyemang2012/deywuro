@@ -59,6 +59,9 @@ function login() {
 
                 if (response.message == "Successful Login") {
 
+                    $("#username").val("");
+                    $("#password").val("");
+
                     $.cookie('username', username);
                     $.cookie('password', password);
 
@@ -278,6 +281,13 @@ function get_stats() {
 }
 
 function home() {
+
+    $("#mycontacts").html("");
+    var cookies = $.cookie();
+    for (var cookie in cookies) {
+        $.removeCookie(cookie);
+    }
     change_page('#loginpage');
 }
+
 
