@@ -154,10 +154,8 @@ function contacts_failed(msgObject) {
 
 function select_contacts(num, id) {
 
-    //alert("number: " + num + "id: " + id);
-
     var bool = $("#i" + id).val();
-    //
+
     if (bool == "false") {
 
         //if number is not selected, highlight background of number field and insert it into the live_contacts array
@@ -277,5 +275,9 @@ function get_stats() {
                 // popout("loginfail", "pop");
             }
         });
+}
+
+function home() {
+    change_page('#loginpage');
 }
 
