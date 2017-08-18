@@ -262,12 +262,12 @@ function get_stats() {
                         change_page("#dashboard", "pop");
                     }, 800);
 
-                toast("Fetching your statistics", 1500);
+                toast("Fetching your statistics", 3000);
 
                 setTimeout(
                     function () {
                         drawGauge(total_sent, total_del, total_ack, total_undeliv, total_exp);
-                    }, 1200);
+                    }, 1500);
 
             }
 
