@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
@@ -84,8 +83,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
               <folding>
                 <element signature="e#188#284#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -99,9 +98,9 @@
                 <element signature="n#!!block;n#get_numbers#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-                <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-                <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-                <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+                <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+                <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+                <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1226,7 +1225,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480203385415</updated>
-      <workItem from="1502875944397" duration="41036000" />
+      <workItem from="1502875944397" duration="41357000" />
     </task>
     <task id="LOCAL-00001" summary="test-placesServices">
       <created>1480486559601</created>
@@ -1435,18 +1434,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41036000" />
+    <option name="totallyTimeSpent" value="41357000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1538,9 +1537,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1578,9 +1577,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1632,9 +1631,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1671,9 +1670,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1710,9 +1709,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1749,9 +1748,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1936,8 +1935,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -1951,9 +1950,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1503044186678" expanded="true" signature="3823:3833" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4048:4062" ph="..." />
-            <marker date="1503044186678" expanded="true" signature="4133:4147" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="3823:3833" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4048:4062" ph="..." />
+            <marker date="1503044509984" expanded="true" signature="4133:4147" ph="..." />
           </folding>
         </state>
       </provider>

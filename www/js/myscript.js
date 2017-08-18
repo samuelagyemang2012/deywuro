@@ -147,8 +147,8 @@ function contacts_success(contacts) {
         }
     }
 
-    build += "</div>";
-    build += "</div>";
+    build += "</ul>";
+    // build += "</div>";
 
     $("#mycontacts").html(build);
 }
