@@ -47,6 +47,14 @@
         <h1 style="opacity: 0">Header & Footer</h1>
     </div>
 
+    <!--<div data-role="popup" id="loginfailpopup" class="ui-content">-->
+    <!--<h4 style="color: crimson">Wrong username or password.</h4>-->
+    <!--</div>-->
+
+    <!--<div data-role="popup" id="loginfailpopup" class="ui-content">-->
+    <!--<h4 style="color: crimson">Wrong username or password.</h4>-->
+    <!--</div>-->
+
     <div data-role="content">
         <br><br><br><br><br><br><br><br>
 
@@ -56,18 +64,18 @@
             </div>
 
             <div>
-                <input type="text" name="name2" id="username" value="" data-clear-btn="true"
+                <input type="text" id="username" value="" data-clear-btn="true"
                        placeholder="Username">
             </div>
             <br>
 
             <div>
-                <input type="text" name="name2" id="password" value="" data-clear-btn="true"
+                <input type="password" id="password" value="" data-clear-btn="true"
                        placeholder="Password">
             </div>
 
             <div>
-                <a onclick="toast('Fetching Contacts')"
+                <a onclick="login()"
                    class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
             </div>
         </div>
@@ -98,17 +106,19 @@
         <table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
             <thead>
             <th>Total SMS Sent</th>
-            <th>Total SMS Delivered</th>
-            <th>Total SMS Acknowledged</th>
             <th>Total SMS Expired</th>
+            <th>Total SMS Delivered</th>
+            <th>Total SMS Undelivered</th>
+            <th>Total SMS Acknowledged</th>
             </thead>
 
             <tbody>
             <tr>
-                <td>400</td>
-                <td>100</td>
-                <td>25</td>
-                <td>25</td>
+                <td><b id="ttl" style="color: #FF5722">600</b></td>
+                <td><b id="exp" style="color: #FF5722">100</b></td>
+                <td><b id="del" style="color: #FF5722">25</b></td>
+                <td><b id="undeliv" style="color: #FF5722">25</b></td>
+                <td><b id="ack" style="color: #FF5722">25</b></td>
             </tr>
             </tbody>
 
@@ -120,21 +130,22 @@
         <div class="row center-xs">
             <div class="col-xs-4">
                 <div class="box">
-                    <a onclick="drawGauge(400,100,25,25)" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                    <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i
                             style="color: #FF5722"
                             class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-comment zmd-lg'></i></a>
+                    <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-comment zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-account zmd-lg'></i></a>
+                    <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722" class='zmdi zmdi-account zmd-lg'></i></a>
                 </div>
             </div>
         </div>
@@ -176,20 +187,22 @@
         <div class="row center-xs">
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
+                    <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                                          class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-comment zmd-lg'></i></a>
+                    <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-comment zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-account zmd-lg'></i></a>
+                    <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-account zmd-lg'></i></a>
                 </div>
             </div>
         </div>
@@ -239,21 +252,21 @@
         <div class="row center-xs">
             <div class="col-xs-4">
                 <div class="box">
-                    <a onclick="drawGauge(400,100,25,25)" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                    <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i
                             style="color: #FF5722"
                             class='zmdi zmdi-desktop-mac zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-comment zmdi-lg'></i></a>
+                    <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-comment zmd-lg'></i></a>
                 </div>
             </div>
             <div class="col-xs-4">
                 <div class="box">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                             class='zmdi zmdi-account zmdi-lg'></i></a>
+                    <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
+                                                                             class='zmdi zmdi-account zmd-lg'></i></a>
                 </div>
             </div>
         </div>

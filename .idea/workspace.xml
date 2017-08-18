@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="k">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/Material-Design-Iconic-Font.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/css/Material-Design-Iconic-Font.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,17 +39,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+            <state relative-caret-position="276">
+              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#link#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#b#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -61,41 +68,30 @@
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1502910723989" expanded="false" signature="5592:5924" ph="..." />
-                <marker date="1502910723989" expanded="false" signature="7833:8170" ph="..." />
+                <marker date="1503021198943" expanded="false" signature="6137:6469" ph="..." />
+                <marker date="1503021198943" expanded="false" signature="8433:8770" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="material-design-iconic-font.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/material-design-iconic-font.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="261" column="41" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
+            <state relative-caret-position="231">
+              <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
               <folding>
                 <element signature="e#188#284#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
+                <element signature="n#!!block;n#change_page#0" expanded="false" />
                 <element signature="n#!!block;n#popout#0" expanded="false" />
                 <element signature="n#!!block;n#popout_close#0" expanded="false" />
                 <element signature="n#!!block;n#login#0" expanded="false" />
-                <element signature="e#1433#2585#0" expanded="false" />
-                <element signature="n#!!block;n#load_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_success#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
                 <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -104,11 +100,9 @@
                 <element signature="n#!!block;n#get_numbers#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-                <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-                <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-                <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-                <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-                <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+                <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+                <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+                <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
               </folding>
             </state>
           </provider>
@@ -129,7 +123,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response29.txt" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response41.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -159,11 +153,11 @@
         <option value="$PROJECT_DIR$/www/about.html" />
         <option value="$PROJECT_DIR$/www/js/my-app.js" />
         <option value="$PROJECT_DIR$/www/css/nativedroid2.css" />
-        <option value="$PROJECT_DIR$/www/js/myscript.js" />
         <option value="$PROJECT_DIR$/www/test.html" />
         <option value="$PROJECT_DIR$/www/index1.html" />
         <option value="$PROJECT_DIR$/www/css/material-design-iconic-font.min.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -309,6 +303,256 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjlkVGs1YktkZDFJbWd4YWRUcUYzU2c9PSIsInZhbHVlIjoiWWZINlYzaFJGZXRXWGluUmVFbEtJUTVmQWxRWTdDakhNdGFlTng1M0lKVzVIV09vUlA0WkxQQnlZUkJ3STBGdTdjcCs0SmJyZVlibkpBNDA5Z3NTNHc9PSIsIm1hYyI6ImIxZmQ3YzMxMzJkY2EyNjBkZDE0OTUzNjk0NGI5NmI3MTJhODg3YmNjNTk5NWM4ZGEyOWUxMmIwOTQxZjdiZTAifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1503024289000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlFZZ21rSWkxYkg0c3BzMWhLZU5FVWc9PSIsInZhbHVlIjoieHVyZjBvTkt3aHNuMEVSOFo4SlpTQ0dnMENya0JEQXJIRVJwVmltY0prRTBoRU5mbGVWYXhMT1hMZStmRVwvMklqQUQ1cUE2QjM1NjhiTDU0dFNcL0k3Zz09IiwibWFjIjoiZjNhNTU2NmNjNGE0ZThhY2E3ZWRjNWZmMjNiM2QxMzRiYWMwZmFjYzAyOGIzMmI5MjBmMDdjZWRmN2YyYTFkNyJ9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://deywuro.com" />
+          <option name="urlPath" value="/api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkpzeFhINTM0RnRQK1YxbitFU1pWSVE9PSIsInZhbHVlIjoiaWlsRFBvT1hGVmJNVnlremxvSWJKenNCTmpVelNZcWMyMjJYcTBqMVR0R3dvcStWZ1FIMnUyMEdMbWlob0MrZ0dZa3pjdGhEVkgyR2UxTk9cL29HNUlRPT0iLCJtYWMiOiIzYjQyMjdmMzJiNmUzYmU0ZmY3NGZkN2M5NWEwYzA0ZTI1ZjA5YzEyYjU3ODZiNzk3ZDcwNjk2NjcyYjE5MmQ5In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1502968067000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ijc5Y25wVUVFa1BDZ2Z5cVpvSTBoMlE9PSIsInZhbHVlIjoiVVplREpyVFVhcWhieGN1b1U1OHpCZUpvTGUrMW9MWW0xaEh3UEVCOTZOdEl2WUZLVlZBWHhtVXhBa044dFNTeDJQaXJlWDRuSkV3WmdHcEpkT1YrcWc9PSIsIm1hYyI6IjYxNmI3NDU1MTI5NTJlNjg5MTg4ZTViMjMwZWM5NmNlYTFhZjBmYmMzNGJkNzM2OWY2YmNkMDM0ZmVkYmFlYzkifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://deywuro.com" />
+          <option name="urlPath" value="/api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="Vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlZlZTlEV2NTSG9IeEpWbkFhWUNQekE9PSIsInZhbHVlIjoiWXhUYkFJa3VYeGJBME43SkVUR1czaHUyZTQ4aHVYaDNGd2RZQU84djBoZEhCU1JBeUxLcW02eWpBaFJvQVp5Rk0xVEVxXC82NThlNjVKd1dGVW9IYmRBPT0iLCJtYWMiOiIyMzdhNmMyZmUwZWQ4ZDFmNzg4MjI1MGNkYjc5ZmIyOGE4YTZiYzZkZjNiYzkzMGQ5NmI1OWU3NGQwMDM0ODRkIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1502968055000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlFEOW8zWkdcLzRxRDdOTXVWcnJIZmhRPT0iLCJ2YWx1ZSI6IjdMOHp4TDlKeVRDVHdmYWIrK0ZXUU1McVBaeXRtWmFJSXJGYzgwcTBsWHk0NnZxNm1jTVp6cUIrY1dvbUIxejF4VXp3YnN2TjNvaTFMYko1RVJ3WUVnPT0iLCJtYWMiOiI4NzYyOTJmOGRlN2Y2MTZkMzRmNjFhZDBkMGFmYjgzMGUyOTcxMDFlZTI5OTI3MTg0ZThhMTIyNGRkNDYwYWYyIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://deywuro.com" />
+          <option name="urlPath" value="/api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="Vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlVaQlVOQWFSY29iM0JCT1wvQVZlYkhRPT0iLCJ2YWx1ZSI6IkgxcVwvMGN0MkMzZ29pMXdMT1BSNjNjbitXMDF6RWdFbEhCcE44YnZuVnpkSlFOV3JKb0tKcCtTdkNhc2F1ejQrVEpJVDJvYlJWRFhWY0ZKbUtnQ1wveEE9PSIsIm1hYyI6ImYxOWY3NjA2MjY1Y2YzZjFlMDI5YjFlNzMzMDAyODI4MTAwNzEzOWUzMTY3YTczMTdjMzFkMTJkZDQ5M2Y0MmQifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1502967768000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjRDTWo5ZW52RWJpblBzNGNjUWIrR1E9PSIsInZhbHVlIjoiQ01USytINzc1THcwNG56ajU4TkNkaE9PQ0VmUGNSWmwreGoyd1dxU2MrU3JkNlhadnExbklKSXpmc2FQa2ZiRlM0dFJVbDFZNE1rSFl5c1dLdnJHY2c9PSIsIm1hYyI6ImIwYzg1NmUzYmJhMzIxOTE4OGZmMGJmODYzN2FhMWU0Mzc3N2M3YWI4MWNmOGRjY2U2Zjc3N2NmMTc1YzU5YTUifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://deywuro.com" />
+          <option name="urlPath" value="/api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="Vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle1234" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjluTTZ3YjZ6ZlIyY0pSam8zbUNsSlE9PSIsInZhbHVlIjoidWQyYndQaFFIbjA0T2pkbjA1WmhjcVBcL2FXMURaV2tWRW5jXC9rN1hTRE5COHdSajBQZzQzTDlObmYreDBhalBQaFYwcXV1NDdXMmlzN2VqOVwvWGU5U1E9PSIsIm1hYyI6ImU4NWZlOTRjMmI5YmVlMjA2NzIzMjMzYmZkYTI1MDFiNWFkZGYwYmZmMTE3Njc3NmNiM2Y3NGI5NGY0MTA4M2UifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1502967741000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjZqVDhia2JqZEQ0VmFYZldUNXJkbGc9PSIsInZhbHVlIjoiWVZLQVRJemZYYzNnMDA3R0pRWjJndFYxdklSREs5KzlxbGZMRFZtOVNhMmZsV2JYVzN2ZjFzYjkwSVJ3UnNrSUQyc3lIZmZkUHZVY0h2STVRWGZxdnc9PSIsIm1hYyI6ImRiYjZmOTdiM2U3YjEyNzM0M2M1YTI5Zjk5YzdmMmJlZDU4MWIxNjZkNGRjNjRmZDkzYmQ3N2Y0OTBiZDU1M2YifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://deywuro.com" />
+          <option name="urlPath" value="/api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="Vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -983,7 +1227,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1480203385415</updated>
-      <workItem from="1502875944397" duration="31042000" />
+      <workItem from="1502875944397" duration="40196000" />
     </task>
     <task id="LOCAL-00001" summary="test-placesServices">
       <created>1480486559601</created>
@@ -1185,30 +1429,30 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31042000" />
+    <option name="totallyTimeSpent" value="40196000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2397882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31423897" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7332242" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7332242" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15128593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1258,7 +1502,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1278,11 +1522,10 @@
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -1291,11 +1534,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1323,11 +1564,10 @@
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -1336,11 +1576,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1382,11 +1620,10 @@
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -1395,11 +1632,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1426,11 +1661,10 @@
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -1439,11 +1673,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1470,11 +1702,10 @@
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -1483,11 +1714,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1514,11 +1743,10 @@
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -1527,11 +1755,9 @@
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1650,35 +1876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="261" column="41" selection-start-line="261" selection-start-column="41" selection-end-line="261" selection-end-column="41" />
-          <folding>
-            <element signature="e#188#284#0" expanded="false" />
-            <element signature="n#!!block;n#send_request#0" expanded="false" />
-            <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="e#1433#2585#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
-            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#insert#0" expanded="false" />
-            <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
-            <element signature="n#!!block;n#toast#0" expanded="false" />
-            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <marker date="1502901230507" expanded="true" signature="2128:2150" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="2183:2197" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4172:4182" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4393:4407" ph="..." />
-            <marker date="1502901230507" expanded="true" signature="4475:4489" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1705,14 +1902,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="124" column="60" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+        <state relative-caret-position="276">
+          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#link#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#td#4;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1723,13 +1928,39 @@
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#ul#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1502910723989" expanded="false" signature="5592:5924" ph="..." />
-            <marker date="1502910723989" expanded="false" signature="7833:8170" ph="..." />
+            <marker date="1503021198943" expanded="false" signature="6137:6469" ph="..." />
+            <marker date="1503021198943" expanded="false" signature="8433:8770" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="83" column="42" selection-start-line="83" selection-start-column="42" selection-end-line="83" selection-end-column="42" />
+          <folding>
+            <element signature="e#188#284#0" expanded="false" />
+            <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#popout#0" expanded="false" />
+            <element signature="n#!!block;n#popout_close#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0" expanded="false" />
+            <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#toast#0" expanded="false" />
+            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
+            <marker date="1503021436235" expanded="true" signature="3459:3469" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3680:3694" ph="..." />
+            <marker date="1503021436235" expanded="true" signature="3762:3776" ph="..." />
           </folding>
         </state>
       </provider>

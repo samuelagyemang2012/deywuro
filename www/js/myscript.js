@@ -22,20 +22,10 @@ function send_request(url) {
     return result;
 }
 
-/*
- Changes a page
- page: id of page eg. #loginpage
- transition: animation to play when changing page eg. slide
- */
 function change_page(page, transition) {
     $.mobile.pageContainer.pagecontainer("change", page, {transition: transition});
 }
 
-/*
- Displays a popout
- page: id of popout eg. loginpagepopout
- transition: animation to play when displaying the pop up eg. slide
- */
 function popout(id, transition) {
     $("#" + id).popup("open", {transition: transition});
 }
@@ -44,10 +34,6 @@ function popout_close(id, transition) {
     $("#" + id).popup("close", {transition: transition});
 }
 
-/*
- Logs the user in
-
- */
 function login() {
 
     var url, username, password, balance;
@@ -58,13 +44,13 @@ function login() {
 
     if (username.length == 0 || password.length == 0) {
         popout('loginfail2', 'pop');
+        toast('Please enter a username and password', 5000)
     }
 
-    ////not null
     if (username.length > 0 && password.length > 0) {
 
         //login api
-        $.get("http://deywuro.com:12111/api/login",
+        $.get("http://deywuro.com/api/login",
             {
                 username: username,
                 password: password
@@ -74,26 +60,18 @@ function login() {
 
                 if (response.message == "Successful Login") {
 
-                    load_contacts();
-
-                    //store details in cookies
                     $.cookie('username', username);
                     $.cookie('password', password);
-                    $.cookie('balance', response.bal);
-                    balance = $.cookie('balance');
 
-                    //update balance section of dashboard page
-                    $("#mybalance").html('<h4 id="bal" style="font-family: Quicksand" class="align-center"><b style="color: #8E0D0E">Balance: &nbsp; </b>' + balance + '</h4><hr>');
+                    // load_contacts();
+                    get_stats();
 
-                    setTimeout(
-                        function () {
-                            change_page("#dashboard", "pop");
-                        }, 800);
                 }
 
                 if (response.message == "Invalid Credential!") {
 
-                    popout("loginfail", "pop");
+                    toast("Wrong username or password", 5000);
+                    // popout("loginfail", "pop");
                 }
             });
     } else {
@@ -101,10 +79,9 @@ function login() {
     }
 }
 
-/*
- load contacts from phone
- */
 function load_contacts() {
+
+    toast("Fetching your contacts", 8000);
 
     var obj = new ContactFindOptions();
     obj.filter = "";
@@ -114,9 +91,6 @@ function load_contacts() {
     navigator.contacts.find([navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.phoneNumbers], contacts_success, contacts_failed, obj);
 }
 
-/*
- Sucess function
- */
 function contacts_success(contacts) {
 
     var build;
@@ -170,20 +144,10 @@ function contacts_success(contacts) {
     $("#mycontacts").html(build);
 }
 
-/*
- error functions
- */
 function contacts_failed(msgObject) {
     alert("Failed to access contact list:" + JSON.stringify(msgObject));
 }
 
-//function to_contacts_page() {
-//    change_page("#contacts", "pop");
-//}
-
-/*
- Gets a particular number, highlights it and pushes it to the live_contacts array
- */
 function select_contacts(num, id) {
 
     //alert("number: " + num + "id: " + id);
@@ -210,10 +174,6 @@ function select_contacts(num, id) {
     }
 }
 
-/*
- Inserts a number into the live_contacts array
- data: number
- */
 function insert(data) {
 
     //if number doesn't exist in array, add it
@@ -222,10 +182,6 @@ function insert(data) {
     }
 }
 
-/*
- Deletes a number from the live_contacts array
- data: number
- */
 function del(data) {
 
     //Get index of that number
@@ -236,9 +192,6 @@ function del(data) {
 
 }
 
-/*
- Fetch all numbers from the live_contacts array and paste it in the numbers textarea. Change page back to the dashboard page
- */
 function get_numbers() {
     var numbers = '';
 
@@ -251,11 +204,11 @@ function get_numbers() {
     change_page('#dashboard', 'pop');
 }
 
-function toast(msg) {
+function toast(msg, duration) {
 
     new $.nd2Toast({ // The 'new' keyword is important, otherwise you would overwrite the current toast instance
         message: msg, // Required
-        ttl: 8000 // optional, time-to-live in ms (default: 3000)
+        ttl: duration // optional, time-to-live in ms (default: 3000)
     });
 }
 
@@ -267,9 +220,58 @@ function drawGauge(del, ack, undel, exp) {
         donut: true,
         donutWidth: 60,
         donutSolid: true,
-        startAngle: 270,
+        startAngle: 0,
         // total: total,
         showLabel: true
     });
+}
+
+function get_stats() {
+
+    var total_sent, total_del, total_ack, total_undeliv, total_exp, bal;
+
+    $.get("http://deywuro.com/api/stat",
+        {
+            username: $.cookie('username'),
+            password: $.cookie('password')
+        },
+
+        function (response) {
+
+            if (response.code == 0) {
+
+                total_sent = response.total_sms_sent;
+                total_del = response.total_sms_delivered;
+                total_ack = response.total_sms_ack;
+                total_undeliv = response.total_sms_undelivered;
+                total_exp = response.total_sms_expired;
+                bal = response.total_balance;
+
+                $("#ttl").html(total_sent);
+                $("#exp").html(total_exp);
+                $("#del").html(total_del);
+                $("#undeliv").html(total_undeliv);
+                $("#ack").html(total_ack);
+
+                setTimeout(
+                    function () {
+                        change_page("#dashboard", "pop");
+                    }, 800);
+
+                toast("Fetching your statistics", 1500);
+
+                setTimeout(
+                    function () {
+                        drawGauge(total_del, total_ack, total_undeliv, total_exp);
+                    }, 1200);
+
+            }
+
+            if (response.message == "Invalid Credential!") {
+
+                toast("Wrong username or password", 5000);
+                // popout("loginfail", "pop");
+            }
+        });
 }
 
