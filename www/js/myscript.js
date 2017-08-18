@@ -63,7 +63,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    // load_contacts();
+                    load_contacts();
                     get_stats();
 
                 }
@@ -93,10 +93,12 @@ function load_contacts() {
 
 function contacts_success(contacts) {
 
+    toast("Fetching your contacts", 5000);
+
     var build;
     build = "";
-    build += "<div class='container'>";
-    build += "<div class='row'>";
+    build += '<ul data-role="listview" data-icon="false">';
+    // build += "<div class='row'>";
 
     contacts.sort(function (a, b) {
         var nameA = a.displayName; // ignore upper and lowercase
@@ -124,14 +126,21 @@ function contacts_success(contacts) {
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
+                    build += '<li id="' + contacts[i].id + '">';
+                    build += '<a href="#">';
+                    build += '<h2>' + name + '</h2>';
+                    build += '<p>' + number + '</p>';
+                    build += '</a>';
+                    build += '</li>';
+
                     //$.cookie('i' + contacts[i].id, '' + contacts[id].id);
 
-                    build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
-                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
-                    //build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
-                    build += "<p><b style='color: #8E0D0E'>" + name + "</b></p>";
-                    build += "<p><b style='color: #8E0D0E'>" + number + "</b></p>";
-                    build += "</div>";
+                    // build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
+                    // build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
+                    // build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
+                    // build += "<p><b style='color: #8E0D0E'>" + name + "</b></p>";
+                    // build += "<p><b style='color: #8E0D0E'>" + number + "</b></p>";
+                    // build += "</div>";
 
                 }
             }
