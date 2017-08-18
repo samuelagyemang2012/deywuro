@@ -43,7 +43,6 @@ function login() {
     password = $("#password").val();
 
     if (username.length == 0 || password.length == 0) {
-        popout('loginfail2', 'pop');
         toast('Please enter a username and password', 5000)
     }
 
@@ -71,11 +70,8 @@ function login() {
                 if (response.message == "Invalid Credential!") {
 
                     toast("Wrong username or password", 5000);
-                    // popout("loginfail", "pop");
                 }
             });
-    } else {
-        popout("loginfail2", "pop");
     }
 }
 
