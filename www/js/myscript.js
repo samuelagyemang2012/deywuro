@@ -81,13 +81,11 @@ function login() {
 
 function load_contacts() {
 
-    toast("Fetching your contacts", 8000);
-
     var obj = new ContactFindOptions();
     obj.filter = "";
     obj.multiple = true;
 
-    //alert("start");
+    toast("Fetching your contacts", 8000);
     navigator.contacts.find([navigator.contacts.fieldType.displayName, navigator.contacts.fieldType.phoneNumbers], contacts_success, contacts_failed, obj);
 }
 
@@ -96,7 +94,7 @@ function contacts_success(contacts) {
     toast("Fetching your contacts", 5000);
 
     var build;
-    build = "";
+    build = '';
     build += '<ul data-role="listview" data-icon="false">';
     // build += "<div class='row'>";
 
