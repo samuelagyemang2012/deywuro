@@ -216,7 +216,7 @@ function toast(msg, duration) {
     });
 }
 
-function drawGauge(del, ack, undel, exp) {
+function drawGauge(total, del, ack, undel, exp) {
 
     new Chartist.Pie('.ct-chart', {
         series: [del, ack, undel, exp]
@@ -225,7 +225,7 @@ function drawGauge(del, ack, undel, exp) {
         donutWidth: 60,
         donutSolid: true,
         startAngle: 0,
-        // total: total,
+        total: total,
         showLabel: true
     });
 }
@@ -266,7 +266,7 @@ function get_stats() {
 
                 setTimeout(
                     function () {
-                        drawGauge(total_del, total_ack, total_undeliv, total_exp);
+                        drawGauge(total_sent, total_del, total_ack, total_undeliv, total_exp);
                     }, 1200);
 
             }
