@@ -165,6 +165,8 @@ function select_contacts(num, id) {
         $("#s" + id).show();
         $("#i" + id).val("true");
 
+        alert(num);
+
         //insert into the live_contacts array
         insert("" + num + "");
 
@@ -302,7 +304,7 @@ function send_sms() {
     $.get("http://api.deywuro.com/bulksms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
 
         function (response) {
-            // if(reponse)
+            alert(response);
         });
 }
 
