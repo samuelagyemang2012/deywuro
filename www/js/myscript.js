@@ -147,11 +147,11 @@ function contacts_failed(msgObject) {
 
 function select_contacts(num, id) {
 
-    var first = num.charAt(0);
-
-    if (first != 0 && num.length == 9) {
-        num = "0" + num;
-    }
+    // var first = num.charAt(0);
+    //
+    // if (first != 0 && num.length == 9) {
+    //     num = "0" + num;
+    // }
 
     var bool = $("#i" + id).val();
 

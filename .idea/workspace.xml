@@ -89,8 +89,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="199" column="51" selection-start-line="199" selection-start-column="51" selection-end-line="199" selection-end-column="51" />
+            <state relative-caret-position="68">
+              <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
               <folding>
                 <element signature="e#188#284#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -99,18 +99,19 @@
                 <element signature="n#!!block;n#popout_close#0" expanded="false" />
                 <element signature="n#!!block;n#login#0" expanded="false" />
                 <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+                <element signature="n#!!block;n#contacts_success#0" expanded="false" />
                 <element signature="e#2514#2548#0" expanded="false" />
                 <element signature="e#2577#2610#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
                 <element signature="n#!!block;n#insert#0" expanded="false" />
                 <element signature="n#!!block;n#del#0" expanded="false" />
-                <element signature="e#4957#5007#0" expanded="false" />
+                <element signature="e#4975#5025#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#drawGauge#0" expanded="false" />
                 <element signature="n#!!block;n#get_stats#0" expanded="false" />
-                <element signature="e#5908#7108#0" expanded="false" />
+                <element signature="e#5926#7126#0" expanded="false" />
                 <element signature="n#!!block;n#home#0" expanded="false" />
-                <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+                <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1235,14 +1236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1480203385415</updated>
       <workItem from="1502875944397" duration="53227000" />
-      <workItem from="1503084347935" duration="9235000" />
-    </task>
-    <task id="LOCAL-00003" summary="test-placesServices-can send verification code">
-      <created>1480663727642</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1480663727642</updated>
+      <workItem from="1503084347935" duration="9608000" />
     </task>
     <task id="LOCAL-00004" summary="test-placesServices-login working, sign up working">
       <created>1480730863902</created>
@@ -1580,11 +1574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503308693624</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="k">
+      <created>1503309047548</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1503309047548</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62462000" />
+    <option name="totallyTimeSpent" value="62835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1720,18 +1721,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1749,18 +1751,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1786,18 +1789,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1837,18 +1841,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1873,18 +1878,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1909,18 +1915,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1945,18 +1952,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2099,8 +2107,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="199" column="51" selection-start-line="199" selection-start-column="51" selection-end-line="199" selection-end-column="51" />
+        <state relative-caret-position="68">
+          <caret line="154" column="0" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
             <element signature="e#188#284#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -2109,18 +2117,19 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2514#2548#0" expanded="false" />
             <element signature="e#2577#2610#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="e#4957#5007#0" expanded="false" />
+            <element signature="e#4975#5025#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="e#5908#7108#0" expanded="false" />
+            <element signature="e#5926#7126#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <marker date="1503309042396" expanded="true" signature="3277:3287" ph="..." />
+            <marker date="1503309395311" expanded="true" signature="3277:3287" ph="..." />
           </folding>
         </state>
       </provider>
