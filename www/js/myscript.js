@@ -126,17 +126,13 @@ function contacts_success(contacts) {
                     // build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
                     build += "<p><b style=''>" + name + "</b></p>";
                     build += "<p><b style=''>" + number + "</b></p>";
-                    build += " <p hidden class='align-right' id='s" + contacts[i].id + "'><i class='zmdi zmdi-check'></i></p>";
+                    build += " <p hidden class='align-right' id='s" + contacts[i].id + "'><i style='color: #FF5722' class='zmdi zmdi-check-circle zmd-lg'></i></p>";
                     build += "</div>";
 
                 }
             }
         }
     }
-
-    build += "</ul>";
-    alert("done");
-    // build += "</div>";
 
     $("#mycontacts").html(build);
 }
@@ -294,7 +290,8 @@ function send_sms() {
     $.get("http://api.deywuro.com/bulksms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
 
         function (response) {
-            alert(response);
+            toast("Sending your SMS", 800);
+            get_stats();
         });
 }
 
