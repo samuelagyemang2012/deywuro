@@ -94,7 +94,7 @@ function contacts_success(contacts) {
 
     var build;
     build = '';
-    build += '<ul data-role="listview" data-icon="false">';
+    // build += '<ul data-role="listview" data-icon="false">';
     // build += "<div class='row'>";
 
     contacts.sort(function (a, b) {
@@ -121,16 +121,7 @@ function contacts_success(contacts) {
                 if (contacts[i].phoneNumbers[j] != null) {
 
                     var name = contacts[i].displayName;
-                    var number = contacts[i].phoneNumbers[j].value;
-
-                    // build += '<li id="' + contacts[i].id + '">';
-                    // build += '<a href="#">';
-                    // build += '<h2>' + name + '</h2>';
-                    // build += '<p>' + number + '</p>';
-                    // build += '</a>';
-                    // build += '</li>';
-
-                    //$.cookie('i' + contacts[i].id, '' + contacts[id].id);
+                    var number = "" + contacts[i].phoneNumbers[j].value + "";
 
                     build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
                     build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
