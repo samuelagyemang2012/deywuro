@@ -211,13 +211,13 @@ function get_numbers() {
     change_page('#messagepage', 'pop');
 }
 
-function clear_contacts() {
-    for (var i = 0; i < live_ids.length; i++) {
-
-        $("#s".live_ids[i]).hide();
-        del(live_ids[i]);
-    }
-}
+// function clear_contacts() {
+//     for (var i = 0; i < live_ids.length; i++) {
+//
+//         $("#s".live_ids[i]).hide();
+//         del(live_ids[i]);
+//     }
+// }
 
 function toast(msg, duration) {
 
