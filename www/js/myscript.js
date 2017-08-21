@@ -294,7 +294,7 @@ function send_sms() {
 
     var message, contacts, from;
 
-    message = $("#message").val();
+    message = encodeURI($("#message").val());
     from = $("#from").val();
     contacts = $("#numbers").val();
 
