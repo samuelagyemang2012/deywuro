@@ -147,11 +147,7 @@ function contacts_failed(msgObject) {
 
 function select_contacts(num, id) {
 
-    // var first = num.charAt(0);
-    //
-    // if (first != 0 && num.length == 9) {
-    //     num = "0" + num;
-    // }
+    var new_num = process_num(num);
 
     var bool = $("#i" + id).val();
 
@@ -160,18 +156,17 @@ function select_contacts(num, id) {
         $("#s" + id).show();
         $("#i" + id).val("true");
 
-        alert(num);
+        alert(new_num);
 
         //insert into the live_contacts array
-        insert("" + num + "");
+        insert(new_num);
 
     } else {
 
         $("#s" + id).hide();
         $("#i" + id).val("false");
 
-
-        del("" + num + "");
+        del(new_num);
 
     }
 }
@@ -301,6 +296,19 @@ function send_sms() {
         function (response) {
             alert(response);
         });
+}
+
+function process_num(number) {
+    // var num = number;
+
+    number = "" + number;
+
+    if (number.charAt(0) != 0 && number.length == 9) {
+        number = "0" + number;
+        return number;
+    } else {
+        return number;
+    }
 }
 
 
