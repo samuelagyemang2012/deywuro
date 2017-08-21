@@ -162,20 +162,19 @@ function select_contacts(num, id) {
 
     if (bool == "false") {
 
-        //     if number is not selected, highlight background of number field and insert it into the live_contacts array
         $("#s" + id).show();
         $("#i" + id).val("true");
 
         //insert into the live_contacts array
-        insert(num);
+        insert("" + num + "");
 
     } else {
-        //     if number is selected, unhighlight the number field and delete it from the live_contacts array
+
         $("#s" + id).hide();
         $("#i" + id).val("false");
 
         //delete from the live_contacts array
-        del(num);
+        del("" + num + "");
 
     }
 }
@@ -289,6 +288,22 @@ function home() {
         $.removeCookie(cookie);
     }
     change_page('#loginpage');
+}
+
+function send_sms() {
+
+    var message, contacts, from;
+
+    message = $("#message").val();
+    from = $("#from").val();
+    contacts = $("#numbers").val();
+
+
+    $.get("http://api.deywuro.com/bulksms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
+
+        function (response) {
+            // if(reponse)
+        });
 }
 
 

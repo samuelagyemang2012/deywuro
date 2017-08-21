@@ -43,18 +43,8 @@
 <div data-role="page" id="loginpage">
 
     <div data-role="header" data-position="fixed">
-        <!--<a href="#bottomsheetblock" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-more-vert"></i></a>-->
-        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>-->
         <h1 style="opacity: 0">Header & Footer</h1>
     </div>
-
-    <!--<div data-role="popup" id="loginfailpopup" class="ui-content">-->
-    <!--<h4 style="color: crimson">Wrong username or password.</h4>-->
-    <!--</div>-->
-
-    <!--<div data-role="popup" id="loginfailpopup" class="ui-content">-->
-    <!--<h4 style="color: crimson">Wrong username or password.</h4>-->
-    <!--</div>-->
 
     <div data-role="content">
         <br><br><br><br><br><br><br><br>
@@ -169,7 +159,13 @@
             <h3 style="color: #FF5722">Contacts</h3>
             <textarea id="numbers" cols="40" rows="8" name="textarea2" id="contacts" placeholder=""></textarea>
         </div>
-        <br><br>
+        <br>
+
+        <div>
+            <h3 style="color: #FF5722">Source</h3>
+            <input type="text" id="from" data-clear-btn="true" placeholder="">
+        </div>
+        <br>
 
         <div>
             <h3 style="color: #FF5722">Message</h3>
@@ -222,15 +218,15 @@
 
     <div data-role="content" id="mycontacts">
 
-        <div class='col-xs-12' onclick='select_contacts()'>
-            <input style='opacity: 0' hidden value='false' readonly>
+        <div class='' onclick='select_contacts()'>
+            <input style='' hidden value='false' readonly>
             <p><b style=''>Samuel</b></p>
             <p><b style=''>0542688902</b></p>
             <p hidden class="align-right"><i class="zmdi zmdi-check"></i></p>
         </div>
 
         <div class='col-xs-12' onclick='select_contacts()'>
-            <input style='opacity: 0' hidden value='false'>
+            <input style='opacity: 0; display: none' hidden value='false'>
             <!--<input type='text' name='checkbox-1a' checked=''>-->
             <p><b style=''>Samuel</b></p>
             <p><b style=''>0542688902</b></p>
@@ -238,7 +234,7 @@
         </div>
 
         <div class='col-xs-12' onclick='select_contacts()'>
-            <input style='opacity: 0' hidden value='false'>
+            <input style='opacity: 0;display: none' hidden value='false'>
             <!--<input type='text' name='checkbox-1a' checked=''>-->
             <p><b style=''>Samuel</b></p>
             <p><b style=''>0542688902</b></p>
@@ -246,7 +242,7 @@
         </div>
 
         <div class='col-xs-12' onclick='select_contacts()'>
-            <input style='opacity: 0' hidden value='false'>
+            <input style='opacity: 0; display: none' hidden value='false'>
             <!--<input type='text' name='checkbox-1a' checked=''>-->
             <p><b style=''>Samuel</b></p>
             <p><b style=''>0542688902</b></p>
