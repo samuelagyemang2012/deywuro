@@ -94,8 +94,6 @@ function contacts_success(contacts) {
 
     var build;
     build = '';
-    // build += '<ul data-role="listview" data-icon="false">';
-    // build += "<div class='row'>";
 
     contacts.sort(function (a, b) {
         var nameA = a.displayName; // ignore upper and lowercase
@@ -149,6 +147,12 @@ function contacts_failed(msgObject) {
 
 function select_contacts(num, id) {
 
+    var first = num.charAt(0);
+
+    if (first != 0 && num.length == 9) {
+        num = "0" + num;
+    }
+
     var bool = $("#i" + id).val();
 
     if (bool == "false") {
@@ -166,7 +170,7 @@ function select_contacts(num, id) {
         $("#s" + id).hide();
         $("#i" + id).val("false");
 
-        //delete from the live_contacts array
+
         del("" + num + "");
 
     }
