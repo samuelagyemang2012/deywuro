@@ -122,8 +122,9 @@ function contacts_success(contacts) {
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
+                    build += "<br>";
                     build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
-                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
+                    build += "<input data-clear-btn='true' style='opacity: 0; display: none;' hidden value='false' id='i" + contacts[i].id + "'>";
                     // build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
                     build += "<p><b style=''>" + name + "</b></p>";
                     build += "<p><b style=''>" + number + "</b></p>";

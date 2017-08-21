@@ -6,7 +6,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">-->
     <link rel="stylesheet" href="./css/jquery.mobile.min.css"/>
     <link rel="stylesheet" href="./css/waves.min.css"/>
     <link rel="stylesheet" href="./css/animate.css"/>
@@ -216,23 +216,48 @@
         <h1 style="opacity: 1">Contacts</h1>
     </div>
 
+    <div data-role="content">
+        <input type="text" value="" placeholder="Search for contacts"  data-clear-btn="true" style="">
+    </div>
+
     <div data-role="content" id="mycontacts">
 
         <div class='col-xs-12' id='3' onclick=''>
-            <input style='opacity: 0' hidden value='false' id='1'>
+            <br>
+            <input readonly style='opacity: 0; display: none' hidden value='false' id='1' data-clear-btn="true">
             <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
             <p><b style=''>Samuel</b></p>
             <p><b style=''>054689902</b></p>
-            <p  class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>
+            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
         </div>
 
         <div class='col-xs-12' id='3' onclick=''>
-            <input style='opacity: 0' hidden value='false' id='1'>
+            <br>
+            <input readonly style='opacity: 0; display: none' hidden value='false' id='1' data-clear-btn="true">
             <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
             <p><b style=''>Samuel</b></p>
             <p><b style=''>054689902</b></p>
-            <p  class='align-right' id='4'><i class='zmdi zmdi-check zmd-lg'></i></p>
+            <p class='align-right' id='4'><i class='zmdi zmdi-check zmd-lg'></i></p>
         </div>
+
+        <div class='col-xs-12' id='3' onclick=''>
+            <br>
+            <input style='opacity: 0' hidden value='false' id='1' data-clear-btn="true">
+            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
+            <p><b style=''>Samuel</b></p>
+            <p><b style=''>054689902</b></p>
+            <p class='align-right' id='4'><i class='zmdi zmdi-check zmd-lg'></i></p>
+        </div>
+
+        <div class='col-xs-12' id='3' onclick=''>
+            <br>
+            <input style='opacity: 0' hidden value='false' id='1' data-clear-btn="true">
+            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
+            <p><b style=''>Samuel</b></p>
+            <p><b style=''>054689902</b></p>
+            <p class='align-right' id='4'><i class='zmdi zmdi-check zmd-lg'></i></p>
+        </div>
+
 
     </div>
 

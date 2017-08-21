@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
@@ -38,13 +39,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="243" column="26" selection-start-line="243" selection-start-column="26" selection-end-line="243" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="222" column="44" selection-start-line="222" selection-start-column="44" selection-end-line="222" selection-end-column="44" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -74,28 +74,29 @@
                 <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#3;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="312" column="44" selection-start-line="312" selection-start-column="44" selection-end-line="312" selection-end-column="44" />
+            <state relative-caret-position="716">
+              <caret line="125" column="92" selection-start-line="125" selection-start-column="92" selection-end-line="125" selection-end-column="92" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
                 <element signature="e#207#303#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
                 <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -106,17 +107,22 @@
                 <element signature="e#2533#2567#0" expanded="false" />
                 <element signature="e#2596#2629#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+                <element signature="n#!!block;n#select_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#insert#0" expanded="false" />
                 <element signature="n#!!block;n#insert_ids#0" expanded="false" />
                 <element signature="n#!!block;n#del#0" expanded="false" />
+                <element signature="n#!!block;n#del_id#0" expanded="false" />
                 <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+                <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#drawGauge#0" expanded="false" />
                 <element signature="n#!!block;n#get_stats#0" expanded="false" />
                 <element signature="n#!!block;n#home#0" expanded="false" />
+                <element signature="n#!!block;n#send_sms#0" expanded="false" />
                 <element signature="n#!!block;n#process_num#0" expanded="false" />
-                <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-                <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+                <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+                <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+                <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
               </folding>
             </state>
           </provider>
@@ -1241,14 +1247,7 @@
       <option name="presentableId" value="Default" />
       <updated>1480203385415</updated>
       <workItem from="1502875944397" duration="53227000" />
-      <workItem from="1503084347935" duration="16876000" />
-    </task>
-    <task id="LOCAL-00008" summary="test-placesServices-to work on  testing.">
-      <created>1481172048348</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1481172048348</updated>
+      <workItem from="1503084347935" duration="20143000" />
     </task>
     <task id="LOCAL-00009" summary="test-placesServices-to work on  testing.">
       <created>1481172114050</created>
@@ -1586,11 +1585,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503313545459</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="k">
+      <created>1503317564351</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1503317564351</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70103000" />
+    <option name="totallyTimeSpent" value="73370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1673,7 +1679,6 @@
         <state relative-caret-position="323">
           <caret line="215" column="39" selection-start-line="215" selection-start-column="39" selection-end-line="215" selection-end-column="39" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1703,16 +1708,18 @@
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1722,7 +1729,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1733,17 +1739,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1754,7 +1765,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1765,17 +1775,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1794,7 +1809,6 @@
         <state relative-caret-position="0">
           <caret line="172" column="1" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1805,17 +1819,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1848,7 +1867,6 @@
         <state relative-caret-position="0">
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1859,17 +1877,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1887,7 +1910,6 @@
         <state relative-caret-position="0">
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1898,17 +1920,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1926,7 +1953,6 @@
         <state relative-caret-position="0">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1937,17 +1963,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1965,7 +1996,6 @@
         <state relative-caret-position="0">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#207#303#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
@@ -1976,17 +2006,22 @@
             <element signature="e#2533#2567#0" expanded="false" />
             <element signature="e#2596#2629#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
           </folding>
         </state>
       </provider>
@@ -2074,12 +2109,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/jquery-mobile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="416" column="35" selection-start-line="416" selection-start-column="35" selection-end-line="416" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="125" column="92" selection-start-line="125" selection-start-column="92" selection-end-line="125" selection-end-column="92" />
+          <folding>
+            <element signature="e#207#303#0" expanded="false" />
+            <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#popout#0" expanded="false" />
+            <element signature="n#!!block;n#popout_close#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="e#2533#2567#0" expanded="false" />
+            <element signature="e#2596#2629#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0" expanded="false" />
+            <element signature="n#!!block;n#insert_ids#0" expanded="false" />
+            <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#clear_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#toast#0" expanded="false" />
+            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
+            <element signature="n#!!block;n#get_stats#0" expanded="false" />
+            <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <marker date="1503321380392" expanded="true" signature="3355:3365" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3355:3381" ph="..." />
+            <marker date="1503321380392" expanded="true" signature="3788:3802" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="243" column="26" selection-start-line="243" selection-start-column="26" selection-end-line="243" selection-end-column="26" />
+        <state relative-caret-position="245">
+          <caret line="222" column="44" selection-start-line="222" selection-start-column="44" selection-end-line="222" selection-end-column="44" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -2109,55 +2186,18 @@
             <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/jquery-mobile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="416" column="35" selection-start-line="416" selection-start-column="35" selection-end-line="416" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="312" column="44" selection-start-line="312" selection-start-column="44" selection-end-line="312" selection-end-column="44" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#207#303#0" expanded="false" />
-            <element signature="n#!!block;n#send_request#0" expanded="false" />
-            <element signature="n#!!block;n#change_page#0" expanded="false" />
-            <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
-            <element signature="e#2533#2567#0" expanded="false" />
-            <element signature="e#2596#2629#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
-            <element signature="n#!!block;n#insert#0" expanded="false" />
-            <element signature="n#!!block;n#insert_ids#0" expanded="false" />
-            <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
-            <element signature="n#!!block;n#toast#0" expanded="false" />
-            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <marker date="1503317469445" expanded="true" signature="3296:3306" ph="..." />
-            <marker date="1503317469445" expanded="true" signature="3713:3727" ph="..." />
+            <element signature="n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#1;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#3;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#b#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#3;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#4;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#div#5;n#div#0;n#div#3;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
