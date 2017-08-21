@@ -134,7 +134,7 @@ function contacts_success(contacts) {
 
                     build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
                     build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
-                    build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
+                    // build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
                     build += "<p><b style=''>" + name + "</b></p>";
                     build += "<p><b style=''>" + number + "</b></p>";
                     build += " <p hidden class='align-right' id='s" + contacts[i].id + "'><i class='zmdi zmdi-check'></i></p>";
