@@ -5,6 +5,7 @@
 
 //array to store contacts
 var live_contacts = [];
+var live_ids = [];
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -152,10 +153,9 @@ function select_contacts(num, id) {
         $("#s" + id).show();
         $("#i" + id).val("true");
 
-        alert(new_num);
-
         //insert into the live_contacts array
         insert(new_num);
+        insert_ids(id);
 
     } else {
 
@@ -163,6 +163,7 @@ function select_contacts(num, id) {
         $("#i" + id).val("false");
 
         del(new_num);
+        del_id(id);
 
     }
 }
@@ -172,6 +173,12 @@ function insert(data) {
     //if number doesn't exist in array, add it
     if (live_contacts.indexOf(data) == -1) {
         live_contacts.push(data);
+    }
+}
+
+function insert_ids(id) {
+    if (live_ids.indexOf(id) == -1) {
+        live_ids.push(id);
     }
 }
 
@@ -185,6 +192,12 @@ function del(data) {
 
 }
 
+function del_id(id) {
+    var index = live_ids.indexOf(id);
+
+    live_ids.splice(index)
+}
+
 function get_numbers() {
     var numbers = '';
 
@@ -195,6 +208,14 @@ function get_numbers() {
     $("#numbers").val(numbers);
 
     change_page('#messagepage', 'pop');
+}
+
+function clear_contacts() {
+    for (var i = 0; i < live_ids.length; i++) {
+
+        $("#s".live_ids[i]).hide();
+        del(live_ids[i]);
+    }
 }
 
 function toast(msg, duration) {
@@ -283,14 +304,13 @@ function send_sms() {
     var message, contacts, from;
 
     message = encodeURI($("#message").val());
-    from = $("#from").val();
-    contacts = $("#numbers").val();
+    from = encodeURI($("#from").val());
+    contacts = encodeURI($("#numbers").val());
 
-
-    $.get("http://api.deywuro.com/bulksms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
+    $.get("http://api.deywuro.com/bulksms/?username=" + encodeURI($.cookie('username')) + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
 
         function (response) {
-            toast("Sending your SMS", 800);
+            toast("Sending your SMS", 1000);
             get_stats();
         });
 }
