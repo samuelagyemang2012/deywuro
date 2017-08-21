@@ -123,21 +123,22 @@ function contacts_success(contacts) {
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
-                    build += '<li id="' + contacts[i].id + '">';
-                    build += '<a href="#">';
-                    build += '<h2>' + name + '</h2>';
-                    build += '<p>' + number + '</p>';
-                    build += '</a>';
-                    build += '</li>';
+                    // build += '<li id="' + contacts[i].id + '">';
+                    // build += '<a href="#">';
+                    // build += '<h2>' + name + '</h2>';
+                    // build += '<p>' + number + '</p>';
+                    // build += '</a>';
+                    // build += '</li>';
 
                     //$.cookie('i' + contacts[i].id, '' + contacts[id].id);
 
-                    // build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
-                    // build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
-                    // build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
-                    // build += "<p><b style='color: #8E0D0E'>" + name + "</b></p>";
-                    // build += "<p><b style='color: #8E0D0E'>" + number + "</b></p>";
-                    // build += "</div>";
+                    build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
+                    build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
+                    build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
+                    build += "<p><b style=''>" + name + "</b></p>";
+                    build += "<p><b style=''>" + number + "</b></p>";
+                    build += " <p hidden class='align-right' id='s" + contacts[i].id + "'><i class='zmdi zmdi-check'></i></p>";
+                    build += "</div>";
 
                 }
             }
@@ -161,16 +162,16 @@ function select_contacts(num, id) {
 
     if (bool == "false") {
 
-        //if number is not selected, highlight background of number field and insert it into the live_contacts array
-        $("#" + id).css("background-color", "#EF9E9A");
+        //     if number is not selected, highlight background of number field and insert it into the live_contacts array
+        $("#s" + id).show();
         $("#i" + id).val("true");
 
         //insert into the live_contacts array
         insert(num);
 
     } else {
-        //if number is selected, unhighlight the number field and delete it from the live_contacts array
-        $("#" + id).css("background-color", "#EEEEEE");
+        //     if number is selected, unhighlight the number field and delete it from the live_contacts array
+        $("#s" + id).hide();
         $("#i" + id).val("false");
 
         //delete from the live_contacts array
@@ -206,7 +207,7 @@ function get_numbers() {
 
     $("#numbers").val(numbers);
 
-    change_page('#dashboard', 'pop');
+    change_page('#messagepage', 'pop');
 }
 
 function toast(msg, duration) {
@@ -289,5 +290,6 @@ function home() {
     }
     change_page('#loginpage');
 }
+
 
 

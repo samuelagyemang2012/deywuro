@@ -167,7 +167,7 @@
         <br><br>
         <div>
             <h3 style="color: #FF5722">Contacts</h3>
-            <textarea cols="40" rows="8" name="textarea2" id="contacts" placeholder=""></textarea>
+            <textarea id="numbers" cols="40" rows="8" name="textarea2" id="contacts" placeholder=""></textarea>
         </div>
         <br><br>
 
@@ -222,35 +222,44 @@
 
     <div data-role="content" id="mycontacts">
 
-        <ul data-role="listview" data-icon="false">
-            <!--<li data-role="list-divider">-->
-            <!--&lt;!&ndash;Contacts&ndash;&gt;-->
-            <!--</li>-->
-            <li>
-                <a href="#">
-                    <h2>Ethel Chancy</h2>
-                    <p>233542688902</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <h2>Lorean Gainer</h2>
-                    <p>lorean87@mail.com</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <h2>Juliet Gieseke</h2>
-                    <p>flowerpower69@rainbokjnjbw.com</p>
-                </a>
-            </li>
-        </ul>
+        <div class='col-xs-12' onclick='select_contacts()'>
+            <input style='opacity: 0' hidden value='false' readonly>
+            <p><b style=''>Samuel</b></p>
+            <p><b style=''>0542688902</b></p>
+            <p hidden class="align-right"><i class="zmdi zmdi-check"></i></p>
+        </div>
 
+        <div class='col-xs-12' onclick='select_contacts()'>
+            <input style='opacity: 0' hidden value='false'>
+            <!--<input type='text' name='checkbox-1a' checked=''>-->
+            <p><b style=''>Samuel</b></p>
+            <p><b style=''>0542688902</b></p>
+            <p></p>
+        </div>
     </div>
 
     <div data-role="footer" data-position="fixed">
 
         <div class="row center-xs">
+
+            <div class="col-xs-4">
+                <div class="box">
+                    <a onclick="" class="ui-btn ui-mini nd2-btn-icon-block"><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-close zmd-lg'></i></a>
+                </div>
+            </div>
+
+            <div class="col-xs-4"></div>
+
+            <div class="col-xs-4">
+                <div class="box">
+                    <a onclick="get_numbers()" class="ui-btn ui-mini nd2-btn-icon-block"><b><i
+                            style="color: #FF5722"
+                            class='zmdi zmdi-check zmd-lg'></i></b></a>
+                </div>
+            </div>
+
             <div class="col-xs-4">
                 <div class="box">
                     <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i
@@ -258,6 +267,7 @@
                             class='zmdi zmdi-desktop-mac zmd-lg'></i></a>
                 </div>
             </div>
+
             <div class="col-xs-4">
                 <div class="box">
                     <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
@@ -265,6 +275,7 @@
                             class='zmdi zmdi-comment zmd-lg'></i></a>
                 </div>
             </div>
+
             <div class="col-xs-4">
                 <div class="box">
                     <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
