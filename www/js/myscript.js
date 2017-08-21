@@ -119,7 +119,7 @@ function contacts_success(contacts) {
                 if (contacts[i].phoneNumbers[j] != null) {
 
                     var name = contacts[i].displayName;
-                    var number = "" + contacts[i].phoneNumbers[j].value + "";
+                    var number = contacts[i].phoneNumbers[j].value;
 
                     build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
                     build += "<input style='opacity: 0' hidden value='false' id='i" + contacts[i].id + "'>";
@@ -198,7 +198,7 @@ function get_numbers() {
     var numbers = '';
 
     for (var i = 0; i < live_contacts.length; i++) {
-        numbers += live_contacts[i] + ';';
+        numbers += live_contacts[i] + ',';
     }
 
     $("#numbers").val(numbers);
