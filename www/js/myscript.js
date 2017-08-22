@@ -306,7 +306,7 @@ function send_sms() {
 
     message = encodeURI($("#message").val());
     from = encodeURI($("#from").val());
-    contacts = encodeURI($("#numbers").val());
+    contacts = $("#numbers").val();
 
     $.get("http://api.deywuro.com/bulksms/?username=" + encodeURI($.cookie('username')) + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
 
@@ -314,6 +314,8 @@ function send_sms() {
             toast("Sending your SMS", 1000);
             get_stats();
         });
+
+    clear_sms();
 }
 
 function process_num(number) {
@@ -327,6 +329,12 @@ function process_num(number) {
     } else {
         return number;
     }
+}
+
+function clear_sms() {
+    $("#numbers").val("");
+    $("#message").val("");
+    $("#contacts").val("");
 }
 
 
