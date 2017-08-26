@@ -1,329 +1,68 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="js/test.js"></script>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
-
-    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">-->
-    <link rel="stylesheet" href="./css/jquery.mobile.min.css"/>
-    <link rel="stylesheet" href="./css/waves.min.css"/>
-    <link rel="stylesheet" href="./css/animate.css"/>
-    <link rel="stylesheet" href="./css/nativedroid2.color.deep-orange.css"/>
-    <link rel="stylesheet" href="./css/nativedroid2.css"/>
-    <link rel="stylesheet" href="./css/chartist.min.css">
-
-    <meta charset="utf-8"/>
-    <meta name="format-detection" content="telephone=no"/>
-    <meta name="msapplication-tap-highlight" content="no"/>
+    <!--<meta charset="utf-8"/>-->
+    <!--<meta name="format-detection" content="telephone=no"/>-->
+    <!--<meta name="msapplication-tap-highlight" content="no"/>-->
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
-    <!--<meta http-equiv="Content-Security-Policy"-->
-    <!--content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>-->
-
-    <script src="./js/jquery.js"></script>
-    <script src="./js/jquery-ui.js"></script>
-    <script src="./js/jquery-mobile.js"></script>
-    <script src="./js/jquery.cookie.js"></script>
-    <script src="./js/waves.min.js"></script>
-    <script src="./js/wow.min.js"></script>
-    <script src="./js/nativedroid2.js"></script>
-    <script src="./js/nd2settings.js"></script>
-    <script type="text/javascript" src="./js/myscript.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <!--<script type="text/javascript" src="./js/index.js"></script>-->
-    <script type="text/javascript" src="./js/chartist.min.js"></script>
-
 </head>
-
 <body>
 
-<!--Login Page-->
-<div data-role="page" id="loginpage">
+<!--login page-->
+<ons-navigator title="Navigator" id="myNav">
+    <ons-page id="login">
 
-    <div data-role="header" data-position="fixed">
-        <h1 style="opacity: 0">Header & Footer</h1>
-    </div>
+        <ons-dialog id="loginfail">
+            <div style="text-align: center; padding: 10px;">
+                <p>
+                    Invalid credentials
+                <p>
 
-    <div data-role="content">
-        <br><br><br><br><br><br><br><br>
-
-        <div>
-            <div>
-                <!--<img src="./img/logo.png">-->
+                <p>
+                    <ons-button modifier="quiet" onclick="popup_close('loginfail')">Close</ons-button>
+                </p>
             </div>
+        </ons-dialog>
 
-            <div>
-                <input type="text" id="username" value="" data-clear-btn="true"
-                       placeholder="Username">
-            </div>
-            <br>
+        <ons-toolbar style="background-color: #8E0D0E">
+            <div class="center">Login</div>
+        </ons-toolbar>
 
-            <div>
-                <input type="password" id="password" value="" data-clear-btn="true"
-                       placeholder="Password">
-            </div>
+        <!--<p style="text-align: center; margin-top: 10px;">-->
+        <!--<ons-search-input placeholder="Search"></ons-search-input>-->
+        <!--</p>-->
+        <br><br><br><br><br><br>
 
-            <div>
-                <a onclick="login()"
-                   class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
-            </div>
-        </div>
-    </div>
-
-    <div data-role="footer" data-position="fixed">
-        <h1 style="opacity: 0">Header & Footer</h1>
-    </div>
-</div>
-<!--End Login page-->
-
-<!--Dashboard-->
-<div data-role="page" id="dashboard">
-    <div data-role="header" data-position="fixed">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
-        <h1 style="opacity: 1">Dashboard</h1>
-    </div>
-
-    <div data-role="content">
-        <br><br><br><br>
-
-        <div style="display: inherit" class="ct-chart ct-perfect-fourth"></div>
-    </div>
-    <br>
-    <br>
-    <div>
-        <table data-role="table" id="table-column-toggle" class="ui-responsive table-stroke">
-            <thead>
-            <th>Total SMS Sent</th>
-            <th>Total SMS Expired</th>
-            <th>Total SMS Delivered</th>
-            <th>Total SMS Undelivered</th>
-            <th>Total SMS Acknowledged</th>
-            </thead>
-
-            <tbody>
-            <tr>
-                <td><b id="ttl" style="color: #FF5722">600</b></td>
-                <td><b id="exp" style="color: #FF5722">100</b></td>
-                <td><b id="del" style="color: #FF5722">25</b></td>
-                <td><b id="undeliv" style="color: #FF5722">25</b></td>
-                <td><b id="ack" style="color: #FF5722">25</b></td>
-            </tr>
-            </tbody>
-
-        </table>
-    </div>
-
-    <div data-role="footer" data-position="fixed">
-
-        <div class="row center-xs">
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-comment zmd-lg'></i></a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722" class='zmdi zmdi-account zmd-lg'></i></a>
-                </div>
-            </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <p>
+                <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
+            </p>
+            <p>
+                <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+            </p>
+            <!--<section style="padding: 50px">-->
+            <p style="margin-top: 0px;">
+                <ons-button style="background-color: #8E0D0E" onclick="login()">Login</ons-button>
+            </p>
+            <!--</section>-->
         </div>
 
-    </div>
-</div>
-<!--end dashboard-->
+    </ons-page>
+</ons-navigator>
 
-<!--Message page-->
-<div data-role="page" id="messagepage">
-    <div data-role="header" data-position="fixed">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
-        <h1 style="opacity: 1">SMS</h1>
-    </div>
-
-    <div data-role="content">
-        <br><br>
-        <div>
-            <h3 style="color: #FF5722">Contacts</h3>
-            <textarea id="numbers" cols="40" rows="8" name="textarea2" id="contacts" placeholder=""></textarea>
-        </div>
-        <br>
-
-        <div>
-            <h3 style="color: #FF5722">Source</h3>
-            <input type="text" id="from" data-clear-btn="true" placeholder="">
-        </div>
-        <br>
-
-        <div>
-            <h3 style="color: #FF5722">Message</h3>
-            <textarea cols="40" rows="8" name="textarea2" id="message" placeholder="Write something here"></textarea>
-        </div>
-        <br><br>
-
-        <div>
-            <a onclick="send_sms()"
-               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Send</a>
-        </div>
-    </div>
-
-    <div data-role="footer" data-position="fixed">
-
-        <div class="row center-xs">
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i style="color: #FF5722"
-                                                                                          class='zmdi zmdi-desktop-mac zmd-lg '></i></a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-comment zmd-lg'></i></a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-account zmd-lg'></i></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-<!--end message page-->
-
-<!--Contacts page-->
-<div data-role="page" id="contactspage">
-    <div data-role="header" data-position="fixed">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.0s' data-transition="pop"><i
-                class="zmdi zmdi-home"></i></a>
-        <h1 style="opacity: 1">Contacts</h1>
-    </div>
-
-    <div data-role="content" id="mycontacts" data-filter="true" data-filter-reveal="false" data-filter-placeholder="Search">
-
-        <div class='col-xs-12' id='sam1' onclick=''>
-            <br>
-            <input readonly style='opacity: 0; display: none' hidden value='false' id='sam2' data-clear-btn="true">
-            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
-            <p><b style=''>Samuel</b></p>
-            <p><b style=''>054689902</b></p>
-            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
-        </div>
-
-        <div class='col-xs-12' id='max1' onclick=''>
-            <br>
-            <input readonly style='opacity: 0; display: none' hidden value='false' id='max2' data-clear-btn="true">
-            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
-            <p><b style=''>Max</b></p>
-            <p><b style=''>233758903</b></p>
-            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
-        </div>
-
-        <div class='col-xs-12' id='maxine1' onclick=''>
-            <br>
-            <input readonly style='opacity: 0; display: none' hidden value='false' id='felix2' data-clear-btn="true">
-            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
-            <p><b style=''>Maxine</b></p>
-            <p><b style=''>0542689386</b></p>
-            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
-        </div>
-
-        <div class='col-xs-12' id='tumi1' onclick=''>
-            <br>
-            <input readonly style='opacity: 0; display: none' hidden value='false' id='felix2' data-clear-btn="true">
-            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
-            <p><b style=''>Tumi</b></p>
-            <p><b style=''>0542680982</b></p>
-            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
-        </div>
-
-        <div class='col-xs-12' id='david1' onclick=''>
-            <br>
-            <input readonly style='opacity: 0; display: none' hidden value='false' id='felix2' data-clear-btn="true">
-            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
-            <p><b style=''>David</b></p>
-            <p><b style=''>0542685343</b></p>
-            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
-        </div>
-
-        <div class='col-xs-12' id='lisa1' onclick=''>
-            <br>
-            <input readonly style='opacity: 0; display: none' hidden value='false' id='felix2' data-clear-btn="true">
-            <!--<input type='text' name='checkbox-1a' id='6' checked=''>-->
-            <p><b style=''>lisa</b></p>
-            <p><b style=''>0584398943</b></p>
-            <!--<p class='align-right' id='4'><i class='zmdi zmdi-check-circle zmd-lg'></i></p>-->
-        </div>
-    </div>
-
-    <div style="position: fixed;  bottom: 0" data-role="footer" data-position="fixed">
-
-        <div class="row center-xs">
-
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-close zmd-lg'></i></a>
-                </div>
-            </div>
-
-            <div class="col-xs-4"></div>
-
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="get_numbers()" class="ui-btn ui-mini nd2-btn-icon-block"><b><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-check zmd-lg'></i></b></a>
-                </div>
-            </div>
-
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-desktop-mac zmd-lg'></i></a>
-                </div>
-            </div>
-
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="change_page('#messagepage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-comment zmd-lg'></i></a>
-                </div>
-            </div>
-
-            <div class="col-xs-4">
-                <div class="box">
-                    <a onclick="change_page('#contactspage','pop')" class="ui-btn ui-mini nd2-btn-icon-block"><i
-                            style="color: #FF5722"
-                            class='zmdi zmdi-account zmd-lg'></i></a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-<!--end contacts page-->
-
+<ons-template id="page2">
+    <ons-page>
+        <ons-toolbar>
+            <div class="center">Dashboard</div>
+        </ons-toolbar>
+    </ons-page>
+</ons-template>
 </body>
-
 </html>
