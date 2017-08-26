@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
     <script src="js/test.js"></script>
-
+    <script type="text/javascript" src="cordova.js"></script>
     <!--<meta charset="utf-8"/>-->
     <!--<meta name="format-detection" content="telephone=no"/>-->
     <!--<meta name="msapplication-tap-highlight" content="no"/>-->
@@ -31,13 +32,10 @@
             </div>
         </ons-dialog>
 
-        <ons-toolbar style="background-color: #8E0D0E">
+        <ons-toolbar>
             <div class="center">Login</div>
         </ons-toolbar>
 
-        <!--<p style="text-align: center; margin-top: 10px;">-->
-        <!--<ons-search-input placeholder="Search"></ons-search-input>-->
-        <!--</p>-->
         <br><br><br><br><br><br>
 
         <div style="text-align: center; margin-top: 30px;">
@@ -47,13 +45,11 @@
             <p>
                 <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
             </p>
-            <!--<section style="padding: 50px">-->
-            <p style="margin-top: 0px;">
-                <ons-button style="background-color: #8E0D0E" onclick="login()">Login</ons-button>
-            </p>
-            <!--</section>-->
-        </div>
 
+            <p style="margin-top: 0px;">
+                <ons-button onclick="login()">Login</ons-button>
+            </p>
+        </div>
     </ons-page>
 </ons-navigator>
 
@@ -62,7 +58,40 @@
         <ons-toolbar>
             <div class="center">Dashboard</div>
         </ons-toolbar>
+
+        <ons-tabbar position="auto">
+            <ons-tab page="page5" label="Dashboard" icon="ion-home, material:md-home" active>
+            </ons-tab>
+            <ons-tab page="page3" label="Messages" icon="md-comment-outline" active-icon="md-comment">
+            </ons-tab>
+            <ons-tab page="page4" label="Contacts" icon="md-account-box-o" active-icon="md-phone">
+            </ons-tab>
+        </ons-tabbar>
+
+        <p>this is the dashboard</p>
     </ons-page>
 </ons-template>
+
+<!--Message-->
+<template id="page3">
+    <ons-page>
+        <p>this is page3</p>
+    </ons-page>
+</template>
+
+<!--Contacts-->
+<template id="page4">
+    <ons-page >
+        <p>this is page4</p>
+    </ons-page>
+</template>
+
+<template id="page5">
+    <ons-page >
+        <p>this is page5</p>
+    </ons-page>
+</template>
+
+<!--<ons-->
 </body>
 </html>

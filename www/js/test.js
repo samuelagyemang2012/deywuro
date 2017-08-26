@@ -41,20 +41,52 @@ function popup_close(id) {
     document.getElementById(id).hide();
 }
 
+function change_page(page, animation) {
+    document.getElementById('myNav').pushPage(page, {animation: animation});
+}
+
 function login() {
-    var url, username, password, balance;
+    
+    document.getElementById('myNav').pushPage('page2', {animation: 'slide'});
+    // change_page('page2', 'slide');
 
-    username = $("#username").val();
-    password = $('#password').val();
-
-    // alert("" + username + "");
-
-    if (username.length == 0 || password.length == 0) {
-
-        popup_show('loginfail');
-        
-    }
-
-    // document.getElementById('myNav').pushPage('page2', {animation: 'slide'});
-    // myNav.pushPage('page2', { animation : 'slide' } );
+    // var url, username, password, balance;
+    //
+    // username = $("#username").val();
+    // password = $('#password').val();
+    //
+    // if (username.length == 0 || password.length == 0) {
+    //
+    //     popup_show('loginfail');
+    //
+    // } else {
+    //     $.get("http://deywuro.com/api/login",
+    //         {
+    //             username: username,
+    //             password: password
+    //         },
+    //
+    //         function (response) {
+    //
+    //             if (response.message == "Successful Login") {
+    //
+    //                 $("#username").val("");
+    //                 $("#password").val("");
+    //
+    //                 $.cookie('username', username);
+    //                 $.cookie('password', password);
+    //
+    //                 change_page('page2', 'slide');
+    //
+    //                 // load_contacts();
+    //                 // get_stats();
+    //
+    //             }
+    //
+    //             if (response.message == "Invalid Credential!") {
+    //
+    //                 popup_show('loginfail');
+    //             }
+    //         });
+    // }
 }
