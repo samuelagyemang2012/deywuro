@@ -1,97 +1,340 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
-    <script src="https://unpkg.com/jquery/dist/jquery.min.js"></script>
-    <script src="./js/jquery.cookie.js"></script>
-    <script src="js/test.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <!--<meta charset="utf-8"/>-->
-    <!--<meta name="format-detection" content="telephone=no"/>-->
-    <!--<meta name="msapplication-tap-highlight" content="no"/>-->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
+
+    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">-->
+    <link rel="stylesheet" href="./css/jquery.mobile.min.css"/>
+    <link rel="stylesheet" href="./css/waves.min.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+    <link rel="stylesheet" href="./css/nativedroid2.color.red.css"/>
+    <link rel="stylesheet" href="./css/nativedroid2.css"/>
+    <link rel="stylesheet" href="./css/chartist.min.css">
+
+    <meta charset="utf-8"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
     <meta name="viewport"
           content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <!--<meta http-equiv="Content-Security-Policy"-->
+    <!--content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>-->
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/jquery-mobile.js"></script>
+    <script src="./js/jquery.cookie.js"></script>
+    <script src="./js/waves.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/nativedroid2.js"></script>
+    <script src="./js/nd2settings.js"></script>
+    <script type="text/javascript" src="./js/myscript.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--<script type="text/javascript" src="./js/index.js"></script>-->
+    <script type="text/javascript" src="./js/chartist.min.js"></script>
+
 </head>
+
 <body>
 
-<!--login page-->
-<ons-navigator title="Navigator" id="myNav">
-    <ons-page id="login">
+<!--Login Page-->
+<div data-role="page" id="loginpage" style="background-image: url('img/lol.jpg')">
 
-        <ons-dialog id="loginfail">
-            <div style="text-align: center; padding: 10px;">
-                <p>
-                    Invalid credentials
-                <p>
+    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
+        <h1>Deywuro</h1>
+    </div>
 
-                <p>
-                    <ons-button modifier="quiet" onclick="popup_close('loginfail')">Close</ons-button>
-                </p>
+    <div data-role="content">
+        <br><br>
+        <!--<br><br>-->
+        <!--<br><br>-->
+        <!--<br><br>-->
+
+        <div class="nd2-card" style="background-color: white">
+            <div class="container" style="margin-top: 10%; margin-bottom: 10%">
+                <div class="row">
+                    <div class="col-xs-1"></div>
+
+                    <div class="col-xs-10">
+                        <div class="align-center">
+                            <img src="img/lo.jpg">
+                        </div>
+
+                        <div>
+                            <input type="text" id="username" value="" data-clear-btn="true"
+                                   placeholder="Username">
+                        </div>
+                        <br>
+
+                        <div>
+                            <input type="password" id="password" value="" data-clear-btn="true"
+                                   placeholder="Password">
+                        </div>
+
+                        <div>
+                            <a style="background-color: #8e0d0e" onclick="login()"
+                               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1"></div>
+                </div>
             </div>
-        </ons-dialog>
-
-        <ons-toolbar>
-            <div class="center">Login</div>
-        </ons-toolbar>
-
-        <br><br><br><br><br><br>
-
-        <div style="text-align: center; margin-top: 30px;">
-            <p>
-                <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
-            </p>
-            <p>
-                <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
-            </p>
-
-            <p style="margin-top: 0px;">
-                <ons-button onclick="login()">Login</ons-button>
-            </p>
         </div>
-    </ons-page>
-</ons-navigator>
 
-<ons-template id="page2">
-    <ons-page>
-        <ons-toolbar>
-            <div class="center">Dashboard</div>
-        </ons-toolbar>
+    </div>
+</div>
+<!--End Login page-->
 
-        <ons-tabbar position="auto">
-            <ons-tab page="page5" label="Dashboard" icon="ion-home, material:md-home" active>
-            </ons-tab>
-            <ons-tab page="page3" label="Messages" icon="md-comment-outline" active-icon="md-comment">
-            </ons-tab>
-            <ons-tab page="page4" label="Contacts" icon="md-account-box-o" active-icon="md-phone">
-            </ons-tab>
-        </ons-tabbar>
+<!--Dashboard-->
+<div data-role="page" id="dashboard" style="background-image: url('img/lol.jpg')">
 
-        <p>this is the dashboard</p>
-    </ons-page>
-</ons-template>
+    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
+        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
+        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <h1 style="opacity: 1">Dashboard</h1>
+    </div>
 
-<!--Message-->
-<template id="page3">
-    <ons-page>
-        <p>this is page3</p>
-    </ons-page>
-</template>
+    <div data-role="content">
+        <br><br><br><br>
 
-<!--Contacts-->
-<template id="page4">
-    <ons-page >
-        <p>this is page4</p>
-    </ons-page>
-</template>
+        <div class="nd2-card" style="background-color: white">
+            <div class="container">
+                <div style="display: inherit" class="ct-chart ct-perfect-fourth"></div>
+            </div>
+        </div>
 
-<template id="page5">
-    <ons-page >
-        <p>this is page5</p>
-    </ons-page>
-</template>
+        <div class="nd2-card" style="background-color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-10">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <p>Sent</p>
+                                <p>Delivered</p>
+                                <p>Acknowledged</p>
+                                <p>Undelivered</p>
+                            </div>
 
-<!--<ons-->
+                            <div class="col-xs-6 align-right">
+                                <p id="ttl">200</p>
+                                <p id="del">200</p>
+                                <p id="undeliv">200</p>
+                                <p id="ack">200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <div data-role="footer" data-position="fixed" style="background-color: #2d2d2d">
+
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box">
+                    <a style="color: #fff" onclick="get_stats()"
+                       class="ui-btn ui-mini nd2-btn-icon-block">Statistics</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a style="color: #fff" onclick="change_page('#messagepage','pop')"
+                       class="ui-btn ui-mini nd2-btn-icon-block">Message</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a style="color: #fff" onclick="change_page('#contactspage','pop')"
+                       class="ui-btn ui-mini nd2-btn-icon-block">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end dashboard-->
+
+<!--Message page-->
+<div data-role="page" id="messagepage" style="background-image: url('img/lol.jpg')">
+    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
+        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
+        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <h1 style="opacity: 1">Messages</h1>
+    </div>
+
+    <div data-role="content">
+        <br><br><br><br>
+
+        <div class="nd2-card" style="background-color: white">
+
+            <div class="container" style="margin-top: 10%; margin-bottom: 10%">
+                <div class="row">
+                    <div class="col-xs-1"></div>
+
+                    <div class="col-xs-10">
+
+                        <div>
+                            <input id="numbers" placeholder="Phone Numbers" data-clear-btn="true"><br>
+                        </div>
+
+                        <div>
+                            <input id="source" placeholder="Source" data-clear-btn="true"><br>
+                        </div>
+
+                        <div>
+                            <input id="message" placeholder="Write something here" data-clear-btn="true"><br>
+                        </div>
+
+                        <div>
+                            <a style="background-color: #8e0d0e" onclick="send_sms()"
+                               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Send</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-role="footer" data-position="fixed" style="background-color: #2d2d2d">
+
+        <div class="row center-xs">
+            <div class="col-xs-4">
+                <div class="box">
+                    <a style="color: #fff" onclick="get_stats()"
+                       class="ui-btn ui-mini nd2-btn-icon-block">Statistics</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a style="color: #fff" onclick="change_page('#messagepage','pop')"
+                       class="ui-btn ui-mini nd2-btn-icon-block">Message</a>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="box">
+                    <a style="color: #fff" onclick="change_page('#contactspage','pop')"
+                       class="ui-btn ui-mini nd2-btn-icon-block">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end message page-->
+
+<!--Contacts page-->
+<div data-role="page" id="contactspage" style="background-image: url('img/lol.jpg')">
+    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
+        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.0s' data-transition="pop"><i
+                class="zmdi zmdi-home"></i></a>
+        <h1 style="opacity: 1">Contacts</h1>
+    </div>
+
+    <div data-role="content">
+        <div class="nd2-card" style="background-color: white">
+            <div class="container">
+
+                <div data-clear-btn="true" data-role="content" id="mycontacts" data-filter="true"
+                     data-filter-reveal="false"
+                     data-filter-placeholder="Search">
+
+
+                    <div>
+                        <input type="checkbox" id="aa" onclick="add_number('6000','aa')">
+                        <label for="aa">Sam</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="bb" onclick="add_number('8000','bb')">
+                        <label for="bb">Danilo</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="cc" onclick="add_number('9000','cc')">
+                        <label for="cc">Effie</label>
+                        <!--<label>adas</label>-->
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="dd" onclick="add_number('1000','dd')">
+                        <label for="dd">Xorla</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ee" onclick="add_number('2000','ee')">
+                        <label for="ee">Danny</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="ff" onclick="add_number('3000','ff')">
+                        <label for="ff">Max</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="gg"  onchange="add_number('4000','gg')">
+                        <label for="gg">Trump</label>
+                    </div>
+
+
+                </div>
+            </div>
+            <!---->
+            <div style="position: fixed;  bottom: 0; background-color: #2d2d2d" data-role="footer"
+                 data-position="fixed">
+
+                <div class="row center-xs">
+
+                    <div class="col-xs-4">
+                        <div class="box">
+                            <a style="color: white" onclick="clear_numbers()"
+                               class="ui-btn ui-mini nd2-btn-icon-block">Clear</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4"></div>
+
+                    <div class="col-xs-4">
+                        <div class="box">
+                            <a style="color: white" onclick="get_numbers()" class="ui-btn ui-mini nd2-btn-icon-block">Done</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="box">
+                            <a style="color: white" onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block">Statistics</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="box">
+                            <a style="color: white"
+                               class="ui-btn ui-mini nd2-btn-icon-block">Message</a>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-4">
+                        <div class="box">
+                            <a style="color: white" onclick="change_page('#contactspage','pop')"
+                               class="ui-btn ui-mini nd2-btn-icon-block">Contacts</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!---->
+        </div>
+    </div>
+</div>
+<!--end contacts page-->
+
 </body>
+
 </html>

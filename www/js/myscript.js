@@ -66,8 +66,10 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    load_contacts();
+                    // load_contacts();
                     get_stats();
+                    // drawGauge(100, 100, 100)
+                    // change_page('#dashboard', 'slide');
 
                 }
 
@@ -119,16 +121,13 @@ function contacts_success(contacts) {
 
                 if (contacts[i].phoneNumbers[j] != null) {
 
+                    var id = contacts[i].id;
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
-                    build += "<br>";
-                    build += "<div class='col-xs-12' id='" + contacts[i].id + "' onclick='select_contacts(" + contacts[i].phoneNumbers[j].value + "," + contacts[i].id + ")'>";
-                    build += "<input data-clear-btn='true' style='opacity: 0; display: none;' hidden value='false' id='i" + contacts[i].id + "'>";
-                    // build += "<input type='text' name='checkbox-1a' id='i" + contacts[i].id + "' checked=''>";
-                    build += "<p><b style=''>" + name + "</b></p>";
-                    build += "<p><b style=''>" + number + "</b></p>";
-                    build += " <p hidden class='align-right' id='s" + contacts[i].id + "'><i style='color: #FF5722' class='zmdi zmdi-check-circle zmd-lg'></i></p>";
+                    build += "<div>";
+                    build += "<input type='checkbox' id='" + id + "' onclick='add_number(" + number + "," + id + ")'>";
+                    build += "<label for='" + id + "'>" + name + "</label>";
                     build += "</div>";
 
                 }
@@ -211,6 +210,12 @@ function get_numbers() {
     change_page('#messagepage', 'pop');
 }
 
+function clear_numbers() {
+    
+    $('#gg').checked(true);
+    // alert('hgj');
+}
+
 function toast(msg, duration) {
 
     new $.nd2Toast({ // The 'new' keyword is important, otherwise you would overwrite the current toast instance
@@ -219,16 +224,16 @@ function toast(msg, duration) {
     });
 }
 
-function drawGauge(total, del, ack, undel, exp) {
+function drawGauge(del, ack, undel) {
 
     new Chartist.Pie('.ct-chart', {
-        series: [del, ack, undel, exp]
+        series: [del, ack, undel]
     }, {
         donut: true,
         donutWidth: 60,
         donutSolid: true,
         startAngle: 0,
-        total: total,
+        // total: total,
         showLabel: true
     });
 }
@@ -254,6 +259,7 @@ function get_stats() {
                 total_exp = response.total_sms_expired;
                 bal = response.total_balance;
 
+                $("#bal").html(bal);
                 $("#ttl").html(total_sent);
                 $("#exp").html(total_exp);
                 $("#del").html(total_del);
@@ -262,7 +268,7 @@ function get_stats() {
 
                 setTimeout(
                     function () {
-                        change_page("#dashboard", "pop");
+                        change_page("#dashboard", "slide");
                     }, 800);
 
                 toast("Fetching your statistics", 1500);
@@ -294,13 +300,29 @@ function home() {
 
 function send_sms() {
 
-    var message, contacts, from;
+    var message, contacts, source;
 
-    message = encodeURI($("#message").val());
-    from = encodeURI($("#from").val());
     contacts = $("#numbers").val();
+    source = encodeURI($("#source").val());
+    message = encodeURI($("#message").val());
 
-    $.get("http://api.deywuro.com/bulksms/?username=" + encodeURI($.cookie('username')) + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + from + "&message=" + message,
+    if (contacts.length == 0) {
+        toast("Please enter at least one phone number", 3000);
+        return;
+    }
+
+    if (source.length == 0) {
+        toast("Please enter the source of the message", 3000);
+        return;
+    }
+
+    if (message.length == 0) {
+        toast("Please enter a message to be sent", 3000);
+        return;
+    }
+
+
+    $.get("http://api.deywuro.com/bulksms/?username=" + encodeURI($.cookie('username')) + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + source + "&message=" + message,
 
         function (response) {
             toast("Sending your SMS", 1000);
@@ -327,6 +349,25 @@ function clear_sms() {
     $("#numbers").val("");
     $("#message").val("");
     $("#contacts").val("");
+}
+
+function add_number(num, id) {
+
+    var new_num;
+
+    if ($("#" + id).is(':checked')) {
+
+        new_num = process_num(num)
+        insert(new_num);
+        insert_ids(id);
+        // document.getElementById(id).click();
+
+    } else {
+
+        del(new_num);
+        del_id(id);
+
+    }
 }
 
 
