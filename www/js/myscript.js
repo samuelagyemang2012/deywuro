@@ -148,7 +148,7 @@ function contacts_success(contacts) {
     }
 
     duplicate = _.uniq(contacts_array, function (p) {
-        return p.id;
+        return p.number;
     });
 
     // duplicate = Array.from(new Set(contacts_array));
