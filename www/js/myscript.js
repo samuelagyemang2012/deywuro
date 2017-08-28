@@ -186,16 +186,6 @@ function contacts_success(contacts) {
     $("#mycontacts").html(build);
 }
 
-// function build_contacts() {
-//
-//     for (var s = 0; s < duplicate.length; s++) {
-//         build += "<div>";
-//         build += "<input type='checkbox' id='" + duplicate[s].id + "' onclick='add_number(" + duplicate[s].number + "," + duplicate[s].id + ")'>";
-//         build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
-//         build += "</div>";
-//     }
-// }
-
 function contacts_failed(msgObject) {
     alert("Failed to access contact list:" + JSON.stringify(msgObject));
 }
@@ -232,11 +222,11 @@ function insert(data) {
     if (live_contacts.indexOf(data) == -1) {
         live_contacts.push(data);
 
-        $("#2").show();
+        // $("#" + id).show();
 
     } else {
         del(data);
-        $("#2").hide();
+        // $("#" + id).hide();
     }
 }
 
@@ -472,6 +462,12 @@ function add_number(num, id) {
 
     new_num = process_num(num)
     insert(new_num);
+
+    if ($("#" + id).is(':visible') == false) {
+        $("#" + id).show();
+    } else {
+        $("#" + id).hide();
+    }
 
 }
 
