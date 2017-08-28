@@ -128,40 +128,73 @@ function contacts_success(contacts) {
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
-                    var person = {
-                        id: id,
-                        name: name,
-                        number: number
-                    };
+                    // var person = {
+                    //     id: id,
+                    //     name: name,
+                    //     number: number
+                    // };
 
                     // insert_ids(id);
-                    contacts_array.push(person);
+                    // contacts_array.push(person);
 
-                    // build += "<div>";
-                    // build += "<input type='checkbox' id='" + id + "' onclick='add_number(" + number + "," + id + ")'>";
-                    // build += "<label for='" + id + "'>" + name + "</label>";
-                    // build += "</div>";
+                    // <div onclick="add_number('0542688904','2')">
+                    //         <p>Dan</p>
+                    //         <!--<input type="checkbox" id="aa" onclick="add_number('6000','aa')">-->
+                    //         <!--<label for="aa">Sam</label>-->
+                    //         <div class="container">
+                    //         <div class="row">
+                    //         <div class="col-xs-6"></div>
+                    //
+                    //         <div class="col-xs-6 align-right" id="2" hidden>
+                    //     <i class="zmdi zmdi-check"></i>
+                    //     </div>
+                    //     </div>
+                    //     </div>
+                    //     </div>
+
+
+                    build += "<div onclick='add_number(" + number + "," + id + ")'>";
+                    build += "<p>" + name + "</p>";
+                    build += "<div class='container'>";
+                    build += "<div class='row'>";
+                    build += "<div class='col-xs-6'></div>";
+                    build += "<div hidden class='col-xs-6 align-right' id='" + id + "'>";
+                    build += "<i class='zmdi zmdi-check'></i>";
+                    build += "</div>";
+                    build += "</div>";
+                    build += "</div>";
+                    build += "</div>";
 
                 }
             }
         }
     }
 
-    duplicate = _.uniq(contacts_array, function (p) {
-        return p;
-    });
+    // duplicate = _.uniq(contacts_array, function (p) {
+    //     return p;
+    // });
 
     // duplicate = Array.from(new Set(contacts_array));
 
-    for (var s = 0; s < duplicate.length; s++) {
-        build += "<div>";
-        build += "<input type='checkbox' id='" + duplicate[s].id + "' onclick='add_number(" + duplicate[s].number + "," + duplicate[s].id + ")'>";
-        build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
-        build += "</div>";
-    }
+    // for (var s = 0; s < duplicate.length; s++) {
+    //     build += "<div>";
+    //     build += "<input type='checkbox' id='" + duplicate[s].id + "' onclick='add_number(" + duplicate[s].number + "," + duplicate[s].id + ")'>";
+    //     build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
+    //     build += "</div>";
+    // }
 
     $("#mycontacts").html(build);
 }
+
+// function build_contacts() {
+//
+//     for (var s = 0; s < duplicate.length; s++) {
+//         build += "<div>";
+//         build += "<input type='checkbox' id='" + duplicate[s].id + "' onclick='add_number(" + duplicate[s].number + "," + duplicate[s].id + ")'>";
+//         build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
+//         build += "</div>";
+//     }
+// }
 
 function contacts_failed(msgObject) {
     alert("Failed to access contact list:" + JSON.stringify(msgObject));
@@ -198,6 +231,12 @@ function insert(data) {
     //if number doesn't exist in array, add it
     if (live_contacts.indexOf(data) == -1) {
         live_contacts.push(data);
+
+        $("#2").show();
+
+    } else {
+        del(data);
+        $("#2").hide();
     }
 }
 
@@ -206,7 +245,6 @@ function insert_contacts(obj) {
     contacts_array.push(obj);
 
 }
-// alert(contacts[0].id);
 
 function clear_numbers() {
 
@@ -432,19 +470,9 @@ function add_number(num, id) {
 
     var new_num;
 
-    if ($("#" + id).is(':checked')) {
+    new_num = process_num(num)
+    insert(new_num);
 
-        new_num = process_num(num)
-        insert(new_num);
-        insert_ids(id);
-        // document.getElementById(id).click();
-
-    } else {
-
-        del(new_num);
-        del_id(id);
-
-    }
 }
 
 
