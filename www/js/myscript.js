@@ -379,7 +379,7 @@ function get_stats() {
 
                 setTimeout(
                     function () {
-                        drawGauge(total_sent, total_del, total_ack, total_undeliv, total_exp);
+                        drawGauge(total_del, total_ack, total_undeliv, total_exp);
                     }, 1500);
 
             }
