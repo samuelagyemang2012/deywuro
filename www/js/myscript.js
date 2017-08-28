@@ -135,7 +135,7 @@ function contacts_success(contacts) {
                     };
 
                     // insert_ids(id);
-                    insert_contacts(person);
+                    contacts_array.push(person);
 
                     // build += "<div>";
                     // build += "<input type='checkbox' id='" + id + "' onclick='add_number(" + number + "," + id + ")'>";
@@ -219,10 +219,20 @@ function clear_numbers() {
 
     var p3 = {id: 15, name: "sam", number: "123"};
 
-    // var person = [p0, p0, p1, p2, p3];
-    // var person_dup = Array.from(new Set(person));
 
-    // console.log(person_dup);
+    var person = [];
+
+    person.push(p0);
+    person.push(p0);
+    person.push(p1);
+    person.push(p1);
+    person.push(p2);
+    person.push(p3);
+
+
+    var person_dup = Array.from(new Set(person));
+
+    console.log(person_dup);
     //
     // if (p1.id == p0.id) {
     //     alert('p1: ' + p1.id + ' true' + ' p0: ' + p0.id);

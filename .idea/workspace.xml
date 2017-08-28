@@ -91,8 +91,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2890">
-              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+            <state relative-caret-position="-767">
+              <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
               <folding>
                 <element signature="e#252#348#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -105,7 +105,6 @@
                 <element signature="n#!!block;n#select_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#insert#0" expanded="false" />
                 <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-                <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
                 <element signature="n#!!block;n#del#0" expanded="false" />
                 <element signature="n#!!block;n#del_id#0" expanded="false" />
                 <element signature="n#!!block;n#get_numbers#0" expanded="false" />
@@ -2535,14 +2534,7 @@
       <workItem from="1503084347935" duration="33445000" />
       <workItem from="1503690306422" duration="19682000" />
       <workItem from="1503772224465" duration="528000" />
-      <workItem from="1503853822389" duration="34235000" />
-    </task>
-    <task id="LOCAL-00025" summary="k">
-      <created>1501261679103</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1501261679103</updated>
+      <workItem from="1503853822389" duration="35071000" />
     </task>
     <task id="LOCAL-00026" summary="k">
       <created>1501262363616</created>
@@ -2880,11 +2872,18 @@
       <option name="project" value="LOCAL" />
       <updated>1503913907218</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="k">
+      <created>1503914194152</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1503914194152</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141117000" />
+    <option name="totallyTimeSpent" value="141953000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -3001,7 +3000,6 @@
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
@@ -3038,7 +3036,6 @@
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
@@ -3075,7 +3072,6 @@
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
@@ -3112,7 +3108,6 @@
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
@@ -3377,8 +3372,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2890">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="-767">
+          <caret line="137" column="48" selection-start-line="137" selection-start-column="48" selection-end-line="137" selection-end-column="48" />
           <folding>
             <element signature="e#252#348#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
@@ -3391,7 +3386,6 @@
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
             <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#get_numbers#0" expanded="false" />
