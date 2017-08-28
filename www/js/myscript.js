@@ -212,7 +212,7 @@ function get_numbers() {
 
 function clear_numbers() {
     
-    $('#gg').checked(true);
+    // $('#gg').checked(true);
     // alert('hgj');
 }
 
