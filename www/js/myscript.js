@@ -66,7 +66,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    // load_contacts();
+                    load_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
@@ -290,7 +290,7 @@ function get_stats() {
 
 function home() {
 
-    $("#mycontacts").html("");
+    // $("#mycontacts").html("");
     var cookies = $.cookie();
     for (var cookie in cookies) {
         $.removeCookie(cookie);
