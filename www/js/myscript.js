@@ -127,7 +127,14 @@ function contacts_success(contacts) {
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
-                    insert_contacts(id, name, number);
+                    var person = {
+                        id: id,
+                        name: name,
+                        number: number
+                    };
+
+                    // insert_ids(id);
+                    insert_contacts(person);
 
                     // build += "<div>";
                     // build += "<input type='checkbox' id='" + id + "' onclick='add_number(" + number + "," + id + ")'>";
@@ -187,19 +194,44 @@ function insert(data) {
     }
 }
 
-function insert_contacts(id, name, number) {
+function insert_contacts(obj) {
 
-    var person = {
-        "id": id,
-        "name": name,
-        "number": number
-    };
-
-    if (contacts_array.indexOf(id) == -1) {
-        contacts_array.push(person);
+    if (contacts_array.length == 0) {
+        contacts_array.push(obj);
+    } else {
+        for (var i = 0; i < contacts_array.length; i++) {
+            if (contacts_array[i].id == obj.id) {
+                ;
+                // contacts_array.push(obj);
+            } else {
+                contacts_array.push(obj);
+            }
+        }
     }
+}
+// alert(contacts[0].id);
 
-    // alert(contacts[0].id);
+function clear_numbers() {
+
+    // var p0 = {id: 12, name: "sam", number: "123"};
+    //
+    // var p1 = {id: 13, name: "sam", number: "123"};
+
+
+    // if (p1.id == p0.id) {
+    //     alert('p1: ' + p1.id + ' true' + ' p0: ' + p0.id);
+    // } else {
+    //     alert("false");
+    // }
+
+    // if () {
+    // }
+
+    // insert_contacts(p0);
+    // insert_contacts(p1);
+    //
+    // console.log(contacts_array);
+
 }
 
 function insert_ids(id) {
@@ -234,13 +266,6 @@ function get_numbers() {
     $("#numbers").val(numbers);
 
     change_page('#messagepage', 'pop');
-}
-
-function clear_numbers() {
-
-    // insert_contacts('12',"sam","o5433232");
-    // $('#gg').checked(true);
-    // alert('hgj');
 }
 
 function toast(msg, duration) {
