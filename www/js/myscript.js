@@ -219,20 +219,24 @@ function clear_numbers() {
 
     var p3 = {id: 15, name: "sam", number: "123"};
 
+    var p5 = {id: 15, name: "samuel", number: "98545"};
+
 
     var person = [];
 
     person.push(p0);
-    person.push(p0);
-    person.push(p1);
     person.push(p1);
     person.push(p2);
     person.push(p3);
+    person.push(p5);
+    person.push(p5);
 
 
-    var person_dup = Array.from(new Set(person));
+    var dup = _.uniq(person, function (p) {
+        return p.id;
+    });
 
-    console.log(person_dup);
+    console.log(dup);
     //
     // if (p1.id == p0.id) {
     //     alert('p1: ' + p1.id + ' true' + ' p0: ' + p0.id);
