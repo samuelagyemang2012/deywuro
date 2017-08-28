@@ -222,11 +222,8 @@ function insert(data) {
     if (live_contacts.indexOf(data) == -1) {
         live_contacts.push(data);
 
-        // $("#" + id).show();
-
     } else {
         del(data);
-        // $("#" + id).hide();
     }
 }
 
@@ -317,6 +314,8 @@ function get_numbers() {
     }
 
     $("#numbers").val(numbers);
+
+    alert(numbers);
 
     change_page('#messagepage', 'pop');
 }
