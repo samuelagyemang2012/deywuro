@@ -147,7 +147,11 @@ function contacts_success(contacts) {
         }
     }
 
-    duplicate = Array.from(new Set(contacts_array));
+    duplicate = _.uniq(contacts_array, function (p) {
+        return p.id;
+    });
+
+    // duplicate = Array.from(new Set(contacts_array));
 
     for (var s = 0; s < duplicate.length; s++) {
         build += "<div>";
@@ -232,11 +236,11 @@ function clear_numbers() {
     person.push(p5);
 
 
-    var dup = _.uniq(person, function (p) {
+    duplicate = _.uniq(person, function (p) {
         return p.id;
     });
 
-    console.log(dup);
+    console.log(duplicate);
     //
     // if (p1.id == p0.id) {
     //     alert('p1: ' + p1.id + ' true' + ' p0: ' + p0.id);
