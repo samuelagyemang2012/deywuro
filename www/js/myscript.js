@@ -199,7 +199,7 @@ function insert_contacts(id, name, number) {
         contacts_array.push(person);
     }
 
-    alert(contacts[0].id);
+    // alert(contacts[0].id);
 }
 
 function insert_ids(id) {
