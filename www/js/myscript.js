@@ -380,7 +380,7 @@ function send_sms() {
     }
 
 
-    $.get("http://api.deywuro.com/bulksms/?username=" + encodeURI($.cookie('username')) + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + source + "&message=" + message,
+    $.get("http://api.deywuro.com/bulksms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + source + "&message=" + message,
 
         function (response) {
             toast("Sending your SMS", 1000);
