@@ -7,6 +7,7 @@
 var live_contacts = [];
 var live_ids = [];
 var contacts_array = [];
+var duplicate = [];
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -146,7 +147,7 @@ function contacts_success(contacts) {
         }
     }
 
-    var duplicate = Array.from(new Set(contacts_array));
+    duplicate = Array.from(new Set(contacts_array));
 
     for (var s = 0; s < duplicate.length; s++) {
         build += "<div>";
