@@ -146,10 +146,12 @@ function contacts_success(contacts) {
         }
     }
 
-    for (var s = 0; s < contacts_array.length; s++) {
+    var duplicate = Array.from(new Set(contacts_array));
+
+    for (var s = 0; s < duplicate.length; s++) {
         build += "<div>";
-        build += "<input type='checkbox' id='" + contacts_array[s].id + "' onclick='add_number(" + contacts_array[s].number + "," + contacts_array[s].id + ")'>";
-        build += "<label for='" + contacts_array[s].id + "'>" + contacts_array[s].name + "</label>";
+        build += "<input type='checkbox' id='" + duplicate[s].id + "' onclick='add_number(" + duplicate[s].number + "," + duplicate[s].id + ")'>";
+        build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
         build += "</div>";
     }
 
@@ -196,28 +198,31 @@ function insert(data) {
 
 function insert_contacts(obj) {
 
-    if (contacts_array.length == 0) {
-        contacts_array.push(obj);
-    } else {
-        for (var i = 0; i < contacts_array.length; i++) {
-            if (contacts_array[i].id == obj.id) {
-                ;
-                // contacts_array.push(obj);
-            } else {
-                contacts_array.push(obj);
-            }
-        }
-    }
+    contacts_array.push(obj);
+
 }
 // alert(contacts[0].id);
 
 function clear_numbers() {
 
-    // var p0 = {id: 12, name: "sam", number: "123"};
+    // var fruits = ['apple', 'banana', 'orange', 'apple', 'mango', 'banana'];
+    // var fruits_without_duplicates = Array.from(new Set(fruits));
     //
-    // var p1 = {id: 13, name: "sam", number: "123"};
+    // console.log(fruits_without_duplicates);
 
+    var p0 = {id: 12, name: "sam", number: "123"};
 
+    var p1 = {id: 13, name: "sam", number: "123"};
+
+    var p2 = {id: 14, name: "sam", number: "123"};
+
+    var p3 = {id: 15, name: "sam", number: "123"};
+
+    // var person = [p0, p0, p1, p2, p3];
+    // var person_dup = Array.from(new Set(person));
+
+    // console.log(person_dup);
+    //
     // if (p1.id == p0.id) {
     //     alert('p1: ' + p1.id + ' true' + ' p0: ' + p0.id);
     // } else {
@@ -229,6 +234,7 @@ function clear_numbers() {
 
     // insert_contacts(p0);
     // insert_contacts(p1);
+    // insert_contacts(p2);
     //
     // console.log(contacts_array);
 
