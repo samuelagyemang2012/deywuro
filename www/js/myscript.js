@@ -6,6 +6,7 @@
 //array to store contacts
 var live_contacts = [];
 var live_ids = [];
+var contacts_array = [];
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -121,18 +122,28 @@ function contacts_success(contacts) {
 
                 if (contacts[i].phoneNumbers[j] != null) {
 
+
                     var id = contacts[i].id;
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
-                    build += "<div>";
-                    build += "<input type='checkbox' id='" + id + "' onclick='add_number(" + number + "," + id + ")'>";
-                    build += "<label for='" + id + "'>" + name + "</label>";
-                    build += "</div>";
+                    insert_contacts(id, name, number);
+
+                    // build += "<div>";
+                    // build += "<input type='checkbox' id='" + id + "' onclick='add_number(" + number + "," + id + ")'>";
+                    // build += "<label for='" + id + "'>" + name + "</label>";
+                    // build += "</div>";
 
                 }
             }
         }
+    }
+
+    for (var s = 0; s < contacts_array.length; s++) {
+        build += "<div>";
+        build += "<input type='checkbox' id='" + contacts_array[s].id + "' onclick='add_number(" + contacts_array[s].number + "," + contacts_array[s].id + ")'>";
+        build += "<label for='" + contacts_array[s].id + "'>" + contacts_array[s].name + "</label>";
+        build += "</div>";
     }
 
     $("#mycontacts").html(build);
@@ -176,6 +187,21 @@ function insert(data) {
     }
 }
 
+function insert_contacts(id, name, number) {
+
+    var person = {
+        "id": id,
+        "name": name,
+        "number": number
+    };
+
+    if (contacts_array.indexOf(id) == -1) {
+        contacts_array.push(person);
+    }
+
+    alert(contacts[0].id);
+}
+
 function insert_ids(id) {
     if (live_ids.indexOf(id) == -1) {
         live_ids.push(id);
@@ -211,7 +237,8 @@ function get_numbers() {
 }
 
 function clear_numbers() {
-    
+
+    // insert_contacts('12',"sam","o5433232");
     // $('#gg').checked(true);
     // alert('hgj');
 }
