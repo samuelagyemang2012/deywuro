@@ -41,7 +41,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
+            <state relative-caret-position="1360">
               <caret line="263" column="23" selection-start-line="263" selection-start-column="23" selection-end-line="263" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -93,15 +93,15 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="382" column="29" selection-start-line="382" selection-start-column="29" selection-end-line="382" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="474" column="0" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
               <folding>
                 <element signature="e#252#348#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
                 <element signature="n#!!block;n#popout#0" expanded="false" />
                 <element signature="n#!!block;n#popout_close#0" expanded="false" />
-                <element signature="n#!!block;n#login#0" expanded="false" />
                 <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+                <element signature="n#!!block;n#contacts_success#0" expanded="false" />
                 <element signature="e#2685#2719#0" expanded="false" />
                 <element signature="e#2748#2781#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
@@ -112,7 +112,6 @@
                 <element signature="n#!!block;n#del_id#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#home#0" expanded="false" />
-                <element signature="n#!!block;n#send_sms#0" expanded="false" />
                 <element signature="n#!!block;n#process_num#0" expanded="false" />
                 <element signature="n#!!block;n#clear_sms#0" expanded="false" />
               </folding>
@@ -219,6 +218,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -308,7 +308,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -338,6 +337,656 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Im5OUjZsUUtWcEtJcGFHUUxSTU9iR2c9PSIsInZhbHVlIjoiZ05wdVU0dG84dmlcL2ZiMWV6N0RQYXBtcWRNOHNvamxYXC81eUVyT3NlOFgxb2pxMlVaSUF2MkErM1M0RU03dDV2cjE3ZDFScFdlNVlEaTBxXC9yV1wvMnNnPT0iLCJtYWMiOiJjYjU4MTJkZGViOWRmYTUyNTc2NmI4M2RkNzEyZmUzMTg2YzE2NGJkM2E4NTZmZGNkMDk2NjFiMGY5MjkyZGI3In0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006813000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjNNeVFnM0E3M0UrM1dWKytqaXZYOUE9PSIsInZhbHVlIjoibkNRanNhemhwMyt4TndLcjg5WjQxMTZJejhtQkhKdnU1YTVNOEQ5RlpkZGJYc29aaGltT2M4V0pzTUd2OVFmc2NNaEZIN2ZGdmRzOU05MENZVWlxYWc9PSIsIm1hYyI6IjA2OWM2YmQzYjcwMTI0ZDRiNzlhNGJjMjI3ZmE2OGVhOGIyZGEzNGJlMGI4ZWMyOTc3MjQ0NDY3YzU2ZjBhNGMifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="sammy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IllIVFByRVlkZlJKVklITTh3Rk9kS3c9PSIsInZhbHVlIjoidnZNNkhFWWIzMzJDXC9KbGFMVlp0XC9ERlg5cmNrMnlITFwvUFF5Y3hJZnNIR2VDNG9sZWdGdHdXRHRkVWRnSHRiR3NxUHA1a0dxRWtYa1ljQWZEUzgrcHc9PSIsIm1hYyI6ImViNzgyYTJiMzk3NWI4YzVlMWQ1MWIxZjUzZGMxZDQxZjQ3Y2QyNTMyZTU1MzgyZWVmYzViM2Y1ZmU1OWE0NDcifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006783000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlwvcG11NEw5aWdMb3Z1T1hQNjJxXC90Zz09IiwidmFsdWUiOiJyT0QxOWlrdWI5VTFiVTMzZVU4SzQ2U1dMRzhLNGZwdEJhOWVweEU0RjRkeUtxdDFrbEhVb1NvTmtiMlVpVFZJemxMd0JnanlXSmJ1XC9lVmxXYnBESVE9PSIsIm1hYyI6ImM0NzhkNmIzZjk3NWVlNDE1ODZkYWZlMzBlZDQ4MmRmZmFjZDdhMDU4ZmU5NjVkNzEyYjNmMTFlMTAxYmQzMWQifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="sammy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkdWbSswN1ZuTENDWXdGRlpsY01qZ0E9PSIsInZhbHVlIjoiTXRUSHlQQU9iYjd6V0Z0UGNyb0xFSTh4TG92dUZzckJ4TjJTN2IzM3hvdHZIXC9VREZmNlRoNWRUaWRrd1hnMG8xT2xiNUYyREk2UE1XRlUrYVVpMGZRPT0iLCJtYWMiOiJlNzk1OGVjNzg4NmQyMDBlYjhkOWExZTU4NDRlOTM0M2I5YmJmNzU3YTcxODE4YTkwYzVkYWMzNGZjYzFjZDNjIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006512000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik5ZRzM5UkF0M21LbU9KbFMzNlg5SlE9PSIsInZhbHVlIjoiUmwxWlJrT28yemlCQmM0WnFsaDQyck9RSHRYVUxrQitTYndzeE5cL3RZa1pSTnRwRndHV3FEc2RCRFFNYkNBXC9FT0dWdjdwRXErR2hYMUIzc0xUeUpmdz09IiwibWFjIjoiMWRhYzA4YTFmMzY0NmI4Y2YzY2I5ODM0MDU1ZjY2N2U4ZGMzNjhhY2FmZmYzOTMwMmNjNjc2YzAxOTViZTI3NiJ9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="sammy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkdWbSswN1ZuTENDWXdGRlpsY01qZ0E9PSIsInZhbHVlIjoiTXRUSHlQQU9iYjd6V0Z0UGNyb0xFSTh4TG92dUZzckJ4TjJTN2IzM3hvdHZIXC9VREZmNlRoNWRUaWRrd1hnMG8xT2xiNUYyREk2UE1XRlUrYVVpMGZRPT0iLCJtYWMiOiJlNzk1OGVjNzg4NmQyMDBlYjhkOWExZTU4NDRlOTM0M2I5YmJmNzU3YTcxODE4YTkwYzVkYWMzNGZjYzFjZDNjIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006512000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik5ZRzM5UkF0M21LbU9KbFMzNlg5SlE9PSIsInZhbHVlIjoiUmwxWlJrT28yemlCQmM0WnFsaDQyck9RSHRYVUxrQitTYndzeE5cL3RZa1pSTnRwRndHV3FEc2RCRFFNYkNBXC9FT0dWdjdwRXErR2hYMUIzc0xUeUpmdz09IiwibWFjIjoiMWRhYzA4YTFmMzY0NmI4Y2YzY2I5ODM0MDU1ZjY2N2U4ZGMzNjhhY2FmZmYzOTMwMmNjNjc2YzAxOTViZTI3NiJ9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com/bulksms/" />
+          <option name="urlPath" value="/bulksms/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="sammy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="destination" />
+                <option name="value" value="0542688902" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="source" />
+                <option name="value" value="MultiMoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="message" />
+                <option name="value" value="test" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="destination" />
+                <option name="value" value="&quot; . $destination . &quot;" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="source" />
+                <option name="value" value="MultiMoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="message" />
+                <option name="value" value="&quot; . $msg;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkdWbSswN1ZuTENDWXdGRlpsY01qZ0E9PSIsInZhbHVlIjoiTXRUSHlQQU9iYjd6V0Z0UGNyb0xFSTh4TG92dUZzckJ4TjJTN2IzM3hvdHZIXC9VREZmNlRoNWRUaWRrd1hnMG8xT2xiNUYyREk2UE1XRlUrYVVpMGZRPT0iLCJtYWMiOiJlNzk1OGVjNzg4NmQyMDBlYjhkOWExZTU4NDRlOTM0M2I5YmJmNzU3YTcxODE4YTkwYzVkYWMzNGZjYzFjZDNjIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006512000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik5ZRzM5UkF0M21LbU9KbFMzNlg5SlE9PSIsInZhbHVlIjoiUmwxWlJrT28yemlCQmM0WnFsaDQyck9RSHRYVUxrQitTYndzeE5cL3RZa1pSTnRwRndHV3FEc2RCRFFNYkNBXC9FT0dWdjdwRXErR2hYMUIzc0xUeUpmdz09IiwibWFjIjoiMWRhYzA4YTFmMzY0NmI4Y2YzY2I5ODM0MDU1ZjY2N2U4ZGMzNjhhY2FmZmYzOTMwMmNjNjc2YzAxOTViZTI3NiJ9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="bulksms/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="sammy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="destination" />
+                <option name="value" value="0542688902" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="source" />
+                <option name="value" value="MultiMoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="message" />
+                <option name="value" value="test" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="destination" />
+                <option name="value" value="&quot; . $destination . &quot;" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="source" />
+                <option name="value" value="MultiMoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="message" />
+                <option name="value" value="&quot; . $msg;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkdWbSswN1ZuTENDWXdGRlpsY01qZ0E9PSIsInZhbHVlIjoiTXRUSHlQQU9iYjd6V0Z0UGNyb0xFSTh4TG92dUZzckJ4TjJTN2IzM3hvdHZIXC9VREZmNlRoNWRUaWRrd1hnMG8xT2xiNUYyREk2UE1XRlUrYVVpMGZRPT0iLCJtYWMiOiJlNzk1OGVjNzg4NmQyMDBlYjhkOWExZTU4NDRlOTM0M2I5YmJmNzU3YTcxODE4YTkwYzVkYWMzNGZjYzFjZDNjIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006512000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6Ik5ZRzM5UkF0M21LbU9KbFMzNlg5SlE9PSIsInZhbHVlIjoiUmwxWlJrT28yemlCQmM0WnFsaDQyck9RSHRYVUxrQitTYndzeE5cL3RZa1pSTnRwRndHV3FEc2RCRFFNYkNBXC9FT0dWdjdwRXErR2hYMUIzc0xUeUpmdz09IiwibWFjIjoiMWRhYzA4YTFmMzY0NmI4Y2YzY2I5ODM0MDU1ZjY2N2U4ZGMzNjhhY2FmZmYzOTMwMmNjNjc2YzAxOTViZTI3NiJ9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="bulksms/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="vanguard" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="oracle123" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="sammy" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="password" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="destination" />
+                <option name="value" value="0542688902" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="source" />
+                <option name="value" value="MultiMoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="message" />
+                <option name="value" value="test" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkhVbnpITHJwVDFKXC9tdHlrblNwbHpRPT0iLCJ2YWx1ZSI6IjBta0RPc0ZtUHRwa2ZhSlIyXC9PeEppUWM0Y2oyUlFydzYrZVFNOXQwMXBsYjRFbmgrQjBnWUR5dk80aFBcL1ZIa09ybHpDMWNlM0tzSDBYdEpBeW9uWWc9PSIsIm1hYyI6ImExODc0MmEwZjljMjAwNTVhMTUzOTkxMjVmY2JmOGVlNjNkNzRiYjAxZjdhNmRkNDE1NTAxMTllMWIzNmEyODcifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006486000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkY0c0NZaVZNVHhvZlVJZFpiOEZuRHc9PSIsInZhbHVlIjoidEJLRkxPblg0Y2FLdFwvZEgxWXFlNFU5OVg5ckRVRlQ5QXE0Z0p3NnphenBTYkNnSW9Gd3plQllBWGYzMytwYWJkZHVsVEpiaTZ1TFwvc2FITm9PeERsQT09IiwibWFjIjoiNzY4ZmI3YmM2ZDkwODlkMGExNDNkN2NlODE5Nzk5NGM0ZjE3NTk4MWNmOTU4OWU0OThhMjE1M2Y0ZTUzYjhiOSJ9" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="kofi101" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="5834262test" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlhpdjdvXC95RU9lXC91NGNPemRMR2tldz09IiwidmFsdWUiOiJqTWZMcDZNWFUrQ2JyNks2eFN0RTNObkpOWjBOcEFXRW82dlhsOVpwUnNNMHdCNE1ETmNPUDAyQU01K1p3OHpTRXppOTRvYW9FMWhBN0NCWTF0QTU0Zz09IiwibWFjIjoiZmVlZDkzNzBlYTAyMzlmMTE5YzBlY2M0ZjgwMTM5YjNjODRmNmQ3ZmEwYjQ1NTNmODQwOTZlMmExMGRlZmZhMCJ9" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006457000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IlE1eDZ1QnJ3ZXFkUlArTkFqcFFzdEE9PSIsInZhbHVlIjoiZGw3cFJXbUI2eGRvTzVjRUpsS2Iyb0xsdkFiR3hVait0dXZ3NFRvRGt2RmxLWVwvSmVubnRSSUE1SmFCQXl5YVA0OWdGckhaNzg1ZUY0MklJYjZsUVZ3PT0iLCJtYWMiOiI1YjYzOWMxYTRkMjk3OTg1NzM4Njc5MDczNTU5OWNjODc5ZjAxOWRhMjA5NjU1Y2IyNmJkZjAwNTgxYzIwYTliIn0%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com" />
+          <option name="urlPath" value="api/stat" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IkZpN3F3VDc2SERIdjVJQ0IxMmQ4SGc9PSIsInZhbHVlIjoicUJUcWJ6czc4ODBEMU1FVXVKNDVFc2sxU09Kenh4QVR1NitrcW9MZFBnMThWcngxZ0hqenlIXC9tQzNCNmlEUmdSV2QzQmxHZVJDOWhFekhhQWRrT3JnPT0iLCJtYWMiOiI2MjU3YjI0ZjM1ZTdlNzRlNWQ0NmVkMzMyYWE1YzQ2NmJiNzM3MDg1Nzg2OTYwZmYxZWViNGY4MDEwMWU5NzgxIn0%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1504006447000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IjFRVFVCamhQYzI5TWd2U2F5U2w4NkE9PSIsInZhbHVlIjoiNG5VOUlGNU5mcXE1RkdKTzlXRTVxQXpZREJGK1pQbkJaNkJkSmczSzZmZjR4TEo3YlJ4SnFpUW5CVlFSWXExVUE0RGE3cDdKREgrZFR0bEVTeDF5Qmc9PSIsIm1hYyI6IjliYjc5MGM2NTA2YWVhMmQxNDU4NGUwZmVhYzZmZGE4ZTNhMTE1NzgxYWRhMjUwZmY0NmU4ODk2ODkzOWI1N2UifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com/" />
+          <option name="urlPath" value="/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IndtK2twN1FJWmhTQlBXaGY1Q0hNdmc9PSIsInZhbHVlIjoiQ1dNZllYMmtqNGRWbitDQ0Y1UVFDcXpyVzJpbG44YkhkWnkrMm4yVXFSbTlic0JxOGNvMFhlR3VENWRmY09lcU9qY0ZBOG1SVDRpb2tvVGdkb2dHUGc9PSIsIm1hYyI6IjJkZTdkODU1ZDM1NzM0Y2RkZDZlMTA0YzJiMzJlZTllZDE1NmEzYmQ5MmQ0NjQzNTlmNjZhNTlkMzc5ZGIzYWIifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1503514653000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImxaYVZPN0s3THoyTHYyazh6Nkp6RlE9PSIsInZhbHVlIjoiT2xZc0VBU0xPXC9JSGppQ3ppK0lBeGl5bHV6c2EwV3pGelpuYXdZSjJMODc1b1wvWlpKOExoZ3VcLzJ1Y0RDcW1rNlA1QlZTKzMwdkZTMmh1cHJVSGVDWkE9PSIsIm1hYyI6IjM3OGNjYjk0ZDc3MDkwOWM4YmI2ZDFjYjQ1ZTkzZjk4ZWViNWM2MTgwNjUxNjYxZjVhYTVjYWNhZWIxY2RlN2UifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://deywuro.com/" />
+          <option name="urlPath" value="/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="deywuro" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6IndtK2twN1FJWmhTQlBXaGY1Q0hNdmc9PSIsInZhbHVlIjoiQ1dNZllYMmtqNGRWbitDQ0Y1UVFDcXpyVzJpbG44YkhkWnkrMm4yVXFSbTlic0JxOGNvMFhlR3VENWRmY09lcU9qY0ZBOG1SVDRpb2tvVGdkb2dHUGc9PSIsIm1hYyI6IjJkZTdkODU1ZDM1NzM0Y2RkZDZlMTA0YzJiMzJlZTllZDE1NmEzYmQ5MmQ0NjQzNTlmNjZhNTlkMzc5ZGIzYWIifQ%3D%3D" />
+              </Biscuit>
+              <Biscuit>
+                <option name="date" value="1503514653000" />
+                <option name="domain" value="deywuro.com" />
+                <option name="name" value="XSRF-TOKEN" />
+                <option name="path" value="/" />
+                <option name="value" value="eyJpdiI6ImxaYVZPN0s3THoyTHYyazh6Nkp6RlE9PSIsInZhbHVlIjoiT2xZc0VBU0xPXC9JSGppQ3ppK0lBeGl5bHV6c2EwV3pGelpuYXdZSjJMODc1b1wvWlpKOExoZ3VcLzJ1Y0RDcW1rNlA1QlZTKzMwdkZTMmh1cHJVSGVDWkE9PSIsIm1hYyI6IjM3OGNjYjk0ZDc3MDkwOWM4YmI2ZDFjYjQ1ZTkzZjk4ZWViNWM2MTgwNjUxNjYxZjVhYTVjYWNhZWIxY2RlN2UifQ%3D%3D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://api.deywuro.com/" />
+          <option name="urlPath" value="/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="username" />
+                <option name="value" value="multimoney" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="password" />
+                <option name="value" value="multimoney123" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -2382,81 +3031,6 @@
           <option name="textToSend" value="" />
           <option name="filesToSend" value="" />
         </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="deywuro.com" />
-                <option name="name" value="deywuro" />
-                <option name="path" value="/" />
-                <option name="value" value="eyJpdiI6Ik02ZE16bW1NZGRyY3hkR041XC8rbVZnPT0iLCJ2YWx1ZSI6IlwvbnluakJ6ajU5dXk5N2RvS0RDVVwvSHh3c0pqWVlCeSt2K3lQUHV5a1wvTm82dHJQclhrV0Z1RU0zUnJaVk5yQXFmWStqVzRhWm14d3hHSnVNUmtEXC9hdz09IiwibWFjIjoiOGIwNWU5NzM4YjViMGRiMTk1ZDNiZTUxYzQwYTlmM2RiYjVhMzQzOWMzMDk2NGFmMGRkZjRmZGZmZTAxZWI1ZSJ9" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://deywuro.com" />
-          <option name="urlPath" value="/api/login" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="username" />
-                <option name="value" value="Vanguard" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="oracle123" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="https://deywuro.com" />
-          <option name="urlPath" value="/api/stat" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="username" />
-                <option name="value" value="Vanguard" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="oracle123" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
       </list>
     </option>
   </component>
@@ -2537,14 +3111,8 @@
       <workItem from="1503084347935" duration="33445000" />
       <workItem from="1503690306422" duration="19682000" />
       <workItem from="1503772224465" duration="528000" />
-      <workItem from="1503853822389" duration="43419000" />
-    </task>
-    <task id="LOCAL-00034" summary="k">
-      <created>1503045202843</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1503045202843</updated>
+      <workItem from="1503853822389" duration="45681000" />
+      <workItem from="1504032640956" duration="1115000" />
     </task>
     <task id="LOCAL-00035" summary="k">
       <created>1503046364104</created>
@@ -2882,20 +3450,27 @@
       <option name="project" value="LOCAL" />
       <updated>1503923778680</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="k">
+      <created>1503932999119</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1503932999119</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150301000" />
+    <option name="totallyTimeSpent" value="153678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536825" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2907,7 +3482,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41734862" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7332242" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2988,8 +3563,8 @@
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2685#2719#0" expanded="false" />
             <element signature="e#2748#2781#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
@@ -3000,7 +3575,6 @@
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
           </folding>
@@ -3024,8 +3598,8 @@
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2685#2719#0" expanded="false" />
             <element signature="e#2748#2781#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
@@ -3036,7 +3610,6 @@
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
           </folding>
@@ -3060,8 +3633,8 @@
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2685#2719#0" expanded="false" />
             <element signature="e#2748#2781#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
@@ -3072,7 +3645,6 @@
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
           </folding>
@@ -3096,8 +3668,8 @@
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2685#2719#0" expanded="false" />
             <element signature="e#2748#2781#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
@@ -3108,7 +3680,6 @@
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
           </folding>
@@ -3167,9 +3738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="919">
           <caret line="1205" column="21" selection-start-line="1205" selection-start-column="21" selection-end-line="1205" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3207,14 +3775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2412">
           <caret line="571" column="38" selection-start-line="571" selection-start-column="38" selection-end-line="571" selection-end-column="38" />
-          <folding>
-            <element signature="e#69008#70939#1" expanded="false" />
-            <element signature="e#72557#74444#2" expanded="false" />
-            <element signature="e#82847#83018#2" expanded="false" />
-            <element signature="e#102435#103534#1" expanded="false" />
-            <element signature="e#105293#106392#1" expanded="false" />
-            <element signature="e#106497#107596#1" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3229,9 +3789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="2544" column="3" selection-start-line="2544" selection-start-column="3" selection-end-line="2544" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3239,9 +3796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3249,9 +3803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3259,9 +3810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1184">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3269,9 +3817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-215">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3289,21 +3834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-dialog#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ons-input#0;n#p#0;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ons-input#0;n#p#1;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#2;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ons-button#0;n#p#2;n#div#0;n#ons-page#0;n#ons-navigator#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ons-input#0;n#p#0;n#div#0;n#div#0;n#ons-page#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ons-input#0;n#p#0;n#div#1;n#div#0;n#ons-page#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#ons-page#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#ons-button#0;n#p#0;n#div#2;n#div#0;n#ons-page#0;n#template#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#template#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3321,15 +3851,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="606" column="39" selection-start-line="606" selection-start-column="39" selection-end-line="606" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
+        <state relative-caret-position="1360">
           <caret line="263" column="23" selection-start-line="263" selection-start-column="23" selection-end-line="263" selection-end-column="23" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -3379,15 +3906,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="382" column="29" selection-start-line="382" selection-start-column="29" selection-end-line="382" selection-end-column="29" />
+        <state relative-caret-position="266">
+          <caret line="474" column="0" selection-start-line="474" selection-start-column="0" selection-end-line="474" selection-end-column="0" />
           <folding>
             <element signature="e#252#348#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="e#2685#2719#0" expanded="false" />
             <element signature="e#2748#2781#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
@@ -3398,7 +3925,6 @@
             <element signature="n#!!block;n#del_id#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
           </folding>
