@@ -99,6 +99,7 @@ function contacts_success(contacts) {
 
     var build;
     build = '';
+    build += '<ul data-role="listview" data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
 
     contacts.sort(function (a, b) {
         var nameA = a.displayName; // ignore upper and lowercase
@@ -152,18 +153,18 @@ function contacts_success(contacts) {
                     //     </div>
                     //     </div>
 
-
-                    build += "<div onclick='add_number(" + number + "," + id + ")'>";
-                    build += "<p>" + name + "</p>";
-                    build += "<div class='container'>";
-                    build += "<div class='row'>";
-                    build += "<div class='col-xs-6'></div>";
-                    build += "<div hidden class='col-xs-6 align-right' id='" + id + "'>";
-                    build += "<i class='zmdi zmdi-check'></i>";
-                    build += "</div>";
-                    build += "</div>";
-                    build += "</div>";
-                    build += "</div>";
+                    build += "<li><a href='#'>Apple</a></li>"
+                    // build += "<div onclick='add_number(" + number + "," + id + ")'>";
+                    // build += "<p>" + name + "</p>";
+                    // build += "<div class='container'>";
+                    // build += "<div class='row'>";
+                    // build += "<div class='col-xs-6'></div>";
+                    // build += "<div hidden class='col-xs-6 align-right' id='" + id + "'>";
+                    // build += "<i class='zmdi zmdi-check'></i>";
+                    // build += "</div>";
+                    // build += "</div>";
+                    // build += "</div>";
+                    // build += "</div>";
 
                 }
             }

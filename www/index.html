@@ -59,35 +59,36 @@
         <!--<br><br>-->
         <!--<br><br>-->
         <!--<br><br>-->
+        <div>
+            <div class="nd2-card" style="background-color: white">
+                <div class="container" style="margin-top: 10%; margin-bottom: 10%">
+                    <div class="row">
+                        <div class="col-xs-1"></div>
 
-        <div class="nd2-card" style="background-color: white">
-            <div class="container" style="margin-top: 10%; margin-bottom: 10%">
-                <div class="row">
-                    <div class="col-xs-1"></div>
+                        <div class="col-xs-10">
+                            <div class="align-center">
+                                <img src="img/lo.jpg">
+                            </div>
 
-                    <div class="col-xs-10">
-                        <div class="align-center">
-                            <img src="img/lo.jpg">
+                            <div>
+                                <input type="text" id="username" value="" data-clear-btn="true"
+                                       placeholder="Username">
+                            </div>
+                            <br>
+
+                            <div>
+                                <input type="password" id="password" value="" data-clear-btn="true"
+                                       placeholder="Password">
+                            </div>
+
+                            <div>
+                                <a style="background-color: #8e0d0e" onclick="login()"
+                                   class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
+                            </div>
                         </div>
 
-                        <div>
-                            <input type="text" id="username" value="" data-clear-btn="true"
-                                   placeholder="Username">
-                        </div>
-                        <br>
-
-                        <div>
-                            <input type="password" id="password" value="" data-clear-btn="true"
-                                   placeholder="Password">
-                        </div>
-
-                        <div>
-                            <a style="background-color: #8e0d0e" onclick="login()"
-                               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
-                        </div>
+                        <div class="col-xs-1"></div>
                     </div>
-
-                    <div class="col-xs-1"></div>
                 </div>
             </div>
         </div>
@@ -199,108 +200,112 @@
     </div>
 
     <div data-role="content">
-        <div class="nd2-card" style="background-color: white">
+
+        <div class="nd2-card" style="background-color: white" id="contacts">
             <div class="container">
 
-                <ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Search contacts..."
+                    data-inset="true" id="mycontacts">
+
                     <li><a href="#">Apple</a></li>
                     <li><a href="#">Banana</a></li>
                     <li><a href="#">Cherry</a></li>
                     <li><a href="#">Cranberry</a></li>
                     <li><a href="#">Grape</a></li>
                     <li><a href="#">Orange</a></li>
+
                 </ul>
 
                 <!--<div data-clear-btn="true" data-role="content" id="mycontacts" data-filter="true"-->
-                     <!--data-filter-reveal="false"-->
-                     <!--data-filter-placeholder="Search">-->
-<!---->
-                    <!--<div onclick="add_number('0542688902','29')">-->
-                        <!--<p>Dan</p>-->
-<!---->
-                        <!--<div class="container">-->
-                            <!--<div class="row">-->
-                                <!--<div class="col-xs-6"></div>-->
+                <!--data-filter-reveal="false"-->
+                <!--data-filter-placeholder="Search">-->
+                <!---->
+                <!--<div onclick="add_number('0542688902','29')">-->
+                <!--<p>Dan</p>-->
+                <!---->
+                <!--<div class="container">-->
+                <!--<div class="row">-->
+                <!--<div class="col-xs-6"></div>-->
 
-                                <!--<div hidden class="col-xs-6 align-right" id="29">-->
-                                    <!--<i class="zmdi zmdi-check"></i>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                <!--<div hidden class="col-xs-6 align-right" id="29">-->
+                <!--<i class="zmdi zmdi-check"></i>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
 
-                    <!--<div onclick="add_number('0542688905','89')">-->
-                        <!--<p>Dan</p>-->
+                <!--<div onclick="add_number('0542688905','89')">-->
+                <!--<p>Dan</p>-->
 
-                        <!--<div class="container">-->
-                            <!--<div class="row">-->
-                                <!--<div class="col-xs-6"></div>-->
+                <!--<div class="container">-->
+                <!--<div class="row">-->
+                <!--<div class="col-xs-6"></div>-->
 
-                                <!--<div hidden class="col-xs-6 align-right" id="89">-->
-                                    <!--<i class="zmdi zmdi-check"></i>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                <!--<div hidden class="col-xs-6 align-right" id="89">-->
+                <!--<i class="zmdi zmdi-check"></i>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
 
-                    <!--<div>-->
-                    <!--<input type="checkbox" id="bb" onclick="add_number('8000','bb')">-->
-                    <!--<label for="bb">Danilo</label>-->
-                    <!--</div>-->
+                <!--<div>-->
+                <!--<input type="checkbox" id="bb" onclick="add_number('8000','bb')">-->
+                <!--<label for="bb">Danilo</label>-->
+                <!--</div>-->
 
-                    <!--<div>-->
-                    <!--<input type="checkbox" id="cc" onclick="add_number('9000','cc')">-->
-                    <!--<label for="cc">Effie</label>-->
-                    <!--&lt;!&ndash;<label>adas</label>&ndash;&gt;-->
-                    <!--</div>-->
+                <!--<div>-->
+                <!--<input type="checkbox" id="cc" onclick="add_number('9000','cc')">-->
+                <!--<label for="cc">Effie</label>-->
+                <!--&lt;!&ndash;<label>adas</label>&ndash;&gt;-->
+                <!--</div>-->
 
-                    <!--<div>-->
-                    <!--<input type="checkbox" id="dd" onclick="add_number('1000','dd')">-->
-                    <!--<label for="dd">Xorla</label>-->
-                    <!--</div>-->
+                <!--<div>-->
+                <!--<input type="checkbox" id="dd" onclick="add_number('1000','dd')">-->
+                <!--<label for="dd">Xorla</label>-->
+                <!--</div>-->
 
-                    <!--<div>-->
-                    <!--<input type="checkbox" id="ee" onclick="add_number('2000','ee')">-->
-                    <!--<label for="ee">Danny</label>-->
-                    <!--</div>-->
+                <!--<div>-->
+                <!--<input type="checkbox" id="ee" onclick="add_number('2000','ee')">-->
+                <!--<label for="ee">Danny</label>-->
+                <!--</div>-->
 
-                    <!--<div>-->
-                    <!--<input type="checkbox" id="ff" onclick="add_number('3000','ff')">-->
-                    <!--<label for="ff">Max</label>-->
-                    <!--</div>-->
+                <!--<div>-->
+                <!--<input type="checkbox" id="ff" onclick="add_number('3000','ff')">-->
+                <!--<label for="ff">Max</label>-->
+                <!--</div>-->
 
-                    <!--<div>-->
-                    <!--<input type="checkbox" id="gg" onchange="add_number('4000','gg')">-->
-                    <!--<label for="gg">Trump</label>-->
-                    <!--</div>-->
-
-                </div>
-            </div>
-            <!---->
-            <div style="position: fixed;  bottom: 0; background-color: #2d2d2d" data-role="footer"
-                 data-position="fixed">
-
-                <div class="row center-xs">
-
-                    <div class="col-xs-4">
-                        <div class="box">
-                            <a style="color: white" onclick="clear_numbers()"
-                               class="ui-btn ui-mini nd2-btn-icon-block">Clear</a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4"></div>
-
-                    <div class="col-xs-4">
-                        <div class="box">
-                            <a style="color: white" onclick="get_numbers()" class="ui-btn ui-mini nd2-btn-icon-block">Done</a>
-                        </div>
-                    </div>
-                </div>
+                <!--<div>-->
+                <!--<input type="checkbox" id="gg" onchange="add_number('4000','gg')">-->
+                <!--<label for="gg">Trump</label>-->
+                <!--</div>-->
 
             </div>
-            <!---->
         </div>
+        <!---->
+        <div style="position: fixed;  bottom: 0; background-color: #2d2d2d" data-role="footer"
+             data-position="fixed">
+
+            <div class="row center-xs">
+
+                <div class="col-xs-4">
+                    <div class="box">
+                        <a style="color: white" onclick="clear_numbers()"
+                           class="ui-btn ui-mini nd2-btn-icon-block">Clear</a>
+                    </div>
+                </div>
+
+                <div class="col-xs-4"></div>
+
+                <div class="col-xs-4">
+                    <div class="box">
+                        <a style="color: white" onclick="get_numbers()"
+                           class="ui-btn ui-mini nd2-btn-icon-block">Done</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!---->
     </div>
 </div>
 <!--end contacts page-->
@@ -326,7 +331,7 @@
         </li>
 
         <li>
-            <a onclick="change_page('#messagepage','pop')" href="">
+            <a onclick="get_contacts()" href="">
                 <h5 class="h" style="font-weight: lighter; color:#8e0d0e"><i class="zmdi zmdi-comment"></i>&nbsp;&nbsp;&nbsp;&nbsp;MESSAGE
                 </h5>
                 <!--<h2></h2>-->
