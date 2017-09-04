@@ -99,7 +99,7 @@ function contacts_success(contacts) {
 
     var build;
     build = '';
-    build += '<ul data-role="listview" data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
+    build += '<ul data-role="listview" data-autodividers="true"  data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
 
     contacts.sort(function (a, b) {
         var nameA = a.displayName; // ignore upper and lowercase
@@ -183,7 +183,7 @@ function contacts_success(contacts) {
     //     build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
     //     build += "</div>";
     // }
-    build += "<ul>";
+    build += "</ul>";
     $("#mycontacts").html(build);
 }
 
