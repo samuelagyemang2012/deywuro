@@ -35,6 +35,13 @@
     <!--<script type="text/javascript" src="./js/index.js"></script>-->
     <script type="text/javascript" src="./js/chartist.min.js"></script>
     <script type="text/javascript" src="./js/underscore.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+//            get_slides();
+//
+            $("body>[data-role='panel']").panel().enhanceWithin();
+        });
+    </script>
 
 </head>
 
@@ -94,7 +101,7 @@
 
     <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
         <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
         <h1 style="opacity: 1">Dashboard</h1>
     </div>
 
@@ -135,30 +142,6 @@
     </div>
     <br>
     <br>
-
-    <div data-role="footer" data-position="fixed" style="background-color: #2d2d2d">
-
-        <div class="row center-xs">
-            <div class="col-xs-4">
-                <div class="box">
-                    <a style="color: #fff" onclick="get_stats()"
-                       class="ui-btn ui-mini nd2-btn-icon-block">Statistics</a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a style="color: #fff" onclick="change_page('#messagepage','pop')"
-                       class="ui-btn ui-mini nd2-btn-icon-block">Message</a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a style="color: #fff" onclick="change_page('#contactspage','pop')"
-                       class="ui-btn ui-mini nd2-btn-icon-block">Contacts</a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 <!--end dashboard-->
 
@@ -166,7 +149,7 @@
 <div data-role="page" id="messagepage" style="background-image: url('img/lol.jpg')">
     <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
         <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-arrow-back"></i></a>-->
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
         <h1 style="opacity: 1">Messages</h1>
     </div>
 
@@ -204,38 +187,14 @@
             </div>
         </div>
     </div>
-
-    <div data-role="footer" data-position="fixed" style="background-color: #2d2d2d">
-
-        <div class="row center-xs">
-            <div class="col-xs-4">
-                <div class="box">
-                    <a style="color: #fff" onclick="get_stats()"
-                       class="ui-btn ui-mini nd2-btn-icon-block">Statistics</a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a style="color: #fff" onclick="change_page('#messagepage','pop')"
-                       class="ui-btn ui-mini nd2-btn-icon-block">Message</a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <div class="box">
-                    <a style="color: #fff" onclick="change_page('#contactspage','pop')"
-                       class="ui-btn ui-mini nd2-btn-icon-block">Contacts</a>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 <!--end message page-->
 
 <!--Contacts page-->
 <div data-role="page" id="contactspage" style="background-image: url('img/lol.jpg')">
     <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.0s' data-transition="pop"><i
-                class="zmdi zmdi-home"></i></a>
+        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
         <h1 style="opacity: 1">Contacts</h1>
     </div>
 
@@ -243,37 +202,46 @@
         <div class="nd2-card" style="background-color: white">
             <div class="container">
 
-                <div data-clear-btn="true" data-role="content" id="mycontacts" data-filter="true"
-                     data-filter-reveal="false"
-                     data-filter-placeholder="Search">
+                <ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+                    <li><a href="#">Apple</a></li>
+                    <li><a href="#">Banana</a></li>
+                    <li><a href="#">Cherry</a></li>
+                    <li><a href="#">Cranberry</a></li>
+                    <li><a href="#">Grape</a></li>
+                    <li><a href="#">Orange</a></li>
+                </ul>
 
-                    <div onclick="add_number('0542688902','29')">
-                        <p>Dan</p>
+                <!--<div data-clear-btn="true" data-role="content" id="mycontacts" data-filter="true"-->
+                     <!--data-filter-reveal="false"-->
+                     <!--data-filter-placeholder="Search">-->
+<!---->
+                    <!--<div onclick="add_number('0542688902','29')">-->
+                        <!--<p>Dan</p>-->
+<!---->
+                        <!--<div class="container">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-6"></div>-->
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-6"></div>
+                                <!--<div hidden class="col-xs-6 align-right" id="29">-->
+                                    <!--<i class="zmdi zmdi-check"></i>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-                                <div hidden class="col-xs-6 align-right" id="29">
-                                    <i class="zmdi zmdi-check"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <!--<div onclick="add_number('0542688905','89')">-->
+                        <!--<p>Dan</p>-->
 
-                    <div onclick="add_number('0542688905','89')">
-                        <p>Dan</p>
+                        <!--<div class="container">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-6"></div>-->
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xs-6"></div>
-
-                                <div hidden class="col-xs-6 align-right" id="89">
-                                    <i class="zmdi zmdi-check"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <!--<div hidden class="col-xs-6 align-right" id="89">-->
+                                    <!--<i class="zmdi zmdi-check"></i>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                     <!--<div>-->
                     <!--<input type="checkbox" id="bb" onclick="add_number('8000','bb')">-->
@@ -328,26 +296,6 @@
                             <a style="color: white" onclick="get_numbers()" class="ui-btn ui-mini nd2-btn-icon-block">Done</a>
                         </div>
                     </div>
-
-                    <div class="col-xs-4">
-                        <div class="box">
-                            <a style="color: white" onclick="get_stats()" class="ui-btn ui-mini nd2-btn-icon-block">Statistics</a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="box">
-                            <a onclick="change_page('#messagepage','pop')" style="color: white"
-                               class="ui-btn ui-mini nd2-btn-icon-block">Message</a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-4">
-                        <div class="box">
-                            <a style="color: white" onclick="change_page('#contactspage','pop')"
-                               class="ui-btn ui-mini nd2-btn-icon-block">Contacts</a>
-                        </div>
-                    </div>
                 </div>
 
             </div>
@@ -356,6 +304,64 @@
     </div>
 </div>
 <!--end contacts page-->
+
+<!--Panel-->
+<div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true"
+     style="background-color: white;">
+
+    <!--<a data-role="button">Profile</a>-->
+
+    <ul data-role="listview" data-icon="false">
+        <li data-role="list-divider" class="">
+            Menu
+        </li>
+        <hr style="opacity: .2">
+
+        <!---->
+        <li>
+            <a onclick="get_stats()" href="">
+                <h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-share"></i>&nbsp;&nbsp;&nbsp;&nbsp;STATISTICS
+                </h5>
+            </a>
+        </li>
+
+        <li>
+            <a onclick="change_page('#messagepage','pop')" href="">
+                <h5 class="h" style="font-weight: lighter; color:#8e0d0e"><i class="zmdi zmdi-comment"></i>&nbsp;&nbsp;&nbsp;&nbsp;MESSAGE
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+        </li>
+        <!---->
+        <li>
+            <a onclick="get_contacts()">
+                <h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-account"></i>&nbsp;&nbsp;&nbsp;&nbsp;CONTACTS
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+        </li>
+
+        <!--<li>-->
+        <!--<a href="#dashboard">-->
+        <!--<h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-view-dashboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;DASHBOARD-->
+        <!--</h5>-->
+        <!--<h2></h2>-->
+        <!--</a>-->
+        <!--<hr style="opacity: .5">-->
+        <!--</li>-->
+
+        <li>
+            <a onclick="">
+                <h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-money"></i>&nbsp;&nbsp;&nbsp;&nbsp;PAYMENTS
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+            <!--<hr style="opacity: .5">-->
+        </li>
+    </ul>
+
+</div>
+<!--end panel-->
 
 </body>
 

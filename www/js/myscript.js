@@ -52,7 +52,7 @@ function login() {
     if (username.length > 0 && password.length > 0) {
 
         //login api
-        $.get("http://deywuro.com/api/login",
+        $.get("https://deywuro.com/api/login",
             {
                 username: username,
                 password: password
@@ -346,7 +346,7 @@ function get_stats() {
 
     var total_sent, total_del, total_ack, total_undeliv, total_exp, bal;
 
-    $.get("http://deywuro.com/api/stat",
+    $.get("https://deywuro.com/api/stat",
         {
             username: $.cookie('username'),
             password: $.cookie('password')
@@ -372,7 +372,7 @@ function get_stats() {
 
                 setTimeout(
                     function () {
-                        change_page("#dashboard", "slide");
+                        change_page("#dashboard", "pop");
                     }, 800);
 
                 toast("Fetching your statistics", 1500);
@@ -425,8 +425,7 @@ function send_sms() {
         return;
     }
 
-
-    $.get("http://api.deywuro.com/bulksms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + source + "&message=" + message,
+    $.get("https://deywuro.com/api/sms/?username=" + $.cookie('username') + "&password=" + $.cookie('password') + "&destination=" + contacts + "&source=" + source + "&message=" + message,
 
         function (response) {
             toast("Sending your SMS", 1000);
@@ -468,6 +467,11 @@ function add_number(num, id) {
         $("#" + id).hide();
     }
 
+}
+
+function get_contacts() {
+    load_contacts();
+    change_page("#contactspage", "pop");
 }
 
 
