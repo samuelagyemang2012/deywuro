@@ -153,7 +153,7 @@ function contacts_success(contacts) {
                     //     </div>
                     //     </div>
 
-                    build += "<li><a href='#'>Apple</a></li>"
+                    build += "<li><a href='#'>" + name + "</a></li>";
                     // build += "<div onclick='add_number(" + number + "," + id + ")'>";
                     // build += "<p>" + name + "</p>";
                     // build += "<div class='container'>";
@@ -183,7 +183,7 @@ function contacts_success(contacts) {
     //     build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
     //     build += "</div>";
     // }
-
+    build += "<ul>";
     $("#mycontacts").html(build);
 }
 
