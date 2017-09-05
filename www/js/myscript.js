@@ -68,7 +68,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    load_contacts();
+                    // load_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
@@ -510,15 +510,29 @@ function test_get_contacts() {
 
     var build;
     build = '';
-    build += '<ul data-role="listview" data-autodividers="true"  data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
+    // build += '<ul data-role="listview" data-autodividers="true"  data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
 
     for (var i = 0; i < data.length; i++) {
+        // $('ul[data-role=listview]').append(build).listview("refresh");
         build += "<li><a href='#'>" + data[i].name + "</a></li>";
     }
 
-    build += '</ul>';
+    $('#contactspage').bind('pageinit', function () {
+        alert(build);
+        $('#mylistview').append(build).listview("refresh");
+        // $("#mylistview").append(build).listview();
+        // $('#myListview').listview('refresh');
+    });
 
-    $("#mycontacts").html(build);
+    // build += '</ul>';
+
+    // $("#mylistview").replaceWith(build).listview();
+
+    // $("#mylistview").on("pageinit", "#contactspage", function (event) {
+    //     $("#mylistview").replaceWith(build).listview();
+    //     alert("This page was just enhanced by jQuery Mobile!");
+    // });
+    // $("#mycontacts").html(build);
 
     change_page("#contactspage", 'pop');
 

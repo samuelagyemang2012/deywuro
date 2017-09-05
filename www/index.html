@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
 
     <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">-->
+
     <link rel="stylesheet" href="./css/jquery.mobile.min.css"/>
     <link rel="stylesheet" href="./css/waves.min.css"/>
     <link rel="stylesheet" href="./css/animate.css"/>
@@ -40,6 +41,7 @@
 //            get_slides();
 //
             $("body>[data-role='panel']").panel().enhanceWithin();
+//            alert("s");
         });
     </script>
 
@@ -194,7 +196,7 @@
             <div class="col-xs-6"></div>
             <div class="col-xs-4 col-sm-4">
                 <div class="align-right">
-                    <button onclick="get_contacts()" style="background-color: #8e0d0e; position: fixed"
+                    <button onclick="test_get_contacts()" style="background-color: #8e0d0e; position: fixed"
                             class="ui-btn-fab ui-btn-raised clr-warning ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button">
                         <i class="zmdi zmdi-phone zmd-2x"></i></button>
                 </div>
@@ -221,14 +223,9 @@
 
                 <ul data-role="listview" data-autodividers="true" data-filter="true"
                     data-filter-placeholder="Search contacts..."
-                    data-inset="true">
+                    data-inset="true" id="mylistview">
 
                     <li><a href="#">Apple</a></li>
-                    <li><a href="#">Banana</a></li>
-                    <li><a href="#">Cherry</a></li>
-                    <li><a href="#">Cranberry</a></li>
-                    <li><a href="#">Grape</a></li>
-                    <li><a href="#">Orange</a></li>
 
                 </ul>
 
