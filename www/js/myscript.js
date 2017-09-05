@@ -479,30 +479,37 @@ function test_get_contacts() {
 
     var data = [
         {
+            "id": "0",
             "name": "red",
             "number": "#f00"
         },
         {
+            "id": "1",
             "name": "green",
             "number": "#0f0"
         },
         {
+            "id": "2",
             "name": "blue",
             "number": "#00f"
         },
         {
+            "id": "3",
             "name": "cyan",
             "number": "#0ff"
         },
         {
+            "id": "4",
             "name": "magenta",
             "number": "#f0f"
         },
         {
+            "id": "5",
             "name": "yellow",
             "number": "#ff0"
         },
         {
+            "id": "6",
             "name": "black",
             "number": "#000"
         }
@@ -538,5 +545,6 @@ function test_get_contacts() {
 
 }
 
-
-
+function test_select(id) {
+    $("#" + id).css('background', '#eeeeee');
+}
