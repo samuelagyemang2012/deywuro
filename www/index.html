@@ -187,6 +187,20 @@
                 </div>
             </div>
         </div>
+
+
+        <br><br><br>
+        <div class="row">
+            <div class="col-xs-6"></div>
+            <div class="col-xs-4 col-sm-4">
+                <div class="align-right">
+                    <button style="background-color: #8e0d0e; position: fixed"
+                            class="ui-btn-fab ui-btn-raised clr-warning ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button">
+                        <i class="zmdi zmdi-phone zmd-2x"></i></button>
+                </div>
+            </div>
+            <div class="col-xs-2"></div>
+        </div>
     </div>
 </div>
 <!--end message page-->
@@ -205,7 +219,8 @@
 
             <div class="container" id="mycontacts">
 
-                <ul data-role="listview" data-autodividers="true" data-filter="true" data-filter-placeholder="Search contacts..."
+                <ul data-role="listview" data-autodividers="true" data-filter="true"
+                    data-filter-placeholder="Search contacts..."
                     data-inset="true">
 
                     <li><a href="#">Apple</a></li>
@@ -332,20 +347,20 @@
         </li>
 
         <li>
-            <a onclick="get_contacts()" href="">
+            <a onclick="change_page('#messagepage','pop')" href="">
                 <h5 class="h" style="font-weight: lighter; color:#8e0d0e"><i class="zmdi zmdi-comment"></i>&nbsp;&nbsp;&nbsp;&nbsp;MESSAGE
                 </h5>
                 <!--<h2></h2>-->
             </a>
         </li>
         <!---->
-        <li>
-            <a onclick="get_contacts()">
-                <h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-account"></i>&nbsp;&nbsp;&nbsp;&nbsp;CONTACTS
-                </h5>
-                <!--<h2></h2>-->
-            </a>
-        </li>
+        <!--<li>-->
+        <!--<a onclick="test_get_contacts()">-->
+        <!--<h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-account"></i>&nbsp;&nbsp;&nbsp;&nbsp;CONTACTS-->
+        <!--</h5>-->
+        <!--<h2></h2>-->
+        <!--</a>-->
+        <!--</li>-->
 
         <!--<li>-->
         <!--<a href="#dashboard">-->

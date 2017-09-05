@@ -68,7 +68,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    load_contacts();
+                    // load_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
@@ -473,6 +473,55 @@ function add_number(num, id) {
 function get_contacts() {
     load_contacts();
     change_page("#contactspage", "pop");
+}
+
+function test_get_contacts() {
+
+    var data = [
+        {
+            "name": "red",
+            "number": "#f00"
+        },
+        {
+            "name": "green",
+            "number": "#0f0"
+        },
+        {
+            "name": "blue",
+            "number": "#00f"
+        },
+        {
+            "name": "cyan",
+            "number": "#0ff"
+        },
+        {
+            "name": "magenta",
+            "number": "#f0f"
+        },
+        {
+            "name": "yellow",
+            "number": "#ff0"
+        },
+        {
+            "name": "black",
+            "number": "#000"
+        }
+    ];
+
+    var build;
+    build = '';
+    build += '<ul data-role="listview" data-autodividers="true"  data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
+
+    for (var i = 0; i < data.length; i++) {
+        build += "<li><a href='#'>" + data[i].name + "</a></li>";
+    }
+
+    build += '</ul>';
+
+    $("#mycontacts").html(build);
+
+    change_page("#contactspage", 'pop');
+
 }
 
 
