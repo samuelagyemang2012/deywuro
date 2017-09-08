@@ -69,7 +69,7 @@ function login() {
                     $.cookie('password', password);
 
                     load_contacts();
-                    get_contacts();
+                    // get_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
