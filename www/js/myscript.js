@@ -126,31 +126,35 @@ function contacts_success(contacts) {
                 if (contacts[i].phoneNumbers[j] != null) {
 
                     // if (contacts[i].phoneNumbers[j].value.length != 0) {
-                        var id = contacts[i].id;
-                        var name = contacts[i].displayName;
-                        var number = contacts[i].phoneNumbers[j].value;
+                    var id = contacts[i].id;
+                    var name = contacts[i].displayName;
+                    var number = contacts[i].phoneNumbers[j].value;
 
-                        var person = {"id": id, "name": name, "number": number};
+                    var person = {"id": id, "name": name, "number": number};
 
-                        if (contacts_array.length == 0) {
-                            contacts_array.push(person);
-                        }
-                        else {
-                            if (!containsObject(person, contacts_array)) {
-                                contacts_array.push(person);
-                            }
-                        // }
-                    }
+                    build += "<input type='checkbox' id='" + data[i].id + "'>";
+                    build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
+
+                    // if (contacts_array.length == 0) {
+                    //     contacts_array.push(person);
+                    // }
+                    // else {
+                    //     if (!containsObject(person, contacts_array)) {
+                    //         contacts_array.push(person);
+                    //     }
+                    // }
                 }
             }
         }
+        $(build).appendTo("#mycontacts").enhanceWithin();
     }
 
-    // $('#contactspage').bind('pageinit', function () {
-    // alert(build);
-    // console.log('dsa');
-    // $('#mycontacts').append(build);
-    // });
+
+// $('#contactspage').bind('pageinit', function () {
+// alert(build);
+// console.log('dsa');
+// $('#mycontacts').append(build);
+// });
 }
 
 function contacts_failed(msgObject) {

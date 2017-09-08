@@ -85,8 +85,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+            <state relative-caret-position="330">
+              <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#252#348#0" expanded="false" />
@@ -113,7 +113,7 @@
                 <element signature="n#!!block;n#process_num#0" expanded="false" />
                 <element signature="n#!!block;n#clear_sms#0" expanded="false" />
                 <element signature="n#!!block;n#add_number#0" expanded="false" />
-                <element signature="e#10919#11638#0" expanded="false" />
+                <element signature="e#11083#11802#0" expanded="false" />
                 <element signature="n#!!block;n#containsObject#0" expanded="false" />
               </folding>
             </state>
@@ -3532,14 +3532,7 @@
       <workItem from="1504183274976" duration="2999000" />
       <workItem from="1504534682924" duration="23651000" />
       <workItem from="1504867517520" duration="2316000" />
-      <workItem from="1504873046462" duration="17513000" />
-    </task>
-    <task id="LOCAL-00049" summary="k">
-      <created>1503307461754</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1503307461754</updated>
+      <workItem from="1504873046462" duration="17727000" />
     </task>
     <task id="LOCAL-00050" summary="k">
       <created>1503307835919</created>
@@ -3877,20 +3870,27 @@
       <option name="project" value="LOCAL" />
       <updated>1504899655740</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="k">
+      <created>1504899904460</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1504899904460</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201303000" />
+    <option name="totallyTimeSpent" value="201517000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20294599" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20294599" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3997,7 +3997,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10919#11638#0" expanded="false" />
+            <element signature="e#11083#11802#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4041,7 +4041,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10919#11638#0" expanded="false" />
+            <element signature="e#11083#11802#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4085,7 +4085,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10919#11638#0" expanded="false" />
+            <element signature="e#11083#11802#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4129,7 +4129,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10919#11638#0" expanded="false" />
+            <element signature="e#11083#11802#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4356,8 +4356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+        <state relative-caret-position="330">
+          <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#252#348#0" expanded="false" />
@@ -4384,7 +4384,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10919#11638#0" expanded="false" />
+            <element signature="e#11083#11802#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
