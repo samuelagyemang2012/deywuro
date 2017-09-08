@@ -196,7 +196,7 @@
             <div class="col-xs-6"></div>
             <div class="col-xs-4 col-sm-4">
                 <div class="align-right">
-                    <button onclick="test_get_contacts()" style="background-color: #8e0d0e; position: fixed"
+                    <button onclick="get_contacts()" style="background-color: #8e0d0e; position: fixed"
                             class="ui-btn-fab ui-btn-raised clr-warning ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button">
                         <i class="zmdi zmdi-phone zmd-2x"></i></button>
                 </div>
@@ -218,41 +218,17 @@
     <div data-role="content">
 
         <div class="nd2-card" style="background-color: white" id="contacts">
+            <!---->
+            <div class="container" id="mycontacts" data-filter="true">
 
-            <div class="container" id="mycontacts">
-
-                <ul data-role="listview" data-autodividers="true" data-filter="true" data-inset="true" id="mylistview">
-                    <li id="99" onclick="test_select(99)"><a href="#">Apple</a></li>
-                    <li id="100" onclick="test_select(100);"><a href="#">Banana</a></li>
-                </ul>
+                <!--<input type="checkbox" name="checkbox-6" id="1">-->
+                <!--<label for="1">Samuel</label>-->
+<!---->
+                <!--<input type="checkbox" name="checkbox-6" id="2">-->
+                <!--<label for="2">Dan</label>-->
 
             </div>
         </div>
-        <!---->
-        <div style="position: fixed;  bottom: 0; background-color: #2d2d2d" data-role="footer"
-             data-position="fixed">
-
-            <div class="row center-xs">
-
-                <div class="col-xs-4">
-                    <div class="box">
-                        <a style="color: white" onclick="clear_numbers()"
-                           class="ui-btn ui-mini nd2-btn-icon-block">Clear</a>
-                    </div>
-                </div>
-
-                <div class="col-xs-4"></div>
-
-                <div class="col-xs-4">
-                    <div class="box">
-                        <a style="color: white" onclick="get_numbers()"
-                           class="ui-btn ui-mini nd2-btn-icon-block">Done</a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!---->
     </div>
 </div>
 <!--end contacts page-->

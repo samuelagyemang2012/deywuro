@@ -68,7 +68,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    // load_contacts();
+                    load_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
@@ -129,9 +129,17 @@ function contacts_success(contacts) {
                         var name = contacts[i].displayName;
                         var number = contacts[i].phoneNumbers[j].value;
 
-                        build += "<li id='" + id + "' onclick='add_number(" + number + "," + id + ")'><a>" + name + "</a></li>";
-                    }
+                        var person = {"id": id, "name": name, "number": number};
 
+                        if (contacts_array.length == 0) {
+                            contacts_array.push(person);
+                        }
+                        else {
+                            if (!containsObject(person, contacts_array)) {
+                                contacts_array.push(person);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -140,7 +148,7 @@ function contacts_success(contacts) {
     $('#contactspage').bind('pageinit', function () {
         // alert(build);
         // console.log('dsa');
-        $('#mylistview').append(build).listview("refresh");
+        $('#mymycontacts').append(build);
     });
 }
 
@@ -152,24 +160,26 @@ function select_contacts(num, id) {
 
     var new_num = process_num(num);
 
-    var bool = $("#i" + id).val();
+    var bool = $("#b" + id).html();
+
+    // alert(bool);
 
     if (bool == "false") {
 
-        $("#s" + id).show();
-        $("#i" + id).val("true");
-
-        //insert into the live_contacts array
-        insert(new_num);
-        insert_ids(id);
+        $("#" + id).css('background-color', '#eeeeee');
+        $("#b" + id).html("true");
+        //
+        // insert into the live_contacts array
+        // insert(new_num);
+        // insert_ids(id);
 
     } else {
 
-        $("#s" + id).hide();
-        $("#i" + id).val("false");
+        $("#" + id).css('background-color', '#ffffff');
+        $("#b" + id).html("false");
 
-        del(new_num);
-        del_id(id);
+        // del(new_num);
+        // del_id(id);
 
     }
 }
@@ -475,26 +485,32 @@ function test_get_contacts() {
     build = '';
 
     for (var i = 0; i < data.length; i++) {
-        // $('ul[data-role=listview]').append(build).listview("refresh");
-        build += "<li id='" + id + "' onclick='add_number(" + number + "," + id + ")'><a>" + name + "</a></li>";
+
+        // alert(data[i].id);
+        build += "<input type='checkbox' id='" + data[i].id + "'>";
+        build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
+
     }
 
     $('#contactspage').bind('pageinit', function () {
-        // alert(build);
-        console.log('dsa');
-        $('#mylistview').append(build).listview("refresh");
+    //     $('#mycontacts').html(build);
+        //     alert(build);
+        // console.log('dsa');
+        $('#mycontacts').append(build);
     });
+
 
     change_page("#contactspage", 'pop');
 
 }
 
-function test_select(id) {
-    if ($("#" + id).css('background-color') == 'rgb(238,238,238)') {
-        alert($("#" + id).css('background-color'));
-        $("#" + id).css('background-color', '#fff')
-    } else {
-        alert($("#" + id).css('background-color'));
-        $("#" + id).css('background-color', '#eeeee')
+function containsObject(obj, list) {
+
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].id == obj.id) {
+            return true;
+        }
     }
+
+    return false;
 }
