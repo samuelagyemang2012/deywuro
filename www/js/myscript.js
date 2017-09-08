@@ -148,7 +148,7 @@ function contacts_success(contacts) {
     $('#contactspage').bind('pageinit', function () {
         // alert(build);
         // console.log('dsa');
-        $('#mymycontacts').append(build);
+        $('#mycontacts').append(build);
     });
 }
 
