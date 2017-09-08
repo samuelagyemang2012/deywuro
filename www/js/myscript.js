@@ -447,6 +447,7 @@ function get_contacts() {
     }
 
     $(build).appendTo("#mycontacts").enhanceWithin();
+    alert('done');
 }
 
 function test_get_contacts() {
