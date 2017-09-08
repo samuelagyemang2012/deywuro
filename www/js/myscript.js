@@ -69,6 +69,7 @@ function login() {
                     $.cookie('password', password);
 
                     load_contacts();
+                    get_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
@@ -145,11 +146,11 @@ function contacts_success(contacts) {
         }
     }
 
-    $('#contactspage').bind('pageinit', function () {
-        // alert(build);
-        // console.log('dsa');
-        $('#mycontacts').append(build);
-    });
+    // $('#contactspage').bind('pageinit', function () {
+    // alert(build);
+    // console.log('dsa');
+    // $('#mycontacts').append(build);
+    // });
 }
 
 function contacts_failed(msgObject) {
@@ -437,8 +438,15 @@ function add_number(num, id) {
 }
 
 function get_contacts() {
-    // load_contacts();
-    change_page("#contactspage", "pop");
+
+    var build = '';
+
+    for (var i = 0; i < contacts_array.length; i++) {
+        build += "<input type='checkbox' id='" + data[i].id + "'>";
+        build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
+    }
+
+    $(build).appendTo("#mycontacts").enhanceWithin();
 }
 
 function test_get_contacts() {
@@ -492,13 +500,14 @@ function test_get_contacts() {
 
     }
 
-    $('#contactspage').bind('pageinit', function () {
+    // $('#contactspage').bind('pageinit', function () {
     //     $('#mycontacts').html(build);
-        //     alert(build);
-        // console.log('dsa');
-        $('#mycontacts').append(build);
-    });
+    //     alert(build);
+    // console.log('dsa');
+    // $('#mycontacts').append(build);
+    // });
 
+    $(build).appendTo("#mycontacts").enhanceWithin();
 
     change_page("#contactspage", 'pop');
 
