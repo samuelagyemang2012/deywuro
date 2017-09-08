@@ -125,7 +125,7 @@ function contacts_success(contacts) {
 
                 if (contacts[i].phoneNumbers[j] != null) {
 
-                    if (contacts[i].phoneNumbers[j].value.length != 0) {
+                    // if (contacts[i].phoneNumbers[j].value.length != 0) {
                         var id = contacts[i].id;
                         var name = contacts[i].displayName;
                         var number = contacts[i].phoneNumbers[j].value;
@@ -139,7 +139,7 @@ function contacts_success(contacts) {
                             if (!containsObject(person, contacts_array)) {
                                 contacts_array.push(person);
                             }
-                        }
+                        // }
                     }
                 }
             }
@@ -447,7 +447,7 @@ function get_contacts() {
     }
 
     $(build).appendTo("#mycontacts").enhanceWithin();
-    alert('done');
+    alert('done loadind');
 }
 
 function test_get_contacts() {

@@ -85,8 +85,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="449" column="18" selection-start-line="449" selection-start-column="18" selection-end-line="449" selection-end-column="18" />
+            <state relative-caret-position="348">
+              <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#252#348#0" expanded="false" />
@@ -96,7 +96,6 @@
                 <element signature="n#!!block;n#popout_close#0" expanded="false" />
                 <element signature="e#2872#2906#0" expanded="false" />
                 <element signature="e#2935#2968#0" expanded="false" />
-                <element signature="e#3074#4060#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
                 <element signature="n#!!block;n#select_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -114,7 +113,7 @@
                 <element signature="n#!!block;n#process_num#0" expanded="false" />
                 <element signature="n#!!block;n#clear_sms#0" expanded="false" />
                 <element signature="n#!!block;n#add_number#0" expanded="false" />
-                <element signature="e#10905#11624#0" expanded="false" />
+                <element signature="e#10919#11638#0" expanded="false" />
                 <element signature="n#!!block;n#containsObject#0" expanded="false" />
               </folding>
             </state>
@@ -3533,14 +3532,7 @@
       <workItem from="1504183274976" duration="2999000" />
       <workItem from="1504534682924" duration="23651000" />
       <workItem from="1504867517520" duration="2316000" />
-      <workItem from="1504873046462" duration="17262000" />
-    </task>
-    <task id="LOCAL-00048" summary="k">
-      <created>1503307092440</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1503307092440</updated>
+      <workItem from="1504873046462" duration="17513000" />
     </task>
     <task id="LOCAL-00049" summary="k">
       <created>1503307461754</created>
@@ -3878,11 +3870,18 @@
       <option name="project" value="LOCAL" />
       <updated>1504899454026</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="k">
+      <created>1504899655740</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1504899655740</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201052000" />
+    <option name="totallyTimeSpent" value="201303000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -3981,7 +3980,6 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="e#2872#2906#0" expanded="false" />
             <element signature="e#2935#2968#0" expanded="false" />
-            <element signature="e#3074#4060#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -3999,7 +3997,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10905#11624#0" expanded="false" />
+            <element signature="e#10919#11638#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4026,7 +4024,6 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="e#2872#2906#0" expanded="false" />
             <element signature="e#2935#2968#0" expanded="false" />
-            <element signature="e#3074#4060#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4044,7 +4041,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10905#11624#0" expanded="false" />
+            <element signature="e#10919#11638#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4071,7 +4068,6 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="e#2872#2906#0" expanded="false" />
             <element signature="e#2935#2968#0" expanded="false" />
-            <element signature="e#3074#4060#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4089,7 +4085,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10905#11624#0" expanded="false" />
+            <element signature="e#10919#11638#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4116,7 +4112,6 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="e#2872#2906#0" expanded="false" />
             <element signature="e#2935#2968#0" expanded="false" />
-            <element signature="e#3074#4060#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4134,7 +4129,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10905#11624#0" expanded="false" />
+            <element signature="e#10919#11638#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
@@ -4361,8 +4356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="449" column="18" selection-start-line="449" selection-start-column="18" selection-end-line="449" selection-end-column="18" />
+        <state relative-caret-position="348">
+          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#252#348#0" expanded="false" />
@@ -4372,7 +4367,6 @@
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="e#2872#2906#0" expanded="false" />
             <element signature="e#2935#2968#0" expanded="false" />
-            <element signature="e#3074#4060#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4390,7 +4384,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#add_number#0" expanded="false" />
-            <element signature="e#10905#11624#0" expanded="false" />
+            <element signature="e#10919#11638#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
           </folding>
         </state>
