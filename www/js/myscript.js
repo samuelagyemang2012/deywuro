@@ -122,14 +122,15 @@ function contacts_success(contacts) {
         if (contacts[i].phoneNumbers != null) {
             for (var j = 0; j < contacts[i].phoneNumbers.length; j++) {
 
-                if (contacts[i].phoneNumbers[j] != null && contacts[i].phoneNumbers[j].length > 0) {
+                if (contacts[i].phoneNumbers[j] != null) {
 
+                    if (contacts[i].phoneNumbers[j].value.length != 0) {
+                        var id = contacts[i].id;
+                        var name = contacts[i].displayName;
+                        var number = contacts[i].phoneNumbers[j].value;
 
-                    var id = contacts[i].id;
-                    var name = contacts[i].displayName;
-                    var number = contacts[i].phoneNumbers[j].value;
-
-                    build += "<li id='" + id + "' onclick='add_number(" + number + "," + id + ")'><a>" + name + "</a></li>";
+                        build += "<li id='" + id + "' onclick='add_number(" + number + "," + id + ")'><a>" + name + "</a></li>";
+                    }
 
                 }
             }
