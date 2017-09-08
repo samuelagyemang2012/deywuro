@@ -69,7 +69,7 @@ function login() {
                     $.cookie('password', password);
 
                     load_contacts();
-                    // get_contacts();
+                    get_contacts();
                     get_stats();
                     // drawGauge(100, 100, 100)
                     // change_page('#dashboard', 'slide');
@@ -97,10 +97,6 @@ function load_contacts() {
 function contacts_success(contacts) {
 
     toast("Fetching your contacts", 5000);
-
-    var build;
-    build = '';
-    build += '<ul data-role="listview" data-autodividers="true"  data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
 
     contacts.sort(function (a, b) {
         var nameA = a.displayName; // ignore upper and lowercase
@@ -132,29 +128,21 @@ function contacts_success(contacts) {
 
                     var person = {"id": id, "name": name, "number": number};
 
-                    build += "<input type='checkbox' id='" + data[i].id + "'>";
-                    build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
+                    // build += "<input type='checkbox' id='" + data[i].id + "'>";
+                    // build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
 
-                    // if (contacts_array.length == 0) {
-                    //     contacts_array.push(person);
-                    // }
-                    // else {
-                    //     if (!containsObject(person, contacts_array)) {
-                    //         contacts_array.push(person);
-                    //     }
-                    // }
+                    if (contacts_array.length == 0) {
+                        contacts_array.push(person);
+                    }
+                    else {
+                        if (!containsObject(person, contacts_array)) {
+                            contacts_array.push(person);
+                        }
+                    }
                 }
             }
         }
-        $(build).appendTo("#mycontacts").enhanceWithin();
     }
-
-
-// $('#contactspage').bind('pageinit', function () {
-// alert(build);
-// console.log('dsa');
-// $('#mycontacts').append(build);
-// });
 }
 
 function contacts_failed(msgObject) {
@@ -427,31 +415,18 @@ function clear_sms() {
     $("#contacts").val("");
 }
 
-function add_number(num, id) {
-
-    var new_num;
-
-    new_num = process_num(num)
-    insert(new_num);
-
-    if ($("#" + id).css('background-color') == 'rgb(238,238,238)') {
-        $("#" + id).css('background-color', '#fff')
-    } else {
-        $("#" + id).css('background-color', '#eeeee')
-    }
-}
-
 function get_contacts() {
 
     var build = '';
 
     for (var i = 0; i < contacts_array.length; i++) {
+        alert(contacts_array[i].id);
         build += "<input type='checkbox' id='" + data[i].id + "'>";
         build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
     }
 
     $(build).appendTo("#mycontacts").enhanceWithin();
-    alert('done loadind');
+    // alert('done loadind');
 }
 
 function test_get_contacts() {
