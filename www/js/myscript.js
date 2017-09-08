@@ -122,69 +122,25 @@ function contacts_success(contacts) {
         if (contacts[i].phoneNumbers != null) {
             for (var j = 0; j < contacts[i].phoneNumbers.length; j++) {
 
-                if (contacts[i].phoneNumbers[j] != null) {
+                if (contacts[i].phoneNumbers[j] != null && contacts[i].phoneNumbers[j].length > 0) {
 
 
                     var id = contacts[i].id;
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
 
-                    // var person = {
-                    //     id: id,
-                    //     name: name,
-                    //     number: number
-                    // };
-
-                    // insert_ids(id);
-                    // contacts_array.push(person);
-
-                    // <div onclick="add_number('0542688904','2')">
-                    //         <p>Dan</p>
-                    //         <!--<input type="checkbox" id="aa" onclick="add_number('6000','aa')">-->
-                    //         <!--<label for="aa">Sam</label>-->
-                    //         <div class="container">
-                    //         <div class="row">
-                    //         <div class="col-xs-6"></div>
-                    //
-                    //         <div class="col-xs-6 align-right" id="2" hidden>
-                    //     <i class="zmdi zmdi-check"></i>
-                    //     </div>
-                    //     </div>
-                    //     </div>
-                    //     </div>
-
-                    build += "<li><a href='#'>" + name + "</a></li>";
-                    // build += "<div onclick='add_number(" + number + "," + id + ")'>";
-                    // build += "<p>" + name + "</p>";
-                    // build += "<div class='container'>";
-                    // build += "<div class='row'>";
-                    // build += "<div class='col-xs-6'></div>";
-                    // build += "<div hidden class='col-xs-6 align-right' id='" + id + "'>";
-                    // build += "<i class='zmdi zmdi-check'></i>";
-                    // build += "</div>";
-                    // build += "</div>";
-                    // build += "</div>";
-                    // build += "</div>";
+                    build += "<li id='" + id + "' onclick='add_number(" + number + "," + id + ")'><a>" + name + "</a></li>";
 
                 }
             }
         }
     }
 
-    // duplicate = _.uniq(contacts_array, function (p) {
-    //     return p;
-    // });
-
-    // duplicate = Array.from(new Set(contacts_array));
-
-    // for (var s = 0; s < duplicate.length; s++) {
-    //     build += "<div>";
-    //     build += "<input type='checkbox' id='" + duplicate[s].id + "' onclick='add_number(" + duplicate[s].number + "," + duplicate[s].id + ")'>";
-    //     build += "<label for='" + duplicate[s].id + "'>" + duplicate[s].name + "</label>";
-    //     build += "</div>";
-    // }
-    build += "</ul>";
-    $("#mycontacts").html(build);
+    $('#contactspage').bind('pageinit', function () {
+        // alert(build);
+        // console.log('dsa');
+        $('#mylistview').append(build).listview("refresh");
+    });
 }
 
 function contacts_failed(msgObject) {
@@ -462,12 +418,11 @@ function add_number(num, id) {
     new_num = process_num(num)
     insert(new_num);
 
-    if ($("#" + id).is(':visible') == false) {
-        $("#" + id).show();
+    if ($("#" + id).css('background-color') == 'rgb(238,238,238)') {
+        $("#" + id).css('background-color', '#fff')
     } else {
-        $("#" + id).hide();
+        $("#" + id).css('background-color', '#eeeee')
     }
-
 }
 
 function get_contacts() {
@@ -517,34 +472,28 @@ function test_get_contacts() {
 
     var build;
     build = '';
-    // build += '<ul data-role="listview" data-autodividers="true"  data-filter="true" data-filter-placeholder="Search contacts..." data-inset="true">';
 
     for (var i = 0; i < data.length; i++) {
         // $('ul[data-role=listview]').append(build).listview("refresh");
-        build += "<li><a href='#'>" + data[i].name + "</a></li>";
+        build += "<li id='" + id + "' onclick='add_number(" + number + "," + id + ")'><a>" + name + "</a></li>";
     }
 
     $('#contactspage').bind('pageinit', function () {
-        alert(build);
+        // alert(build);
+        console.log('dsa');
         $('#mylistview').append(build).listview("refresh");
-        // $("#mylistview").append(build).listview();
-        // $('#myListview').listview('refresh');
     });
-
-    // build += '</ul>';
-
-    // $("#mylistview").replaceWith(build).listview();
-
-    // $("#mylistview").on("pageinit", "#contactspage", function (event) {
-    //     $("#mylistview").replaceWith(build).listview();
-    //     alert("This page was just enhanced by jQuery Mobile!");
-    // });
-    // $("#mycontacts").html(build);
 
     change_page("#contactspage", 'pop');
 
 }
 
 function test_select(id) {
-    $("#" + id).css('background', '#eeeeee');
+    if ($("#" + id).css('background-color') == 'rgb(238,238,238)') {
+        alert($("#" + id).css('background-color'));
+        $("#" + id).css('background-color', '#fff')
+    } else {
+        alert($("#" + id).css('background-color'));
+        $("#" + id).css('background-color', '#eeeee')
+    }
 }
