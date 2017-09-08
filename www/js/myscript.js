@@ -69,7 +69,7 @@ function login() {
                     $.cookie('password', password);
 
                     load_contacts();
-                    get_contacts();
+
                     get_stats();
 
                 }
@@ -130,19 +130,22 @@ function contacts_success(contacts) {
                     // build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
 
                     if (contacts_array.length == 0) {
-                        alert('1st');
+                        //alert('1st');
+                        //console.log('1st');
                         contacts_array.push(person);
                     }
                     else {
                         if (!containsObject(person, contacts_array)) {
                             contacts_array.push(person);
-                            alert(person.id);
+                            //console.log('othrs');
+                            // alert(person.id);
                         }
                     }
                 }
             }
         }
     }
+    get_contacts();
 }
 
 function contacts_failed(msgObject) {
@@ -420,13 +423,14 @@ function get_contacts() {
     var build = '';
 
     for (var i = 0; i < contacts_array.length; i++) {
-        alert(contacts_array[i].id);
-        build += "<input type='checkbox' id='" + data[i].id + "'>";
-        build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
+        console.log(contacts_array[i].id);
+
+        build += "<input type='checkbox' id='" + contacts_array[i].id + "'>";
+        build += "<label for='" + contacts_array[i].id + "'>" + contacts_array[i].name + "</label>";
     }
 
     $(build).appendTo("#mycontacts").enhanceWithin();
-    // alert('done loadind');
+    alert('done loadind');
 }
 
 function test_get_contacts() {
