@@ -71,8 +71,6 @@ function login() {
                     load_contacts();
                     get_contacts();
                     get_stats();
-                    // drawGauge(100, 100, 100)
-                    // change_page('#dashboard', 'slide');
 
                 }
 
@@ -132,11 +130,13 @@ function contacts_success(contacts) {
                     // build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
 
                     if (contacts_array.length == 0) {
+                        alert('1st');
                         contacts_array.push(person);
                     }
                     else {
                         if (!containsObject(person, contacts_array)) {
                             contacts_array.push(person);
+                            alert(person.id);
                         }
                     }
                 }

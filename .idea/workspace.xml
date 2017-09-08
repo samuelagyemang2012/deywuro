@@ -85,8 +85,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="422" column="38" selection-start-line="422" selection-start-column="38" selection-end-line="422" selection-end-column="38" />
+            <state relative-caret-position="143">
+              <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#252#348#0" expanded="false" />
@@ -94,8 +94,8 @@
                 <element signature="n#!!block;n#change_page#0" expanded="false" />
                 <element signature="n#!!block;n#popout#0" expanded="false" />
                 <element signature="n#!!block;n#popout_close#0" expanded="false" />
-                <element signature="e#2690#2724#0" expanded="false" />
-                <element signature="e#2753#2786#0" expanded="false" />
+                <element signature="e#2583#2617#0" expanded="false" />
+                <element signature="e#2646#2679#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
                 <element signature="n#!!block;n#select_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -113,7 +113,7 @@
                 <element signature="n#!!block;n#process_num#0" expanded="false" />
                 <element signature="n#!!block;n#clear_sms#0" expanded="false" />
                 <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-                <element signature="e#10430#11149#0" expanded="false" />
+                <element signature="e#10405#11124#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -3531,7 +3531,7 @@
       <workItem from="1504183274976" duration="2999000" />
       <workItem from="1504534682924" duration="23651000" />
       <workItem from="1504867517520" duration="2316000" />
-      <workItem from="1504873046462" duration="18132000" />
+      <workItem from="1504873046462" duration="18490000" />
     </task>
     <task id="LOCAL-00052" summary="k">
       <created>1503309047548</created>
@@ -3880,20 +3880,20 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201922000" />
+    <option name="totallyTimeSpent" value="202280000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20294599" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20294599" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3120915" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31096563" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3977,8 +3977,8 @@
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="e#2690#2724#0" expanded="false" />
-            <element signature="e#2753#2786#0" expanded="false" />
+            <element signature="e#2583#2617#0" expanded="false" />
+            <element signature="e#2646#2679#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -3996,7 +3996,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="e#10430#11149#0" expanded="false" />
+            <element signature="e#10405#11124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4020,8 +4020,8 @@
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="e#2690#2724#0" expanded="false" />
-            <element signature="e#2753#2786#0" expanded="false" />
+            <element signature="e#2583#2617#0" expanded="false" />
+            <element signature="e#2646#2679#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4039,7 +4039,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="e#10430#11149#0" expanded="false" />
+            <element signature="e#10405#11124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4063,8 +4063,8 @@
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="e#2690#2724#0" expanded="false" />
-            <element signature="e#2753#2786#0" expanded="false" />
+            <element signature="e#2583#2617#0" expanded="false" />
+            <element signature="e#2646#2679#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4082,7 +4082,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="e#10430#11149#0" expanded="false" />
+            <element signature="e#10405#11124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4106,8 +4106,8 @@
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="e#2690#2724#0" expanded="false" />
-            <element signature="e#2753#2786#0" expanded="false" />
+            <element signature="e#2583#2617#0" expanded="false" />
+            <element signature="e#2646#2679#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4125,7 +4125,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="e#10430#11149#0" expanded="false" />
+            <element signature="e#10405#11124#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4351,8 +4351,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="422" column="38" selection-start-line="422" selection-start-column="38" selection-end-line="422" selection-end-column="38" />
+        <state relative-caret-position="143">
+          <caret line="132" column="37" selection-start-line="132" selection-start-column="37" selection-end-line="132" selection-end-column="37" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#252#348#0" expanded="false" />
@@ -4360,8 +4360,8 @@
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
             <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="e#2690#2724#0" expanded="false" />
-            <element signature="e#2753#2786#0" expanded="false" />
+            <element signature="e#2583#2617#0" expanded="false" />
+            <element signature="e#2646#2679#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
             <element signature="n#!!block;n#insert#0" expanded="false" />
@@ -4379,7 +4379,7 @@
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="e#10430#11149#0" expanded="false" />
+            <element signature="e#10405#11124#0" expanded="false" />
           </folding>
         </state>
       </provider>
