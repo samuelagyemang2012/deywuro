@@ -567,16 +567,6 @@ function vodafone_payment() {
     }
 }
 
-function generate_id() {
-    return '_' + Math.random().toString(36).substr(2, 10);
-}
-
-function get_timestamp() {
-    var dt = new Date();
-    var utcDate = dt.toLocaleDateString();
-    return utcDate;
-}
-
 function vodafone() {
     var network = $("#networks").val();
 
