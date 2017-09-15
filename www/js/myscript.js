@@ -161,69 +161,6 @@ function select_contacts(num) {
     insert(new_num);
 }
 
-function insert_contacts(obj) {
-
-    contacts_array.push(obj);
-
-}
-
-function clear_numbers() {
-
-    // var fruits = ['apple', 'banana', 'orange', 'apple', 'mango', 'banana'];
-    // var fruits_without_duplicates = Array.from(new Set(fruits));
-    //
-    // console.log(fruits_without_duplicates);
-
-    var p0 = {id: 12, name: "sam", number: "123"};
-
-    var p1 = {id: 13, name: "sam", number: "123"};
-
-    var p2 = {id: 14, name: "sam", number: "123"};
-
-    var p3 = {id: 15, name: "sam", number: "123"};
-
-    var p5 = {id: 15, name: "samuel", number: "98545"};
-
-
-    var person = [];
-
-    person.push(p0);
-    person.push(p1);
-    person.push(p2);
-    person.push(p3);
-    person.push(p5);
-    person.push(p5);
-
-
-    duplicate = _.uniq(person, function (p) {
-        return p.id;
-    });
-
-    console.log(duplicate);
-    //
-    // if (p1.id == p0.id) {
-    //     alert('p1: ' + p1.id + ' true' + ' p0: ' + p0.id);
-    // } else {
-    //     alert("false");
-    // }
-
-    // if () {
-    // }
-
-    // insert_contacts(p0);
-    // insert_contacts(p1);
-    // insert_contacts(p2);
-    //
-    // console.log(contacts_array);
-
-}
-
-function insert_ids(id) {
-    if (live_ids.indexOf(id) == -1) {
-        live_ids.push(id);
-    }
-}
-
 function del(data) {
 
     //Get index of that number
@@ -251,7 +188,7 @@ function insert(data) {
     }
 }
 
-function get_numbers() {
+function done() {
     var numbers = '';
 
     for (var i = 0; i < live_contacts.length; i++) {
