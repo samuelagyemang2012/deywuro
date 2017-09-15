@@ -5,6 +5,7 @@
 
 //array to store contacts
 var live_contacts = [];
+live_contacts = null;
 var live_ids = [];
 var contacts_array = [];
 var duplicate = [];
@@ -14,27 +15,8 @@ $(function () {
     //$("[data-role=popup]").popup().enhanceWithin();
 });
 
-function send_request(url) {
-    "use strict";
-    var obj, result;
-    obj = $.ajax({
-        url: url,
-        async: false
-    });
-    result = $.parseJSON(obj.responseText);
-    return result;
-}
-
 function change_page(page, transition) {
     $.mobile.pageContainer.pagecontainer("change", page, {transition: transition});
-}
-
-function popout(id, transition) {
-    $("#" + id).popup("open", {transition: transition});
-}
-
-function popout_close(id, transition) {
-    $("#" + id).popup("close", {transition: transition});
 }
 
 function login() {
@@ -179,7 +161,9 @@ function del_id(id) {
 
 function insert(data) {
 
+    // var new_num = process_num(num);
     //if number doesn't exist in array, add it
+
     if (live_contacts.indexOf(data) == -1) {
         live_contacts.push(data);
 
@@ -191,8 +175,10 @@ function insert(data) {
 function done() {
     var numbers = '';
 
-    for (var i = 0; i < live_contacts.length; i++) {
-        numbers += live_contacts[i] + ',';
+    if (live_contacts.length != 0) {
+        for (var i = 0; i < live_contacts.length; i++) {
+            numbers += live_contacts[i] + ',';
+        }
     }
 
     $("#numbers").val(numbers);
@@ -349,71 +335,6 @@ function get_contacts() {
 
     // $(build).appendTo("#mycontacts").enhanceWithin();
     $("#mycontacts").html(build).enhanceWithin();
-    //alert('done loadind');
-}
-
-function test_get_contacts() {
-
-    var data = [
-        {
-            "id": "0",
-            "name": "red",
-            "number": "#f00"
-        },
-        {
-            "id": "1",
-            "name": "green",
-            "number": "#0f0"
-        },
-        {
-            "id": "2",
-            "name": "blue",
-            "number": "#00f"
-        },
-        {
-            "id": "3",
-            "name": "cyan",
-            "number": "#0ff"
-        },
-        {
-            "id": "4",
-            "name": "magenta",
-            "number": "#f0f"
-        },
-        {
-            "id": "5",
-            "name": "yellow",
-            "number": "#ff0"
-        },
-        {
-            "id": "6",
-            "name": "black",
-            "number": "#000"
-        }
-    ];
-
-    var build;
-    build = '';
-
-    for (var i = 0; i < data.length; i++) {
-
-        // alert(data[i].id);
-        build += "<input type='checkbox' id='" + data[i].id + "'>";
-        build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
-
-    }
-
-    // $('#contactspage').bind('pageinit', function () {
-    //     $('#mycontacts').html(build);
-    //     alert(build);
-    // console.log('dsa');
-    // $('#mycontacts').append(build);
-    // });
-
-    $(build).appendTo("#mycontacts").enhanceWithin();
-
-    change_page("#contactspage", 'pop');
-
 }
 
 function containsObject(obj, list) {
