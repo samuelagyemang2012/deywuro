@@ -421,7 +421,8 @@ function get_contacts() {
         build += "<label for='" + contacts_array[i].id + "'>" + contacts_array[i].name + "</label>";
     }
 
-    $(build).appendTo("#mycontacts").enhanceWithin();
+    // $(build).appendTo("#mycontacts").enhanceWithin();
+    $("#mycontacts").html(build).enhanceWithin();
     //alert('done loadind');
 }
 

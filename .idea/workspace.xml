@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
@@ -39,7 +38,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="222">
@@ -95,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="516" column="28" selection-start-line="516" selection-start-column="28" selection-end-line="516" selection-end-column="28" />
+            <state relative-caret-position="277">
+              <caret line="424" column="49" selection-start-line="424" selection-start-column="49" selection-end-line="424" selection-end-column="49" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#252#348#0" expanded="false" />
@@ -117,6 +116,7 @@
                 <element signature="n#!!block;n#insert_ids#0" expanded="false" />
                 <element signature="n#!!block;n#del#0" expanded="false" />
                 <element signature="n#!!block;n#del_id#0" expanded="false" />
+                <element signature="n#!!block;n#get_numbers#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#drawGauge#0" expanded="false" />
                 <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -124,7 +124,6 @@
                 <element signature="n#!!block;n#send_sms#0" expanded="false" />
                 <element signature="n#!!block;n#process_num#0" expanded="false" />
                 <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-                <element signature="n#!!block;n#get_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#containsObject#0" expanded="false" />
                 <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
@@ -198,8 +197,8 @@
         <option value="$PROJECT_DIR$/www/js/underscore.js" />
         <option value="$PROJECT_DIR$/www/test1.html" />
         <option value="$PROJECT_DIR$/www/js/test.js" />
-        <option value="$PROJECT_DIR$/www/js/myscript.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -3566,14 +3565,7 @@
       <workItem from="1504867517520" duration="2316000" />
       <workItem from="1504873046462" duration="23418000" />
       <workItem from="1505379083437" duration="1745000" />
-      <workItem from="1505380864039" duration="24346000" />
-    </task>
-    <task id="LOCAL-00055" summary="k">
-      <created>1503313061504</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1503313061504</updated>
+      <workItem from="1505380864039" duration="25415000" />
     </task>
     <task id="LOCAL-00056" summary="k">
       <created>1503313545459</created>
@@ -3911,11 +3903,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505476101483</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="k">
+      <created>1505477501595</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1505477501595</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="233299000" />
+    <option name="totallyTimeSpent" value="234368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -4022,6 +4021,7 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4029,7 +4029,6 @@
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
@@ -4067,6 +4066,7 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4074,7 +4074,6 @@
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
@@ -4112,6 +4111,7 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4119,7 +4119,6 @@
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
@@ -4157,6 +4156,7 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4164,7 +4164,6 @@
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
             <element signature="n#!!block;n#process_num#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
@@ -4344,43 +4343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="516" column="28" selection-start-line="516" selection-start-column="28" selection-end-line="516" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#252#348#0" expanded="false" />
-            <element signature="n#!!block;n#send_request#0" expanded="false" />
-            <element signature="n#!!block;n#change_page#0" expanded="false" />
-            <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
-            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#insert#0" expanded="false" />
-            <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
-            <element signature="n#!!block;n#insert_ids#0" expanded="false" />
-            <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="n#!!block;n#del_id#0" expanded="false" />
-            <element signature="n#!!block;n#toast#0" expanded="false" />
-            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
-            <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#containsObject#0" expanded="false" />
-            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
-            <element signature="n#!!block;n#vodafone#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -4431,6 +4393,43 @@
             <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#a#0;n#li#3;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1505477464516" expanded="false" signature="12080:13667" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="424" column="49" selection-start-line="424" selection-start-column="49" selection-end-line="424" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#252#348#0" expanded="false" />
+            <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#popout#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0" expanded="false" />
+            <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#insert_ids#0" expanded="false" />
+            <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#toast#0" expanded="false" />
+            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
+            <element signature="n#!!block;n#get_stats#0" expanded="false" />
+            <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#clear_sms#0" expanded="false" />
+            <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#containsObject#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
         </state>
       </provider>
