@@ -159,28 +159,6 @@ function select_contacts(num) {
     var new_num = process_num(num);
 
     insert(new_num);
-    // insert_ids(id);
-
-    // } else {
-    //
-    //     $("#" + id).css('background-color', '#ffffff');
-    //     $("#b" + id).html("false");
-    //
-    //     // del(new_num);
-    //     // del_id(id);
-    //
-    // }
-}
-
-function insert(data) {
-
-    //if number doesn't exist in array, add it
-    if (live_contacts.indexOf(data) == -1) {
-        live_contacts.push(data);
-
-    } else {
-        del(data);
-    }
 }
 
 function insert_contacts(obj) {
@@ -260,6 +238,17 @@ function del_id(id) {
     var index = live_ids.indexOf(id);
 
     live_ids.splice(index)
+}
+
+function insert(data) {
+
+    //if number doesn't exist in array, add it
+    if (live_contacts.indexOf(data) == -1) {
+        live_contacts.push(data);
+
+    } else {
+        del(data);
+    }
 }
 
 function get_numbers() {
