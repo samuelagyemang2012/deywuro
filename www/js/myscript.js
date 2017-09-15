@@ -9,6 +9,7 @@ live_contacts = null;
 var live_ids = [];
 var contacts_array = [];
 var duplicate = [];
+var new_array = [];
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -146,17 +147,11 @@ function select_contacts(num) {
 function del(data) {
 
     //Get index of that number
-    var index = live_contacts.indexOf(data);
+    var index = new_array.indexOf(data);
 
     //remove it from the live_contacts array
-    live_contacts.splice(index);
+    new_array.splice(index);
 
-}
-
-function del_id(id) {
-    var index = live_ids.indexOf(id);
-
-    live_ids.splice(index)
 }
 
 function insert(data) {
@@ -164,8 +159,8 @@ function insert(data) {
     // var new_num = process_num(num);
     //if number doesn't exist in array, add it
 
-    if (live_contacts.indexOf(data) == -1) {
-        live_contacts.push(data);
+    if (new_array.indexOf(data) == -1) {
+        new_array.push(data);
 
     } else {
         del(data);
@@ -175,9 +170,9 @@ function insert(data) {
 function done() {
     var numbers = '';
 
-    if (live_contacts.length != 0) {
-        for (var i = 0; i < live_contacts.length; i++) {
-            numbers += live_contacts[i] + ',';
+    if (new_array.length != 0) {
+        for (var i = 0; i < new_array.length; i++) {
+            numbers += new_array[i] + ',';
         }
     }
 
