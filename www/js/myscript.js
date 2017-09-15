@@ -324,9 +324,9 @@ function get_contacts() {
     var build = '';
 
     for (var i = 0; i < contacts_array.length; i++) {
-        console.log(contacts_array[i].id);
+        //console.log(contacts_array[i].id);
 
-        build += "<input type='checkbox' id='" + contacts_array[i].id + "' onclick='select_contacts(contacts_array[i].number)'>";
+        build += "<input onclick='select_contacts(contacts_array[i].number)' type='checkbox' id='" + contacts_array[i].id + "'>";
         build += "<label for='" + contacts_array[i].id + "'>" + contacts_array[i].name + "</label>";
     }
 
