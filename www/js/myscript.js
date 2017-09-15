@@ -6,9 +6,11 @@
 //array to store contacts
 var live_contacts = [];
 live_contacts = null;
+
 var live_ids = [];
 var contacts_array = [];
 var duplicate = [];
+
 var new_array = [];
 
 $(function () {
@@ -324,7 +326,7 @@ function get_contacts() {
     for (var i = 0; i < contacts_array.length; i++) {
         console.log(contacts_array[i].id);
 
-        build += "<input type='checkbox' id='" + contacts_array[i].id + "' onclick='" + select_contacts(contacts_array[i].number) + "'>";
+        build += "<input type='checkbox' id='" + contacts_array[i].id + "' onclick='select_contacts(contacts_array[i].number)'>";
         build += "<label for='" + contacts_array[i].id + "'>" + contacts_array[i].name + "</label>";
     }
 
