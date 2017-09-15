@@ -129,16 +129,18 @@ function contacts_success(contacts) {
                     // build += "<input type='checkbox' id='" + data[i].id + "'>";
                     // build += "<label for='" + data[i].id + "'>" + data[i].name + "</label>";
 
-                    if (contacts_array.length == 0) {
-                        //alert('1st');
-                        //console.log('1st');
-                        contacts_array.push(person);
-                    }
-                    else {
-                        if (!containsObject(person, contacts_array)) {
+                    if (number.length != 0) {
+                        if (contacts_array.length == 0) {
+                            //alert('1st');
+                            //console.log('1st');
                             contacts_array.push(person);
-                            //console.log('othrs');
-                            // alert(person.id);
+                        }
+                        else {
+                            if (!containsObject(person, contacts_array)) {
+                                contacts_array.push(person);
+                                //console.log('othrs');
+                                // alert(person.id);
+                            }
                         }
                     }
                 }
@@ -152,32 +154,22 @@ function contacts_failed(msgObject) {
     alert("Failed to access contact list:" + JSON.stringify(msgObject));
 }
 
-function select_contacts(num, id) {
+function select_contacts(num) {
 
     var new_num = process_num(num);
 
-    var bool = $("#b" + id).html();
+    insert(new_num);
+    // insert_ids(id);
 
-    // alert(bool);
-
-    if (bool == "false") {
-
-        $("#" + id).css('background-color', '#eeeeee');
-        $("#b" + id).html("true");
-        //
-        // insert into the live_contacts array
-        // insert(new_num);
-        // insert_ids(id);
-
-    } else {
-
-        $("#" + id).css('background-color', '#ffffff');
-        $("#b" + id).html("false");
-
-        // del(new_num);
-        // del_id(id);
-
-    }
+    // } else {
+    //
+    //     $("#" + id).css('background-color', '#ffffff');
+    //     $("#b" + id).html("false");
+    //
+    //     // del(new_num);
+    //     // del_id(id);
+    //
+    // }
 }
 
 function insert(data) {
@@ -279,7 +271,7 @@ function get_numbers() {
 
     $("#numbers").val(numbers);
 
-    alert(numbers);
+    // alert(numbers);
 
     change_page('#messagepage', 'pop');
 }
@@ -425,12 +417,12 @@ function get_contacts() {
     for (var i = 0; i < contacts_array.length; i++) {
         console.log(contacts_array[i].id);
 
-        build += "<input type='checkbox' id='" + contacts_array[i].id + "'>";
+        build += "<input type='checkbox' id='" + contacts_array[i].id + "' onclick='" + select_contacts(contacts_array[i].number) + "'>";
         build += "<label for='" + contacts_array[i].id + "'>" + contacts_array[i].name + "</label>";
     }
 
     $(build).appendTo("#mycontacts").enhanceWithin();
-    alert('done loadind');
+    //alert('done loadind');
 }
 
 function test_get_contacts() {
@@ -507,3 +499,90 @@ function containsObject(obj, list) {
 
     return false;
 }
+
+function make_payment() {
+
+    var network = $("#networks").val();
+    var msisdn = $("#msisdn").val();
+    var amount = $("#amount").val();
+    var voucher = $("#voucher_number").val();
+
+    if (msisdn.length == 0 || amount.length == 0) {
+        toast("Please fill all the neccessary fields", 3000);
+    } else {
+        if (network == "mtn") {
+            toast('You will soon receive an sms for confirmation', 4000);
+        }
+
+        if (network == "tigo") {
+
+            $.get("http://5.9.86.210/pay/tigo/tigocash1.php",
+                {
+                    phone: msisdn,
+                    amount: amount,
+                    merchantName: 'DeywuroMobile',
+                    description: "DeywuroMobileCredit",
+                    //user_id:
+                },
+
+                function (response) {
+                    toast('You will soon receive an sms for confirmation', 4000);
+                });
+        }
+
+        if (network == "airtel") {
+            toast('You will soon receive an sms for confirmation', 4000);
+        }
+    }
+}
+
+function vodafone_payment() {
+
+    var msisdnx = $("#msisdnx").val();
+    var amountx = $("#amountx").val();
+    var voucher = $("#voucher_number").val();
+
+    if (msisdnx.length == 0 || amountx.length == 0 || voucher.length == 0) {
+        toast("Please fill all the neccessary fields", 3000);
+    } else {
+
+        $.post("http://5.9.61.79/pay/vodafone/deywuro_live.php",
+            {
+                msisdn: msisdnx,
+                amount: amountx,
+                voucher_number: voucher,
+                description: 'Deywuro_credit_transaction',
+                user_id: "npdeywuro",
+                password: "hdgt2314"
+            },
+
+            function (response) {
+                if (response == '00000-Done0') {
+                    toast(response, 3000);
+                }
+                else {
+                    toast('Transaction failed', 4000);
+                }
+            });
+    }
+}
+
+function generate_id() {
+    return '_' + Math.random().toString(36).substr(2, 10);
+}
+
+function get_timestamp() {
+    var dt = new Date();
+    var utcDate = dt.toLocaleDateString();
+    return utcDate;
+}
+
+function vodafone() {
+    var network = $("#networks").val();
+
+    if (network == "vodafone") {
+
+        change_page("#vodafonepage", 'pop');
+    }
+}
+

@@ -218,21 +218,131 @@
 
     <div data-role="content">
 
+        <br><br>
         <div class="nd2-card" style="background-color: white" id="contacts">
             <!---->
             <div id="mycontacts" data-filter="true">
 
-                <!--<input type="checkbox" name="checkbox-6" id="1">-->
-                <!--<label for="1">Samuel</label>-->
-                <!---->
-                <!--<input type="checkbox" name="checkbox-6" id="2">-->
-                <!--<label for="2">Dan</label>-->
+                <input type='checkbox' id='a' onclick='select_contacts(123)'>
+                <label for='a'>Sam</label>
+
+                <input type='checkbox' id='b' onclick='select_contacts(456)'>
+                <label for='b'>Dan</label>
 
             </div>
         </div>
     </div>
+
+    <div data-role="footer" data-position="fixed"
+         style="position: absolute; right: 0; bottom: 0; left: 0; background-color: #1d1d1d">
+
+        <div class="row center-xs">
+            <div class="col-xs-6">
+                <!--<div class="box">-->
+                <!--<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-plus'></i> add</a>-->
+                <!--</div>-->
+            </div>
+            <div class="col-xs-6">
+                <div class="box align-right">
+                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block" style="color: white" onclick="get_numbers()">Done</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <!--end contacts page-->
+
+<!--Payments page-->
+<div data-role="page" id="paymentspage" style="background-image: url('img/lol.jpg');">
+    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
+        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+        <h1 style="opacity: 1">Payments</h1>
+    </div>
+
+    <div data-role="content">
+        <br><br>
+        <div class="nd2-card" style="background-color: white">
+            <!--<label class="align-center">Balance</label>-->
+
+            <h2 class="align-center" id="balance">GHC 3234</h2>
+        </div>
+        <!---->
+        <div class="nd2-card" style="background-color: white">
+            <br>
+            <div class="col-xs-12">
+                <input type="text" id="msisdn" value="" data-clear-btn="true"
+                       placeholder="Mobile Number">
+                <br>
+
+                <input type="number" id="amount" value="" data-clear-btn="true"
+                       placeholder="Amount">
+                <br>
+
+                <label class="align-center">Select a Network</label>
+
+                <select onchange="vodafone()" name="select-choice-1" id="networks" data-native-menu="true">
+                    <option value="mtn">MTN</option>
+                    <option value="tigo">TIGO</option>
+                    <option value="vodafone">VODAFONE</option>
+                    <option value="airtel">AIRTEL</option>
+                    <!--<option value="java">Java</option>-->
+                </select>
+
+            </div>
+            <br><br>
+        </div>
+
+        <div>
+            <a style="background-color: #8e0d0e" onclick="make_payment()"
+               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Make
+                Payment</a>
+        </div>
+    </div>
+</div>
+
+<div data-role="page" id="vodafonepage" style="background-image: url('img/lol.jpg');">
+    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
+        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
+        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
+        <h1 style="opacity: 1">Payments</h1>
+    </div>
+
+    <div data-role="content">
+
+        <!--<div class="nd2-card" style="background-color: white">-->
+        <!--&lt;!&ndash;<label class="align-center">Balance</label>&ndash;&gt;-->
+        <!--<h2 class="align-center" id="balance">GHC 3234</h2>-->
+        <!--</div>-->
+        <!---->
+        <div class="nd2-card" style="background-color: white">
+            <br>
+            <div class="col-xs-12">
+
+                <input type="text" id="voucher_number" value="" data-clear-btn="true"
+                       placeholder="Voucher Number">
+                <br>
+
+                <input type="text" id="msisdnx" value="" data-clear-btn="true"
+                       placeholder="Mobile Number">
+                <br>
+
+                <input type="number" id="amountx" value="" data-clear-btn="true"
+                       placeholder="Amount">
+                <br>
+
+            </div>
+            <br><br>
+        </div>
+
+        <div>
+            <a style="background-color: #8e0d0e" onclick="vodafone_payment()"
+               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Make
+                Payment</a>
+        </div>
+    </div>
+</div>
 
 <!--Panel-->
 <div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true"
@@ -261,23 +371,6 @@
                 <!--<h2></h2>-->
             </a>
         </li>
-        <!---->
-        <!--<li>-->
-        <!--<a onclick="test_get_contacts()">-->
-        <!--<h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-account"></i>&nbsp;&nbsp;&nbsp;&nbsp;CONTACTS-->
-        <!--</h5>-->
-        <!--<h2></h2>-->
-        <!--</a>-->
-        <!--</li>-->
-
-        <!--<li>-->
-        <!--<a href="#dashboard">-->
-        <!--<h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-view-dashboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;DASHBOARD-->
-        <!--</h5>-->
-        <!--<h2></h2>-->
-        <!--</a>-->
-        <!--<hr style="opacity: .5">-->
-        <!--</li>-->
 
         <li>
             <a onclick="">

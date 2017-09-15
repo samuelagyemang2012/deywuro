@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
+    <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="k">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
@@ -39,11 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="276" column="24" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="24" />
+            <state relative-caret-position="341">
+              <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -51,6 +51,7 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,27 +68,43 @@
                 <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h5#0;n#a#0;n#li#3;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h1#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#a#0;n#li#1;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#a#0;n#li#3;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1505475994717" expanded="false" signature="12057:13644" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="435" column="29" selection-start-line="435" selection-start-column="29" selection-end-line="435" selection-end-column="29" />
+            <state relative-caret-position="-190">
+              <caret line="514" column="9" selection-start-line="514" selection-start-column="9" selection-end-line="514" selection-end-column="9" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="e#252#348#0" expanded="false" />
                 <element signature="n#!!block;n#send_request#0" expanded="false" />
                 <element signature="n#!!block;n#change_page#0" expanded="false" />
                 <element signature="n#!!block;n#popout#0" expanded="false" />
-                <element signature="n#!!block;n#popout_close#0" expanded="false" />
                 <element signature="n#!!block;n#login#0" expanded="false" />
                 <element signature="n#!!block;n#load_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_success#0" expanded="false" />
@@ -99,7 +116,6 @@
                 <element signature="n#!!block;n#insert_ids#0" expanded="false" />
                 <element signature="n#!!block;n#del#0" expanded="false" />
                 <element signature="n#!!block;n#del_id#0" expanded="false" />
-                <element signature="n#!!block;n#get_numbers#0" expanded="false" />
                 <element signature="n#!!block;n#toast#0" expanded="false" />
                 <element signature="n#!!block;n#drawGauge#0" expanded="false" />
                 <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -110,6 +126,10 @@
                 <element signature="n#!!block;n#get_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#containsObject#0" expanded="false" />
+                <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+                <element signature="n#!!block;n#generate_id#0" expanded="false" />
+                <element signature="n#!!block;n#get_timestamp#0" expanded="false" />
+                <element signature="n#!!block;n#vodafone#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -179,8 +199,8 @@
         <option value="$PROJECT_DIR$/www/js/underscore.js" />
         <option value="$PROJECT_DIR$/www/test1.html" />
         <option value="$PROJECT_DIR$/www/js/test.js" />
-        <option value="$PROJECT_DIR$/www/js/myscript.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -225,8 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,12 +291,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ndeywuro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ndeywuro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3527,14 +3565,9 @@
       <workItem from="1504183274976" duration="2999000" />
       <workItem from="1504534682924" duration="23651000" />
       <workItem from="1504867517520" duration="2316000" />
-      <workItem from="1504873046462" duration="20778000" />
-    </task>
-    <task id="LOCAL-00053" summary="k">
-      <created>1503309423257</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1503309423257</updated>
+      <workItem from="1504873046462" duration="23418000" />
+      <workItem from="1505379083437" duration="1745000" />
+      <workItem from="1505380864039" duration="23355000" />
     </task>
     <task id="LOCAL-00054" summary="k">
       <created>1503311352830</created>
@@ -3872,20 +3905,27 @@
       <option name="project" value="LOCAL" />
       <updated>1504900889227</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="k">
+      <created>1504903993329</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1504903993329</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204568000" />
+    <option name="totallyTimeSpent" value="232308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25189108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7168576" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20294599" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20130932" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -3968,10 +4008,10 @@
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#252#348#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
@@ -3983,7 +4023,6 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -3994,6 +4033,10 @@
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="n#!!block;n#generate_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_timestamp#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4012,10 +4055,10 @@
           <caret line="59" column="1" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#252#348#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
@@ -4027,7 +4070,6 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4038,6 +4080,10 @@
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="n#!!block;n#generate_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_timestamp#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4056,10 +4102,10 @@
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#252#348#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
@@ -4071,7 +4117,6 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4082,6 +4127,10 @@
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="n#!!block;n#generate_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_timestamp#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4100,10 +4149,10 @@
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#252#348#0" expanded="false" />
             <element signature="n#!!block;n#send_request#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
             <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
             <element signature="n#!!block;n#login#0" expanded="false" />
             <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
@@ -4115,7 +4164,6 @@
             <element signature="n#!!block;n#insert_ids#0" expanded="false" />
             <element signature="n#!!block;n#del#0" expanded="false" />
             <element signature="n#!!block;n#del_id#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
             <element signature="n#!!block;n#toast#0" expanded="false" />
             <element signature="n#!!block;n#drawGauge#0" expanded="false" />
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
@@ -4126,6 +4174,10 @@
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsObject#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="n#!!block;n#generate_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_timestamp#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -4222,13 +4274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="2544" column="3" selection-start-line="2544" selection-start-column="3" selection-end-line="2544" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/cordova-plugin-battery-status/www/battery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
@@ -4268,9 +4313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4285,10 +4327,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#3003#3578#0" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/chartist.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="1205" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="1290" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -4300,54 +4345,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/chartist.min.js">
+    <entry file="file://$PROJECT_DIR$/www/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="1205" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="1290" selection-end-column="40" />
+        <state relative-caret-position="43248">
+          <caret line="2544" column="3" selection-start-line="2544" selection-start-column="3" selection-end-line="2544" selection-end-column="3" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="435" column="29" selection-start-line="435" selection-start-column="29" selection-end-line="435" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#send_request#0" expanded="false" />
-            <element signature="n#!!block;n#change_page#0" expanded="false" />
-            <element signature="n#!!block;n#popout#0" expanded="false" />
-            <element signature="n#!!block;n#popout_close#0" expanded="false" />
-            <element signature="n#!!block;n#login#0" expanded="false" />
-            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
-            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
-            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#insert#0" expanded="false" />
-            <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
-            <element signature="n#!!block;n#insert_ids#0" expanded="false" />
-            <element signature="n#!!block;n#del#0" expanded="false" />
-            <element signature="n#!!block;n#del_id#0" expanded="false" />
-            <element signature="n#!!block;n#get_numbers#0" expanded="false" />
-            <element signature="n#!!block;n#toast#0" expanded="false" />
-            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
-            <element signature="n#!!block;n#get_stats#0" expanded="false" />
-            <element signature="n#!!block;n#home#0" expanded="false" />
-            <element signature="n#!!block;n#send_sms#0" expanded="false" />
-            <element signature="n#!!block;n#process_num#0" expanded="false" />
-            <element signature="n#!!block;n#clear_sms#0" expanded="false" />
-            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
-            <element signature="n#!!block;n#containsObject#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="276" column="24" selection-start-line="276" selection-start-column="24" selection-end-line="276" selection-end-column="24" />
+        <state relative-caret-position="341">
+          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -4355,6 +4364,7 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -4371,11 +4381,66 @@
             <element signature="n#style#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#hr#0;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#a#0;n#li#1;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h5#0;n#a#0;n#li#3;n#ul#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#a#0;n#li#1;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#a#0;n#li#2;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#a#0;n#li#3;n#ul#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1505475994717" expanded="false" signature="12057:13644" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-190">
+          <caret line="514" column="9" selection-start-line="514" selection-start-column="9" selection-end-line="514" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#252#348#0" expanded="false" />
+            <element signature="n#!!block;n#send_request#0" expanded="false" />
+            <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#popout#0" expanded="false" />
+            <element signature="n#!!block;n#login#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_success#0" expanded="false" />
+            <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
+            <element signature="n#!!block;n#select_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#insert#0" expanded="false" />
+            <element signature="n#!!block;n#insert_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#clear_numbers#0" expanded="false" />
+            <element signature="n#!!block;n#insert_ids#0" expanded="false" />
+            <element signature="n#!!block;n#del#0" expanded="false" />
+            <element signature="n#!!block;n#del_id#0" expanded="false" />
+            <element signature="n#!!block;n#toast#0" expanded="false" />
+            <element signature="n#!!block;n#drawGauge#0" expanded="false" />
+            <element signature="n#!!block;n#get_stats#0" expanded="false" />
+            <element signature="n#!!block;n#home#0" expanded="false" />
+            <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#clear_sms#0" expanded="false" />
+            <element signature="n#!!block;n#get_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#test_get_contacts#0" expanded="false" />
+            <element signature="n#!!block;n#containsObject#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="n#!!block;n#generate_id#0" expanded="false" />
+            <element signature="n#!!block;n#get_timestamp#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
         </state>
       </provider>
