@@ -53,7 +53,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    load_contacts();
+                    // load_contacts();
 
                     get_stats();
 
@@ -108,6 +108,8 @@ function contacts_success(contacts) {
                     var id = contacts[i].id;
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
+                    // var mystring = "+233542688902";
+                    number = number.replace('+', '');
 
                     var person = {"id": id, "name": name, "number": number};
 
@@ -121,7 +123,7 @@ function contacts_success(contacts) {
                             contacts_array.push(person);
                         }
                         else {
-                            if (!containsObject(person, contacts_array)) {
+                            if (!containsId(person, contacts_array) && !containsNumber(person, contacts_array)) {
                                 contacts_array.push(person);
                                 //console.log('othrs');
                                 // alert(person.id);
@@ -141,9 +143,18 @@ function contacts_failed(msgObject) {
 
 function select_contacts(num) {
 
+    var test = '';
     var new_num = process_num(num);
 
     insert(new_num);
+
+    // for (var i = 0; i < new_array.length; i++) {
+    //     test += new_array[i] + ',';
+    // }
+
+    //alert(test);
+
+    // console.log(test);
 }
 
 function del(data) {
@@ -180,7 +191,7 @@ function done() {
 
     $("#numbers").val(numbers);
 
-    // alert(numbers);
+    new_array = [];
 
     change_page('#messagepage', 'pop');
 }
@@ -324,9 +335,11 @@ function get_contacts() {
     var build = '';
 
     for (var i = 0; i < contacts_array.length; i++) {
-        //console.log(contacts_array[i].id);
+        console.log(contacts_array[i].number);
 
-        build += "<input onclick='select_contacts(contacts_array[i].number)' type='checkbox' id='" + contacts_array[i].id + "'>";
+        build += "<input onclick='select_contacts(" + contacts_array[i].number + ")' type='checkbox' id='" + contacts_array[i].id + "'>";
+
+        // build += "<input onclick='select_contacts(" + contacts_array[i].number + ")' type='checkbox' id='" + contacts_array[i].id + "'>";
         build += "<label for='" + contacts_array[i].id + "'>" + contacts_array[i].name + "</label>";
     }
 
@@ -334,10 +347,21 @@ function get_contacts() {
     $("#mycontacts").html(build).enhanceWithin();
 }
 
-function containsObject(obj, list) {
+function containsId(obj, list) {
 
     for (var i = 0; i < list.length; i++) {
         if (list[i].id == obj.id) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function containsNumber(obj, list) {
+
+    for (var i = 0; i < list.length; i++) {
+        if (list[i].number == obj.number) {
             return true;
         }
     }
@@ -398,17 +422,29 @@ function vodafone_payment() {
                 voucher_number: voucher,
                 description: 'Deywuro_credit_transaction',
                 user_id: "npdeywuro",
-                password: "hdgt2314"
+                password: "hdgt2314",
+                username: $.cookie('username')
             },
 
             function (response) {
-                if (response == '00000-Done0') {
-                    toast(response, 3000);
+                // alert(response);
+                if (response == '00000-Done') {
+                    toast("Your request is being processed.", 6000);
+
+                    $("#msisdnx").val('');
+                    $("#amountx").val('');
+                    $("#voucher_number").val('');
+
+                    setTimeout(
+                        function () {
+                            get_balance();
+                        }, 800);
                 }
                 else {
                     toast('Transaction failed', 4000);
                 }
-            });
+            }
+        );
     }
 }
 
@@ -419,5 +455,33 @@ function vodafone() {
 
         change_page("#vodafonepage", 'pop');
     }
+}
+
+function get_balance() {
+
+    var bal, rounded;
+
+    $.get("https://deywuro.com/api/stat",
+        {
+            username: $.cookie('username'),
+            password: $.cookie('password')
+        },
+
+        function (response) {
+
+            if (response.code == 0) {
+
+                bal = response.total_balance;
+
+                rounded = Math.round(bal * 100) / 100;
+
+                $("#balance").html("GHC" + " " + rounded);
+
+                setTimeout(
+                    function () {
+                        change_page("#paymentspage", "pop");
+                    }, 800);
+            }
+        });
 }
 
