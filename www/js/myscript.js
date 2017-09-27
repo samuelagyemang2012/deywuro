@@ -53,7 +53,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    // load_contacts();
+                    load_contacts();
 
                     get_stats();
 
@@ -109,7 +109,7 @@ function contacts_success(contacts) {
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
                     // var mystring = "+233542688902";
-                    number = number.replace('+', '');
+                    number = number.replace(/\s+/g, '');
 
                     var person = {"id": id, "name": name, "number": number};
 
@@ -191,7 +191,7 @@ function done() {
 
     $("#numbers").val(numbers);
 
-    new_array = [];
+    // new_array = [];
 
     change_page('#messagepage', 'pop');
 }
