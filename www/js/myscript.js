@@ -53,7 +53,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    // load_contacts();
+                    load_contacts();
 
                     get_stats();
 
@@ -553,7 +553,6 @@ function vodafone_payment() {
         );
     }
 }
-
 
 function vodafone() {
     var network = $("#networks").val();

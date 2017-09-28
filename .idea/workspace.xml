@@ -101,12 +101,13 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="549" column="49" selection-start-line="549" selection-start-column="49" selection-end-line="549" selection-end-column="49" />
+            <state relative-caret-position="236">
+              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#296#392#0" expanded="false" />
                 <element signature="n#!!block;n#change_page#0" expanded="false" />
+                <element signature="n#!!block;n#load_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_success#0" expanded="false" />
                 <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
                 <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -118,13 +119,20 @@
                 <element signature="n#!!block;n#get_stats#0" expanded="false" />
                 <element signature="n#!!block;n#home#0" expanded="false" />
                 <element signature="n#!!block;n#send_sms#0" expanded="false" />
+                <element signature="n#!!block;n#process_num#0" expanded="false" />
+                <element signature="n#!!block;n#convert_num#0" expanded="false" />
+                <element signature="n#!!block;n#convert_num2#0" expanded="false" />
                 <element signature="n#!!block;n#clear_sms#0" expanded="false" />
                 <element signature="n#!!block;n#get_contacts#0" expanded="false" />
                 <element signature="n#!!block;n#containsId#0" expanded="false" />
                 <element signature="n#!!block;n#containsNumber#0" expanded="false" />
-                <element signature="e#10605#11512#0" expanded="false" />
-                <element signature="e#11545#12452#0" expanded="false" />
-                <element signature="e#12487#13396#0" expanded="false" />
+                <element signature="n#!!block;n#make_payment#0" expanded="false" />
+                <element signature="e#10602#11509#0" expanded="false" />
+                <element signature="e#11542#12449#0" expanded="false" />
+                <element signature="e#12484#13393#0" expanded="false" />
+                <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+                <element signature="e#13802#14047#0" expanded="false" />
+                <element signature="e#14082#14648#0" expanded="false" />
                 <element signature="n#!!block;n#vodafone#0" expanded="false" />
                 <element signature="n#!!block;n#get_balance#0" expanded="false" />
               </folding>
@@ -3599,14 +3607,7 @@
       <workItem from="1504873046462" duration="23418000" />
       <workItem from="1505379083437" duration="1745000" />
       <workItem from="1505380864039" duration="45628000" />
-      <workItem from="1506514082546" duration="12885000" />
-    </task>
-    <task id="LOCAL-00068" summary="k">
-      <created>1503878627496</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1503878627496</updated>
+      <workItem from="1506514082546" duration="12935000" />
     </task>
     <task id="LOCAL-00069" summary="k">
       <created>1503880237787</created>
@@ -3944,11 +3945,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506589647102</updated>
     </task>
-    <option name="localTasksCounter" value="117" />
+    <task id="LOCAL-00117" summary="k">
+      <created>1506589670301</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1506589670301</updated>
+    </task>
+    <option name="localTasksCounter" value="118" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267466000" />
+    <option name="totallyTimeSpent" value="267516000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -4042,6 +4050,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -4053,13 +4062,20 @@
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num2#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
-            <element signature="e#10605#11512#0" expanded="false" />
-            <element signature="e#11545#12452#0" expanded="false" />
-            <element signature="e#12487#13396#0" expanded="false" />
+            <element signature="n#!!block;n#make_payment#0" expanded="false" />
+            <element signature="e#10602#11509#0" expanded="false" />
+            <element signature="e#11542#12449#0" expanded="false" />
+            <element signature="e#12484#13393#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="e#13802#14047#0" expanded="false" />
+            <element signature="e#14082#14648#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
             <element signature="n#!!block;n#get_balance#0" expanded="false" />
           </folding>
@@ -4082,6 +4098,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -4093,13 +4110,20 @@
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num2#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
-            <element signature="e#10605#11512#0" expanded="false" />
-            <element signature="e#11545#12452#0" expanded="false" />
-            <element signature="e#12487#13396#0" expanded="false" />
+            <element signature="n#!!block;n#make_payment#0" expanded="false" />
+            <element signature="e#10602#11509#0" expanded="false" />
+            <element signature="e#11542#12449#0" expanded="false" />
+            <element signature="e#12484#13393#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="e#13802#14047#0" expanded="false" />
+            <element signature="e#14082#14648#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
             <element signature="n#!!block;n#get_balance#0" expanded="false" />
           </folding>
@@ -4122,6 +4146,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -4133,13 +4158,20 @@
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num2#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
-            <element signature="e#10605#11512#0" expanded="false" />
-            <element signature="e#11545#12452#0" expanded="false" />
-            <element signature="e#12487#13396#0" expanded="false" />
+            <element signature="n#!!block;n#make_payment#0" expanded="false" />
+            <element signature="e#10602#11509#0" expanded="false" />
+            <element signature="e#11542#12449#0" expanded="false" />
+            <element signature="e#12484#13393#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="e#13802#14047#0" expanded="false" />
+            <element signature="e#14082#14648#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
             <element signature="n#!!block;n#get_balance#0" expanded="false" />
           </folding>
@@ -4162,6 +4194,7 @@
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -4173,13 +4206,20 @@
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num2#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
-            <element signature="e#10605#11512#0" expanded="false" />
-            <element signature="e#11545#12452#0" expanded="false" />
-            <element signature="e#12487#13396#0" expanded="false" />
+            <element signature="n#!!block;n#make_payment#0" expanded="false" />
+            <element signature="e#10602#11509#0" expanded="false" />
+            <element signature="e#11542#12449#0" expanded="false" />
+            <element signature="e#12484#13393#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="e#13802#14047#0" expanded="false" />
+            <element signature="e#14082#14648#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
             <element signature="n#!!block;n#get_balance#0" expanded="false" />
           </folding>
@@ -4416,12 +4456,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="549" column="49" selection-start-line="549" selection-start-column="49" selection-end-line="549" selection-end-column="49" />
+        <state relative-caret-position="236">
+          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
             <element signature="n#!!block;n#change_page#0" expanded="false" />
+            <element signature="n#!!block;n#load_contacts#0" expanded="false" />
             <element signature="n#!!block;n#contacts_success#0" expanded="false" />
             <element signature="n#!!block;n#contacts_failed#0" expanded="false" />
             <element signature="n#!!block;n#select_contacts#0" expanded="false" />
@@ -4433,13 +4474,20 @@
             <element signature="n#!!block;n#get_stats#0" expanded="false" />
             <element signature="n#!!block;n#home#0" expanded="false" />
             <element signature="n#!!block;n#send_sms#0" expanded="false" />
+            <element signature="n#!!block;n#process_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num#0" expanded="false" />
+            <element signature="n#!!block;n#convert_num2#0" expanded="false" />
             <element signature="n#!!block;n#clear_sms#0" expanded="false" />
             <element signature="n#!!block;n#get_contacts#0" expanded="false" />
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
-            <element signature="e#10605#11512#0" expanded="false" />
-            <element signature="e#11545#12452#0" expanded="false" />
-            <element signature="e#12487#13396#0" expanded="false" />
+            <element signature="n#!!block;n#make_payment#0" expanded="false" />
+            <element signature="e#10602#11509#0" expanded="false" />
+            <element signature="e#11542#12449#0" expanded="false" />
+            <element signature="e#12484#13393#0" expanded="false" />
+            <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
+            <element signature="e#13802#14047#0" expanded="false" />
+            <element signature="e#14082#14648#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
             <element signature="n#!!block;n#get_balance#0" expanded="false" />
           </folding>
