@@ -53,7 +53,7 @@ function login() {
                     $.cookie('username', username);
                     $.cookie('password', password);
 
-                    load_contacts();
+                    // load_contacts();
 
                     get_stats();
 
@@ -108,8 +108,11 @@ function contacts_success(contacts) {
                     var id = contacts[i].id;
                     var name = contacts[i].displayName;
                     var number = contacts[i].phoneNumbers[j].value;
-                    // var mystring = "+233542688902";
+
                     number = number.replace(/\s+/g, '');
+                    number = number.replace(/\(|\)/g, '');
+                    number = number.replace(/\+/g, " ");
+                    number = number.replace(/\-/g, " ");
 
                     var person = {"id": id, "name": name, "number": number};
 
@@ -173,10 +176,13 @@ function insert(data) {
     //if number doesn't exist in array, add it
 
     if (new_array.indexOf(data) == -1) {
+        alert("number-add: " + data);
         new_array.push(data);
 
     } else {
-        del(data);
+        var index = new_array.indexOf(data);
+        new_array.splice(index, 1);
+        alert("number-del: " + data);
     }
 }
 
@@ -324,6 +330,40 @@ function process_num(number) {
     }
 }
 
+function convert_num() {
+
+    var num = $("#msisdnx").val();
+
+    var first = num.charAt(0);
+
+    if (first == '0') {
+
+        first = '233';
+        var substring = num.substring(1, 10);
+        num = first + substring;
+
+        $("#msisdnx").val(num);
+
+    }
+}
+
+function convert_num2() {
+
+    var num = $("#msisdn").val();
+
+    var first = num.charAt(0);
+
+    if (first == '0') {
+
+        first = '233';
+        var substring = num.substring(1, 10);
+        num = first + substring;
+
+        $("#msisdn").val(num);
+
+    }
+}
+
 function clear_sms() {
     $("#numbers").val("");
     $("#message").val("");
@@ -377,36 +417,103 @@ function make_payment() {
     var voucher = $("#voucher_number").val();
 
     if (msisdn.length == 0 || amount.length == 0) {
-        toast("Please fill all the neccessary fields", 3000);
+        toast("Please fill all the neccessary fields", 4000);
     } else {
         if (network == "mtn") {
-            toast('You will soon receive an sms for confirmation', 4000);
-        }
+            $("#msisdn").val('');
+            $("#amount").val('');
+            toast("You will receive an sms shortly", 10000);
 
-        if (network == "tigo") {
-
-            $.get("http://5.9.86.210/pay/tigo/tigocash1.php",
+            $.post("http://5.9.86.210/pay/mtn/deywuro_live.php",
                 {
-                    phone: msisdn,
+                    msisdn: msisdn,
                     amount: amount,
-                    merchantName: 'DeywuroMobile',
-                    description: "DeywuroMobileCredit",
-                    //user_id:
+                    description: 'DMobile_credit',
+                    user_id: "npdeywuro",
+                    password: "hdgt2314",
                 },
 
                 function (response) {
-                    toast('You will soon receive an sms for confirmation', 4000);
-                });
+                    // alert(response);
+                    if (response == '00000-Done') {
+
+                        setTimeout(
+                            function () {
+                                get_balance();
+                            }, 800);
+                    }
+                    else {
+                        toast('Transaction failed', 4000);
+                    }
+                }
+            );
+        }
+
+        if (network == "tigo") {
+            $("#msisdn").val('');
+            $("#amount").val('');
+            toast("You will receive an sms shortly", 5000);
+
+            $.post("http://5.9.86.210/pay/tigo/deywuro_live.php",
+                {
+                    msisdn: msisdn,
+                    amount: amount,
+                    description: 'DMobile_credit',
+                    user_id: "npdeywuro",
+                    password: "hdgt2314",
+                },
+
+                function (response) {
+                    // alert(response);
+                    if (response == '00000-Done') {
+
+                        setTimeout(
+                            function () {
+                                get_balance();
+                            }, 800);
+                    }
+                    else {
+                        toast('Transaction failed', 4000);
+                    }
+                }
+            );
         }
 
         if (network == "airtel") {
-            toast('You will soon receive an sms for confirmation', 4000);
+            $("#msisdn").val('');
+            $("#amount").val('');
+            toast("You will receive an sms shortly", 5000);
+
+            $.post("http://5.9.86.210/pay/airtel/deywuro_live.php",
+                {
+                    msisdn: msisdn,
+                    amount: amount,
+                    description: 'DMobile_credit',
+                    user_id: "npdeywuro",
+                    password: "hdgt2314",
+                },
+
+                function (response) {
+                    // alert(response);
+                    if (response == '00000-Done') {
+
+                        setTimeout(
+                            function () {
+                                get_balance();
+                            }, 800);
+                    }
+                    else {
+                        toast('Transaction failed', 4000);
+                    }
+                }
+            );
         }
     }
 }
 
 function vodafone_payment() {
 
+    var num;
     var msisdnx = $("#msisdnx").val();
     var amountx = $("#amountx").val();
     var voucher = $("#voucher_number").val();
@@ -420,10 +527,9 @@ function vodafone_payment() {
                 msisdn: msisdnx,
                 amount: amountx,
                 voucher_number: voucher,
-                description: 'Deywuro_credit_transaction',
+                description: 'DMobile_credit',
                 user_id: "npdeywuro",
                 password: "hdgt2314",
-                username: $.cookie('username')
             },
 
             function (response) {
@@ -447,6 +553,7 @@ function vodafone_payment() {
         );
     }
 }
+
 
 function vodafone() {
     var network = $("#networks").val();
