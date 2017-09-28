@@ -547,7 +547,7 @@ function vodafone_payment() {
                         }, 800);
                 }
                 else {
-                    toast('Transaction failed', 4000);
+                    toast('Transaction failed', 8000);
                 }
             }
         );

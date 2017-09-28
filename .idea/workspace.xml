@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
@@ -102,8 +101,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="511" column="1" selection-start-line="511" selection-start-column="1" selection-end-line="511" selection-end-column="1" />
+            <state relative-caret-position="335">
+              <caret line="549" column="49" selection-start-line="549" selection-start-column="49" selection-end-line="549" selection-end-column="49" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#296#392#0" expanded="false" />
@@ -3600,14 +3599,7 @@
       <workItem from="1504873046462" duration="23418000" />
       <workItem from="1505379083437" duration="1745000" />
       <workItem from="1505380864039" duration="45628000" />
-      <workItem from="1506514082546" duration="12859000" />
-    </task>
-    <task id="LOCAL-00067" summary="k">
-      <created>1503878519434</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1503878519434</updated>
+      <workItem from="1506514082546" duration="12885000" />
     </task>
     <task id="LOCAL-00068" summary="k">
       <created>1503878627496</created>
@@ -3945,11 +3937,18 @@
       <option name="project" value="LOCAL" />
       <updated>1506516769998</updated>
     </task>
-    <option name="localTasksCounter" value="116" />
+    <task id="LOCAL-00116" summary="k">
+      <created>1506589647102</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1506589647102</updated>
+    </task>
+    <option name="localTasksCounter" value="117" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267440000" />
+    <option name="totallyTimeSpent" value="267466000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -4417,8 +4416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="511" column="1" selection-start-line="511" selection-start-column="1" selection-end-line="511" selection-end-column="1" />
+        <state relative-caret-position="335">
+          <caret line="549" column="49" selection-start-line="549" selection-start-column="49" selection-end-line="549" selection-end-column="49" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
