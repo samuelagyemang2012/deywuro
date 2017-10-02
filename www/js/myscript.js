@@ -67,6 +67,49 @@ function login() {
     }
 }
 
+function register() {
+    var username, name, email, number, password, cpassword;
+
+    username = $("#rusername").val();
+    name = $("#rname").val();
+    email = $("#remail").val();
+    number = $("#rnumber").val();
+    password = $("#rpassword").val();
+    cpassword = $("#rcpassword").val();
+
+    if (username.length == 0 || password.length == 0 || name.length == 0 || number.length == 0 || cpassword.length == 0) {
+        toast("Please fill all the required fields", 4000);
+    } else if (password != cpassword) {
+        toast("Passwords do not match", 4000);
+    } else {
+
+        $.post("https://deywuro.com/api/register?name=" + name + "&email=" + email + "&phone_number=" + number + "&username=" + username + "&password=" + password,
+
+            function (response) {
+
+                if (response.code == 0) {
+
+                    $("#rusername").val('');
+                    $("#rname").val('');
+                    $("#remail").val('');
+                    $("#rnumber").val('');
+                    $("#rpassword").val('');
+                    $("#rcpassword").val('');
+
+                    toast(response.message, 5000);
+
+                    change_page("#loginpage", "pop")
+
+                } else {
+
+                    toast(response.message, 5000);
+
+                }
+            }
+        );
+    }
+}
+
 function load_contacts() {
 
     var obj = new ContactFindOptions();
@@ -428,9 +471,10 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMobile_credit',
+                    description: 'DMC',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
+                    username: $.cookie('username')
                 },
 
                 function (response) {
@@ -458,9 +502,10 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMobile_credit',
+                    description: 'DMC',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
+                    username: $.cookie('username')
                 },
 
                 function (response) {
@@ -488,9 +533,10 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMobile_credit',
+                    description: 'DMC',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
+                    username: $.cookie('username')
                 },
 
                 function (response) {
@@ -527,15 +573,16 @@ function vodafone_payment() {
                 msisdn: msisdnx,
                 amount: amountx,
                 voucher_number: voucher,
-                description: 'DMobile_credit',
+                description: 'DMC',
                 user_id: "npdeywuro",
                 password: "hdgt2314",
+                username: $.cookie('username')
             },
 
             function (response) {
                 // alert(response);
                 if (response == '00000-Done') {
-                    toast("Your request is being processed.", 6000);
+                    toast("You will receive an sms shortly.", 6000);
 
                     $("#msisdnx").val('');
                     $("#amountx").val('');
@@ -566,6 +613,8 @@ function vodafone() {
 function get_balance() {
 
     var bal, rounded;
+
+    toast("Fecthing your balance", 4000);
 
     $.get("https://deywuro.com/api/stat",
         {
