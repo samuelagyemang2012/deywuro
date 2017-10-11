@@ -219,13 +219,13 @@ function insert(data) {
     //if number doesn't exist in array, add it
 
     if (new_array.indexOf(data) == -1) {
-        alert("number-add: " + data);
+        // alert("number-add: " + data);
         new_array.push(data);
 
     } else {
         var index = new_array.indexOf(data);
         new_array.splice(index, 1);
-        alert("number-del: " + data);
+        // alert("number-del: " + data);
     }
 }
 
@@ -463,7 +463,7 @@ function make_payment() {
         toast("Please fill all the neccessary fields", 4000);
     } else {
         if (network == "mtn") {
-            $("#msisdn").val('');
+            //$("#msisdn").val('');
             $("#amount").val('');
             toast("You will receive an sms shortly", 10000);
 
@@ -471,10 +471,9 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMC',
+                    description: 'DMobile_credit',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
-                    username: $.cookie('username')
                 },
 
                 function (response) {
@@ -494,7 +493,7 @@ function make_payment() {
         }
 
         if (network == "tigo") {
-            $("#msisdn").val('');
+            //$("#msisdn").val('');
             $("#amount").val('');
             toast("You will receive an sms shortly", 5000);
 
@@ -502,10 +501,9 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMC',
+                    description: 'DMobile_credit',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
-                    username: $.cookie('username')
                 },
 
                 function (response) {
@@ -525,7 +523,7 @@ function make_payment() {
         }
 
         if (network == "airtel") {
-            $("#msisdn").val('');
+            //$("#msisdn").val('');
             $("#amount").val('');
             toast("You will receive an sms shortly", 5000);
 
@@ -541,16 +539,16 @@ function make_payment() {
 
                 function (response) {
                     // alert(response);
-                    if (response == '00000-Done') {
+                    // if (response == '00000-Done') {
 
-                        setTimeout(
-                            function () {
-                                get_balance();
-                            }, 800);
-                    }
-                    else {
-                        toast('Transaction failed', 4000);
-                    }
+                    setTimeout(
+                        function () {
+                            get_balance();
+                        }, 800);
+                    // }
+                    // else {
+                    // toast('Transaction failed', 4000);
+                    // }
                 }
             );
         }
@@ -573,16 +571,15 @@ function vodafone_payment() {
                 msisdn: msisdnx,
                 amount: amountx,
                 voucher_number: voucher,
-                description: 'DMC',
+                description: 'DMobile_credit',
                 user_id: "npdeywuro",
                 password: "hdgt2314",
-                username: $.cookie('username')
             },
 
             function (response) {
                 // alert(response);
                 if (response == '00000-Done') {
-                    toast("You will receive an sms shortly.", 6000);
+                    toast("Your request is being processed.", 6000);
 
                     $("#msisdnx").val('');
                     $("#amountx").val('');
@@ -614,7 +611,7 @@ function get_balance() {
 
     var bal, rounded;
 
-    toast("Fecthing your balance", 4000);
+    toast("Fecthing your balance",4000);
 
     $.get("https://deywuro.com/api/stat",
         {
