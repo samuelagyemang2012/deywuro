@@ -428,6 +428,7 @@ function get_contacts() {
 
     // $(build).appendTo("#mycontacts").enhanceWithin();
     $("#mycontacts").html(build).enhanceWithin();
+    // change_page("#contactspage","pop");
 }
 
 function containsId(obj, list) {
