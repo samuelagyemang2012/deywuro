@@ -472,9 +472,11 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMobile_credit',
+                    description: 'DMC',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
+                    username: $.cookie('username')
+
                 },
 
                 function (response) {
@@ -502,9 +504,10 @@ function make_payment() {
                 {
                     msisdn: msisdn,
                     amount: amount,
-                    description: 'DMobile_credit',
+                    description: 'DMC',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
+                    username: $.cookie('username')
                 },
 
                 function (response) {
@@ -535,7 +538,7 @@ function make_payment() {
                     description: 'DMC',
                     user_id: "npdeywuro",
                     password: "hdgt2314",
-                    username: $.cookie('username')
+                    username: $.cookie('username'),
                 },
 
                 function (response) {
@@ -575,6 +578,7 @@ function vodafone_payment() {
                 description: 'DMobile_credit',
                 user_id: "npdeywuro",
                 password: "hdgt2314",
+                username: $.cookie('username')
             },
 
             function (response) {
@@ -612,7 +616,7 @@ function get_balance() {
 
     var bal, rounded;
 
-    toast("Fecthing your balance",4000);
+    toast("Fecthing your balance", 4000);
 
     $.get("https://deywuro.com/api/stat",
         {
