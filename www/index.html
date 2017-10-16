@@ -1,27 +1,24 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+
 <head>
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"/>
-
-    <!--<link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">-->
-
     <link rel="stylesheet" href="./css/jquery.mobile.min.css"/>
     <link rel="stylesheet" href="./css/waves.min.css"/>
     <link rel="stylesheet" href="./css/animate.css"/>
-    <link rel="stylesheet" href="./css/nativedroid2.color.red.css"/>
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="stylesheet" href="./css/mycss.css"/>
     <link rel="stylesheet" href="./css/nativedroid2.css"/>
-    <link rel="stylesheet" href="./css/chartist.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
     <meta charset="utf-8"/>
     <meta name="format-detection" content="telephone=no"/>
     <meta name="msapplication-tap-highlight" content="no"/>
     <meta name="viewport"
-          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/>
-    <!--<meta http-equiv="Content-Security-Policy"-->
-    <!--content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>-->
+          content="user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1, width=device-width"/>
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
 
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery-ui.js"></script>
@@ -32,413 +29,834 @@
     <script src="./js/nativedroid2.js"></script>
     <script src="./js/nd2settings.js"></script>
     <script type="text/javascript" src="./js/myscript.js"></script>
-    <script type="text/javascript" src="cordova.js"></script>
-    <!--<script type="text/javascript" src="./js/index.js"></script>-->
-    <script type="text/javascript" src="./js/chartist.min.js"></script>
-    <script type="text/javascript" src="./js/underscore.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript">
-
         $(document).ready(function () {
-
-
+//            get_slides();
+//
             $("body>[data-role='panel']").panel().enhanceWithin();
-
-
         });
-
-        document.addEventListener("backbutton", function (e) {
-            if ($.mobile.activePage.is('#loginpage')) {
-                /*
-                 Event preventDefault/stopPropagation not required as adding backbutton
-                 listener itself override the default behaviour. Refer below PhoneGap link.
-                 */
-                //e.preventDefault();
-                navigator.app.exitApp();
-            }
-            else {
-                navigator.app.backHistory()
-            }
-        }, false);
-
     </script>
-
 </head>
 
-<body>
+<body style="height: 100%; width: 100%">
 
-<!--Login Page-->
-<div data-role="page" id="loginpage" style="background-image: url('img/lol.jpg')">
+<!--Login page-->
+<div data-role="page" id="loginpage">
+    <div data-role="header" style="background-color: #4CAF50">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="index.html" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <!--<i class=""></i>-->
+        </a>
+    </div>
 
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <!--<a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>-->
-        <!--<a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>-->
-        <h1 style="opacity: 1">Deywuro</h1>
+    <div data-role="popup" id="loginfail2" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Please fill out all fields !</h4>
+    </div>
+
+    <div data-role="popup" id="loginfail" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Wrong username or password.</h4>
     </div>
 
     <div data-role="content">
-        <br><br><br>
-
-        <div class="nd2-card" style="background-color: white">
-            <div class="container" style="margin-top: 10%; margin-bottom: 10%">
-                <div class="row">
-                    <div class="col-xs-1"></div>
-
-                    <div class="col-xs-10">
-                        <div class="align-center">
-                            <img src="img/lo.jpg">
-                        </div>
-
-                        <div>
-                            <input type="text" id="username" value="" data-clear-btn="true"
-                                   placeholder="Username">
-                        </div>
-                        <br>
-
-                        <div>
-                            <input type="password" id="password" value="" data-clear-btn="true"
-                                   placeholder="Password">
-                        </div>
-
-                        <div>
-                            <a style="background-color: #8e0d0e" onclick="login()"
-                               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Login</a>
-                        </div>
-                        <br>
-
-                        <div class="align-center">
-                            <a href="#registerpage" data-transition="pop"><h5>Sign up here !</h5></a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-1"></div>
-                </div>
-            </div>
+        <!---->
+        <div class="align-center">
+            <img id="images" src="" style="max-width: 100%">
         </div>
+        <!---->
+        <div class="row">
+            <div class="col-xs-6 align-left">
+                <a data-role="button" onclick="prev()"
+                   class="ui-btn ui-btn-inline align-left"><i
+                        class="zmdi zmdi-chevron-left zmd-2x">
+                    <!---->
+                </i>
+                </a>
+            </div>
+            <!---->
+            <div class="col-xs-6 align-right">
+                <a data-role="button" onclick="next()"
+                   class="ui-btn ui-btn-inline align-left"><i
+                        class="zmdi zmdi-chevron-right zmd-2x">
+                    <!---->
+                </i>
+                </a>
+            </div>
+            <!--<div class="col-xs-6">-->
+            <!--<a data-role="button"-->
+            <!--class="ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button"><i-->
+            <!--class="zmdi zmdi-long-arrow-left zmd-flip-horizontal"></i></a>-->
+            <!--</div>-->
+        </div>
+        <!---->
+        <div data-role="content">
+            <!--<br>-->
+            <!--<br>-->
+            <div class="align-center">
+                <img src="img/genesys.png">
+                <!--<hr>-->
+            </div>
 
+            <div class="align-center">
+                <!--<h4>Login here !</h4>-->
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+                <input data-clear-btn="true" type="text" id="username" placeholder="Username"
+                       style="color: #4CAF50; text-align: center"
+                       required>
+            </div>
+            <!---->
+            <div>
+                <input data-clear-btn="true" type="password" id="password" placeholder="Password"
+                       style="color: #4CAF50; text-align: center"
+                       required>
+            </div>
+            <br>
+            <!---->
+            <div>
+                <a data-role="button" id="loginbutton" style="background-color: #4CAF50;color: #fff" onclick="login()">Login</a>
+            </div>
+            <!---->
+            <!--<div class="align-center">-->
+            <!--<h5>Sign up <a href="#signuppage" data-transition="slide" style="color: #4CAF50">here !</a></h5>-->
+            <!--</div>-->
+        </div>
     </div>
 </div>
-<!--End Login page-->
 
-<!--Dashboard-->
-<div data-role="page" id="dashboard" style="background-image: url('img/lol.jpg')">
+<!--Change password-->
+<div data-role="page" id="changepasswordpage">
+    <div data-role="header" style="background-color: #4CAF50">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="index.html" class="ui-btn ui-btn-icon-right" data-transition="flip">
 
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-        <h1 style="opacity: 1">Dashboard</h1>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
     </div>
 
     <div data-role="content">
-        <br><br><br><br>
-
-        <div class="nd2-card" style="background-color: white">
-            <div class="container">
-                <div style="display: inherit" class="ct-chart ct-perfect-fourth"></div>
-            </div>
+        <div>
+            <input type="text" id="newpassword" placeholder="New Password" style="color: #4CAF50; text-align: center"
+                   required>
         </div>
 
-        <div class="nd2-card" style="background-color: white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-10">
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <p>Sent</p>
-                                <p>Delivered</p>
-                                <p>Acknowledged</p>
-                                <p>Undelivered</p>
-                            </div>
+        <div>
+            <input type="text" id="cnewpassword" placeholder="Confirm Password"
+                   style="color: #4CAF50; text-align: center"
+                   required>
+        </div>
 
-                            <div class="col-xs-6 align-right">
-                                <p id="ttl">200</p>
-                                <p id="del">200</p>
-                                <p id="undeliv">200</p>
-                                <p id="ack">200</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-1"></div>
-                </div>
-            </div>
+        <div>
+            <a data-role="button" id="loginupdagebutton" style="background-color: #4CAF50;color: #fff" onclick="">Change
+                Password</a>
         </div>
     </div>
-    <br>
-    <br>
 </div>
-<!--end dashboard-->
 
-<!--Message page-->
-<div data-role="page" id="messagepage" style="background-image: url('img/lol.jpg')">
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-        <h1 style="opacity: 1">Messages</h1>
+<!--dashboard-->
+<div data-role="page" id="dashboard">
+
+    <div class="row">
+        <a href="https://odb.org/">
+            <div id="firstrow" class="col-xs-12 col-sm-12" style="" onclick="">
+                <div class="align-center">
+                    <img id="fi" src="./img/odb.png" class="img-responsive">
+                </div>
+            </div>
+        </a>
     </div>
 
-    <div data-role="content">
-        <br><br><br><br>
-
-        <div class="nd2-card" style="background-color: white">
-
-            <div class="container" style="margin-top: 10%; margin-bottom: 10%">
-                <div class="row">
-                    <div class="col-xs-1"></div>
-
-                    <div class="col-xs-10">
-
-                        <div>
-                            <input id="numbers" placeholder="Phone Numbers" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input id="source" placeholder="Source" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input id="message" placeholder="Write something here" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <a style="background-color: #8e0d0e" onclick="send_sms()"
-                               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Send</a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-1"></div>
+    <div class="row">
+        <a href="https://www.biblegateway.com">
+            <div id="secondrow" class="col-xs-12" onclick="">
+                <div class="align-center">
+                    <img src="img/bible.png" class="img-responsive">
                 </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="row">
+        <a href="http://www.essex1.com/people/paul/bible.html">
+            <div id="thirdrow" class="col-xs-12" style="" onclick="">
+                <div class="align-center">
+                    <img src="img/bstories.jpg" class="img-responsive">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!--Social Media-->
+    <div class="row">
+
+        <div class="col-xs-4">
+            <div class="align-center">
+                <br>
+                <br>
+                <!--<p/></p>-->
+                <a id="instagramlink" href="" data-role="button" class="ui-btn"><i id="instagram"
+                                                                                   class="zmdi zmdi-instagram icons"></i></a>
             </div>
         </div>
 
+        <div class="col-xs-4">
+            <div class="align-center">
+                <br>
+                <br>
+                <a id="facebooklink" data-role="button" class="ui-btn"><i id="facebook"
+                                                                          class="zmdi zmdi-facebook icons"></i></a>
+                <!--<p style="color: #fff">SERMONS</p>-->
+            </div>
+        </div>
 
-        <br><br><br>
+        <div class="col-xs-4">
+            <div class="align-center">
+                <br>
+                <br>
+                <a id="youtubelink" href="#" class="ui-btn"><i id="youtube" class="zmdi zmdi-twitter icons"></i></a>
+                <!--<p style="color: #fff">SERMONS</p>-->
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div data-role="footer" data-position="fixed" id="footer">
         <div class="row">
             <div class="col-xs-6"></div>
-            <div class="col-xs-4 col-sm-4">
+            <div class="col-xs-6">
                 <div class="align-right">
-                    <button onclick="change_page('#contactspage')"
-                            style="background-color: #8e0d0e; position: fixed"
-                            class="ui-btn-fab ui-btn-raised clr-warning ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button">
-                        <i class="zmdi zmdi-phone zmd-2x"></i></button>
+                    <a href="#bottomsheetlist" data-role="button"
+                       class="ui-btn">
+                        <i id="fmenu" style="color: #4CAF50;" class="zmdi zmdi-menu zmd-2x"></i>
+                    </a>
                 </div>
             </div>
-            <div class="col-xs-2"></div>
         </div>
     </div>
-</div>
-<!--end message page-->
 
-<!--Register page-->
-<div data-role="page" id="registerpage" style="background-image: url('img/lol.jpg')">
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <!--<a onclick="" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-back"></i></a>-->
-        <a onclick="change_page('#loginpage','pop')"><i class="zmdi zmdi-arrow-back"></i></a>
-        <h1 style="opacity: 1">Sign Up</h1>
-    </div>
+    <!--bottom panel-->
+    <div data-role="panel" id="bottomsheetlist" class="ui-bottom-sheet ui-bottom-sheet-list" data-animate="true"
+         data-transition="pop"
+         data-position='bottom' data-display="overlay">
 
-    <div data-role="content">
-        <br><br>
-
-        <div class="nd2-card" style="background-color: white">
-
-            <div class="container" style="margin-top: 10%; margin-bottom: 10%">
-                <div class="row">
-                    <div class="col-xs-1"></div>
-
-                    <div class="col-xs-10">
-
-                        <div>
-                            <input type="text" id="rname" placeholder="Name" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input type="number" id="rnumber" placeholder="Phone Number" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input type="text" id="rusername" placeholder="Username" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input type="email" id="remail" placeholder="Email" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input type="password" id="rpassword" placeholder="Password" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <input type="password" id="rcpassword" placeholder="Confirm Password" data-clear-btn="true"><br>
-                        </div>
-
-                        <div>
-                            <a style="background-color: #8e0d0e" onclick="register()"
-                               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Sign
-                                Up</a>
-                        </div>
-
+        <div class="row">
+            <div class="col-xs-4" onclick="get_profile_data()">
+                <a href="#profilepage" style="text-decoration: none;">
+                    <div class="align-center">
+                        <br>
+                        <br>
+                        <i style="color: #4CAF50" class="zmdi zmdi-account ficons"></i>
+                        <p class="btext">PROFILE</p>
                     </div>
+                </a>
+            </div>
 
-                    <div class="col-xs-1"></div>
+            <div class="col-xs-4" onclick="view_announcements()">
+                <div class="align-center">
+                    <br>
+                    <br>
+                    <i style="" class="zmdi zmdi-comment-outline ficons"></i>
+                    <p class="btext">ANNOUNCEMENTS</p>
+                </div>
+            </div>
+
+            <div class="col-xs-4" onclick="view_appointments()">
+                <div class="align-center">
+                    <br>
+                    <br>
+                    <i class="zmdi zmdi-receipt ficons"></i>
+                    <p class="btext">APPOINTMENTS</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-4" onclick="view_activities()">
+                <div class="align-center">
+                    <br>
+                    <br>
+                    <i class="zmdi zmdi-calendar-note ficons"></i>
+                    <p class="btext" style="">EVENTS</p>
+                </div>
+            </div>
+
+            <div class="col-xs-4" onclick="view_messages()">
+                <div class="align-center">
+                    <br>
+                    <br>
+                    <i class="zmdi zmdi-collection-bookmark ficons"></i>
+                    <p class="btext">SERMONS</p>
+                </div>
+            </div>
+
+            <div class="col-xs-4" onclick="get_books()">
+                <div class="align-center">
+                    <br>
+                    <br>
+                    <i class="zmdi zmdi-book ficons"></i>
+                    <p class="btext">BIBLE</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!--Signup page-->
+<div data-role="page" id="signuppage">
+    <div data-role="header" style="background-color: #4CAF50">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="index.html" class="ui-btn ui-btn-icon-right" data-transition="flip">
+
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+
+    <div data-role="popup" id="successpopup" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: #4CAF50">Sign-up successful !</h4>
+    </div>
+
+    <div data-role="popup" id="failpopup" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Sorry. This user already exists !</h4>
+    </div>
+
+    <div data-role="popup" id="sfailpopup" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Passwords do not match !</h4>
+    </div>
+
+    <div data-role="popup" id="sfailpopup2" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Please fill out all fields !</h4>
+    </div>
+
+    <div data-role="popup" id="sfailpopup3" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Invalid telephone number !</h4>
+    </div>
+
+    <div data-role="popup" id="sfailpopup4" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Your password should be at least 8 characters long !</h4>
+    </div>
+
+    <div data-role="content">
+        <div class="align-center">
+            <h4><b>Sign up here !</b></h4>
+        </div>
+        <br>
+
+        <!--name-->
+        <div>
+            <input type="text" id="susername" placeholder="Username" required style="text-align: center">
+        </div>
+
+        <div>
+            <input type="number" id="stel" placeholder="Telephone" style="text-align: center" maxlength="10">
+        </div>
+
+        <div>
+            <input type="password" id="spassword" placeholder="Password" required style="text-align: center">
+        </div>
+
+        <div>
+            <input type="password" id="scpassword" placeholder="Confirm Password" required
+                   style="text-align: center">
+        </div>
+
+        <br>
+        <br>
+        <div>
+            <a style="background-color: #4CAF50;color: #fff" data-role="button" id="signupbutton"
+               onclick="sign_up()">Sign
+                Up</a>
+        </div>
+
+    </div>
+</div>
+
+<!--profile page-->
+<div data-role="page" id="profilepage">
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0;" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+
+    <!--<br>-->
+    <br>
+    <br>
+    <br>
+    <!--<div data-role="content" id="profile">-->
+
+    <!--<div class="align-center">-->
+    <!--<img class="image" src="./img/sam.jpg" style=" border-radius: 50%; max-width: 100%" height="180px"-->
+    <!--width="180px">-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <div data-role="content">
+        <h1></h1>
+        <!---->
+
+        <div>
+            <input data-clear-btn='true' type="text" id="pusername" placeholder="Username" readonly
+                   style="text-align: center">
+        </div>
+
+        <div>
+            <input data-clear-btn='true' type="text" id="pfname" placeholder="Firstname" readonly
+                   style="text-align: center">
+        </div>
+
+        <div>
+            <input data-clear-btn='true' type="text" id="pmname" placeholder="Middlename" readonly
+                   style="text-align: center">
+        </div>
+
+        <div>
+            <input data-clear-btn='true' type="text" id="plname" placeholder="Lastname" readonly
+                   style="text-align: center">
+        </div>
+
+        <div>
+            <input data-clear-btn='true' type="email" id="pemail" placeholder="Email" readonly
+                   style="text-align: center">
+        </div>
+
+        <div>
+            <input data-clear-btn='true' type="tel" id="ptelephone" placeholder="Telephone" readonly
+                   style="text-align: center">
+        </div>
+
+        <div class='align-center'>
+            <h5><a href='#changepasswordpage' style="color: #4CAF50; text-decoration:none;">Change Password</a></h5>
+        </div>
+
+        <div data-role="footer" data-position="fixed" style="border: none; background-color: #fff">
+            <div class="row">
+                <div class="col-xs-6"></div>
+                <div class="col-xs-6">
+                    <div class="align-right">
+                        <a onclick="allow_edit()" data-role="button" style="background-color: #4CAF50"
+                           class="ui-btn">
+                            <i style="color: #ffffff; font-size: 20px;" class="zmdi zmdi-edit zmd-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--</div>-->
+
+        </div>
+    </div>
+</div>
+
+<!--edit page-->
+<div data-role="page" id="editpage">
+
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0;" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div data-role="popup" id="esuccesspopup" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: #4CAF50">Update successful !</h4>
+    </div>
+
+    <div data-role="popup" id="efailpopup" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Update Failed</h4>
+    </div>
+
+    <div data-role="popup" id="efailpopup2" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Please fill out all empty fields !</h4>
+    </div>
+
+    <div data-role="popup" id="efailpopup3" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Invalid telephone number !</h4>
+    </div>
+
+    <div data-role="popup" id="efailpopup4" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Passwords do not match !</h4>
+    </div>
+
+    <div data-role="popup" id="efailpopup5" class="ui-content" style="background-color: white; border: none">
+        <h4 style="color: crimson">Your password should be at least 8 characters long !</h4>
+    </div>
+
+    <div data-role="content">
+
+        <!--name-->
+        <form id="eform" method="post">
+            <div>
+                <input data-clear-btn="true" type="text" name="username" id="eusername" placeholder="Username" required
+                       style="text-align: center">
+            </div>
+
+            <div>
+                <input data-clear-btn="true" type="text" name="firstname" id="efname" placeholder="Firstname" required
+                       style="text-align: center">
+            </div>
+
+            <div>
+                <input data-clear-btn="true" type="text" name="middlename" id="emname" placeholder="Middlename" required
+                       style="text-align: center">
+            </div>
+
+            <div>
+                <input data-clear-btn="true" type="text" name="lastname" id="elname" placeholder="Lastname" required
+                       style="text-align: center">
+            </div>
+
+            <div>
+                <input data-clear-btn="true" type="email" name="email" id="eemail" placeholder="Email" required
+                       style="text-align: center">
+            </div>
+
+            <div>
+                <input data-clear-btn="true" type="tel" name="telephone" id="etelephone" placeholder="Telephone"
+                       required
+                       style="text-align: center">
+            </div>
+
+            <div>
+                <a data-role="button" id="editbutton" style="background-color: #4CAF50;color: #fff" onclick="update()">Done</a>
+            </div>
+        </form>
+
+        <br>
+        <br>
+        <div>
+            <!--<a style="background-color: #4CAF50;color: #fff" data-role="button" id="updatebutton"-->
+            <!--onclick="update()">Update</a>-->
+        </div>
+    </div>
+</div>
+
+<!--announcement page-->
+<div data-role="page" id="announcementpage">
+
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0;" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="ann" data-role="content">
+        <div class='nd2-card'>
+            <div class='card-title'>
+                <h3 class='card-primary-title' style='color: #4CAF50;'>David and Goliath</h3>
+                <!--//<h5>From " + +" to " + +"</h5>";-->
+                <div class='card-action'>
+                    <div class='row between-xs'>
+                        <div class='col-xs-12 align-left'>
+                            <div class='box'>
+                                <p><i style='color: #4CAF50' class='zmdi zmdi-account'></i> &nbsp; 2 Kings 12:89
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--activities page-->
+<div data-role="page" id="activitiespage">
+
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="acc" data-role="content">
+        <div class='nd2-card'>
+            <div class='card-title'>
+                <h4 class='card-primary-title' style='color: #4CAF50;'>Health Walk</h4>
+                <!--<h5>From " + +" to " + +"</h5>-->
+                <div class='card-action'>
+                    <div class='row between-xs'>
+                        <div class='col-xs-12 align-right'>
+                            <div class='box'>
+                                <a href='#'
+                                   class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button'
+                                   onclick='get_an_info(" + obj.announcements[i].id + ")'><i style='color: #4CAF50'
+                                                                                             class='zmdi zmdi-mail-reply zmd-flip-horizontal'></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-
-        <!--<br><br><br>-->
-        <!--<div class="row">-->
-        <!--<div class="col-xs-6"></div>-->
-        <!--<div class="col-xs-4 col-sm-4">-->
-        <!--<div class="align-right">-->
-        <!--<button onclick="change_page('#contactspage','pop')"-->
-        <!--style="background-color: #8e0d0e; position: fixed"-->
-        <!--class="ui-btn-fab ui-btn-raised clr-warning ui-btn ui-btn-inline waves-effect waves-button waves-effect waves-button">-->
-        <!--<i class="zmdi zmdi-phone zmd-2x"></i></button>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col-xs-2"></div>-->
-        <!--</div>-->
-    </div>
-</div>
-<!--end registerpage-->
-
-<!--Contacts page-->
-<div data-role="page" id="contactspage" style="background-image: url('img/lol.jpg')">
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-        <h1 style="opacity: 1">Contacts</h1>
-    </div>
-
-    <div data-role="content">
-
-        <br><br>
-        <div class="nd2-card" style="background-color: white" id="contacts">
-            <!---->
-            <div id="mycontacts" data-filter="true">
-
-                <input type='checkbox' id='a' onclick='select_contacts(123)'>
-                <label for='a'>Sam</label>
-
-                <input type='checkbox' id='b' onclick='select_contacts(456)'>
-                <label for='b'>Dan</label>
-
-            </div>
-        </div>
-    </div>
-
-    <div data-role="footer" data-position="fixed"
-         style="position: fixed; right: 0; bottom: 0; left: 0; background-color: #1d1d1d">
-
-        <div class="row center-xs">
-            <div class="col-xs-6">
-                <!--<div class="box">-->
-                <!--<a href="#" class="ui-btn ui-mini nd2-btn-icon-block"><i class='zmdi zmdi-plus'></i> add</a>-->
-                <!--</div>-->
-            </div>
-            <div class="col-xs-6">
-                <div class="box align-right">
-                    <a href="#" class="ui-btn ui-mini nd2-btn-icon-block" style="color: white" onclick="done()">Done</a>
+        <div class='nd2-card'>
+            <div class='card-title'>
+                <h4 class='card-primary-title' style='color: #4CAF50;'>Soul Winning</h4>
+                <!--<h5>From " + +" to " + +"</h5>-->
+                <div class='card-action'>
+                    <div class='row between-xs'>
+                        <div class='col-xs-12 align-right'>
+                            <div class='box'>
+                                <a href='#'
+                                   class='ui-btn ui-btn-inline ui-btn-fab waves-effect waves-button waves-effect waves-button'
+                                   onclick='get_an_info(" + obj.announcements[i].id + ")'><i style='color: #4CAF50'
+                                                                                             class='zmdi zmdi-mail-reply zmd-flip-horizontal'></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--end contacts page-->
 
-<!--Payments page-->
-<div data-role="page" id="paymentspage" style="background-image: url('img/lol.jpg');">
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-        <h1 style="opacity: 1">Payments</h1>
+<!--announcement info page-->
+<div data-role="page" id="ainfopage">
+
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <div data-role="content">
-        <br><br>
-        <div class="nd2-card" style="background-color: white">
-            <!--<label class="align-center">Balance</label>-->
+    <div id="aninfo" data-role="content">
 
-            <h2 class="align-center" id="balance">GHC 3234</h2>
-        </div>
-        <!---->
-        <div class="nd2-card" style="background-color: white">
-            <br>
-            <div class="col-xs-12">
-                <input type="text" id="msisdn" onkeyup="convert_num2()" value="" data-clear-btn="true"
-                       placeholder="Mobile Number">
-                <br>
-
-                <input type="number" id="amount" value="" data-clear-btn="true"
-                       placeholder="Amount">
-                <br>
-
-                <label class="align-center">Select a Network</label>
-
-                <select onchange="vodafone()" name="select-choice-1" id="networks" data-native-menu="true">
-                    <option value="mtn">MTN</option>
-                    <option value="tigo">TIGO</option>
-                    <option value="vodafone">VODAFONE</option>
-                    <option value="airtel">AIRTEL</option>
-                    <!--<option value="java">Java</option>-->
-                </select>
-
-            </div>
-            <br><br>
-        </div>
-
-        <div>
-            <a style="background-color: #8e0d0e" onclick="make_payment()"
-               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Make
-                Payment</a>
-        </div>
     </div>
 </div>
-<!--end payment page-->
 
-<div data-role="page" id="vodafonepage" style="background-image: url('img/lol.jpg');">
-    <div data-role="header" data-position="fixed" style="background-color: #8e0d0e">
-        <a onclick="home()" class="ui-btn ui-btn-right wow fadeIn" data-wow-delay='1.2s'><i class="zmdi zmdi-home"></i></a>
-        <a href="#leftpanel" class="ui-btn ui-btn-left wow fadeIn" data-wow-delay='0.8s'><i class="zmdi zmdi-menu"></i></a>
-        <h1 style="opacity: 1">Payments</h1>
+<!--activity info-->
+<div data-role="page" id="acinfopage">
+
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity:0;" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
     </div>
 
-    <div data-role="content">
+    <br>
+    <br>
+    <br>
+    <br>
 
-        <!--<div class="nd2-card" style="background-color: white">-->
-        <!--&lt;!&ndash;<label class="align-center">Balance</label>&ndash;&gt;-->
-        <!--<h2 class="align-center" id="balance">GHC 3234</h2>-->
+    <div id="acinfo" data-role="content">
+
+    </div>
+</div>
+
+<!--appointment page-->
+<div data-role="page" id="appointmentpage">
+
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <div data-role="popup" id="delappsuccess" class="ui-content" style="background-color: white">
+            <h4 style="color: #4CAF50">This appointment has been deleted.</h4>
+        </div>
+
+        <div data-role="popup" id="apploading" class="ui-content" style="background-color: white">
+            <h4 style="color: #4CAF50; border:none" id="apptext">Processing Request</h4>
+        </div>
+
+        <div data-role="popup" id="addappinvalid" class="ui-content" style="background-color: white">
+            <h4 style="color: crimson">Invalid Data Provided</h4>
+        </div>
+
+        <div data-role="popup" id="no internet" class="ui-content" style="background-color: white">
+            <h4 style="color: crimson">No Internet Connection</h4>
+        </div>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div data-role="content" id="app">
+
+    </div>
+
+    <div data-role="footer" data-position="fixed" style="border: none; background-color: #fff">
+        <div class="row">
+            <div class="col-xs-6"></div>
+            <div class="col-xs-6">
+                <div class="align-right">
+                    <a href="" data-role="button" style="background-color: #4CAF50"
+                       class="ui-btn" onclick="build_add_app_page()">
+                        <i style="color: #ffffff; font-size: 20px;" class="zmdi zmdi-plus zmd-3x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--add appointment page-->
+<div data-role="page" id="addapppage">
+    <!---->
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+        <!---->
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+        <!---->
+    </div>
+    <!---->
+    <div data-role="popup" id="addappsuccess" class="ui-content">
+        <h4 style="color: #4CAF50">Your appointment has been scheduled.</h4>
+    </div>
+
+    <div data-role="popup" id="addappfail" class="ui-content">
+        <h4 style="color: crimson">Sorry, your appointment was not scheduled.</h4>
+    </div>
+
+    <div data-role="popup" id="afailpopup2" class="ui-content">
+        <h4 style="color: crimson">Please fill out all empty fields !</h4>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div data-role="content" id="addapp">
+        <!--name-->
+        <!--<div>-->
+        <!--<input type="text" id="aname" placeholder="Name" required style="text-align: center;">-->
         <!--</div>-->
-        <!---->
-        <div class="nd2-card" style="background-color: white">
-            <br>
-            <div class="col-xs-12">
-
-                <input type="text" id="voucher_number" value="" data-clear-btn="true"
-                       placeholder="Voucher Number">
-                <br>
-
-                <input type="text" id="msisdnx" onkeyup="convert_num()" value="" data-clear-btn="true"
-                       placeholder="Mobile Number">
-                <br>
-
-                <input type="number" id="amountx" value="" data-clear-btn="true"
-                       placeholder="Amount">
-                <br>
-
-            </div>
-            <br><br>
-        </div>
 
         <div>
-            <a style="background-color: #8e0d0e" onclick="vodafone_payment()"
-               class="ui-btn ui-btn-inline clr-btn-deep-orange waves-effect waves-button waves-effect waves-button">Make
-                Payment</a>
+            <input hidden type="key" placeholder="Whod to see">
         </div>
+
+        <!--<div>-->
+        <!--<textarea id="purpose" placeholder="Purpose" style="text-align: center"></textarea>-->
+        <!--</div>-->
+
+        <!--<div>-->
+        <!--<input type="text" id="duration" placeholder="Duration" required style="text-align: center;">-->
+        <!--</div>-->
+
+        <!--<div>-->
+        <!--<input type="date" id="adate" placeholder="Date" required style="text-align: center;">-->
+        <!--</div>-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--<div>-->
+        <!--<input type="text" id="acomment" placeholder="Comment" required style="text-align: center;">-->
+        <!--</div>-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--<br>-->
+        <!--<br>-->
+        <!--<div>-->
+        <!--<a style="background-color: #4CAF50;color: #fff;" data-role="button" id="appaddbutton"-->
+        <!--onclick="add_app()">Submit</a>-->
+        <!--</div>-->
     </div>
 </div>
 
-<!--Panel-->
+<!--messages page-->
+<div data-role="page" id="messagespage">
+    <!---->
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff; opacity: 0;" class="align-center"><b>Panels</b></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+        <!---->
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+        <!---->
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!---->
+    <div id="msg" data-role="content" class="">
+
+    </div>
+</div>
+
+<!--panel-->
 <div data-role="panel" id="leftpanel" data-display="overlay" data-position-fixed="true"
      style="background-color: white;">
 
@@ -452,32 +870,155 @@
 
         <!---->
         <li>
-            <a onclick="get_stats()" href="">
-                <h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-share"></i>&nbsp;&nbsp;&nbsp;&nbsp;STATISTICS
+            <a onclick="" href="#profilepage">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-account"></i>&nbsp;&nbsp;&nbsp;&nbsp;PROFILE
                 </h5>
             </a>
         </li>
 
         <li>
-            <a onclick="change_page('#messagepage','pop')" href="">
-                <h5 class="h" style="font-weight: lighter; color:#8e0d0e"><i class="zmdi zmdi-comment"></i>&nbsp;&nbsp;&nbsp;&nbsp;MESSAGE
+            <a onclick="view_announcements()">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-comment-outline"></i>&nbsp;&nbsp;&nbsp;&nbsp;ANNOUNCEMENTS
                 </h5>
                 <!--<h2></h2>-->
             </a>
         </li>
-
+        <!---->
         <li>
-            <a onclick="get_balance()">
-                <h5 class="h" style="font-weight: lighter; color: #8e0d0e"><i class="zmdi zmdi-money"></i>&nbsp;&nbsp;&nbsp;&nbsp;PAYMENTS
+            <a onclick="view_appointments()" href="#appointmentpage">
+                <h5 class="h" style="font-weight: lighter"><i class="zmdi zmdi-receipt"></i>&nbsp;&nbsp;&nbsp;&nbsp;APPOINTMENTS
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+        </li>
+        <!---->
+        <li>
+            <a onclick="view_activities()">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-calendar-note"></i>&nbsp;&nbsp;&nbsp;&nbsp;EVENTS
+                </h5>
+                <h2></h2>
+            </a>
+        </li>
+        <!---->
+        <li>
+            <a onclick="view_messages()">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-collection-bookmark"></i>&nbsp;&nbsp;&nbsp;&nbsp;SERMONS
                 </h5>
                 <!--<h2></h2>-->
             </a>
             <!--<hr style="opacity: .5">-->
         </li>
+
+        <li>
+            <a href="#dashboard">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-view-dashboard"></i>&nbsp;&nbsp;&nbsp;&nbsp;DASHBOARD
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+            <!--<hr style="opacity: .5">-->
+        </li>
+
+        <li>
+            <a onclick="get_books()">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-book"></i>&nbsp;&nbsp;&nbsp;&nbsp;BIBLE
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+            <!--<hr style="opacity: .5">-->
+        </li>
+
+        <li>
+            <a href="#loginpage">
+                <h5 class="h" style="font-weight: lighter;"><i class="zmdi zmdi-home"></i>&nbsp;&nbsp;&nbsp;&nbsp;HOME
+                </h5>
+                <!--<h2></h2>-->
+            </a>
+            <hr style="opacity: .5">
+        </li>
+
     </ul>
 
 </div>
-<!--end panel-->
+
+<!--Bible Part-->
+
+<div data-role="page" id="biblepage">
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 style="color: #ffffff;" class="align-center">Books</h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!--<label>Old Testament</label>-->
+    <div data-role="content" id="ot" data-filter="true" data-filter-placeholder="Search Old Testament">
+
+    </div>
+
+    <!--<label>New Testament</label>-->
+    <div data-role="content" id="nt" data-filter="true" data-filter-placeholder="Search New Testament">
+
+    </div>
+
+</div>
+
+<div data-role="page" id="bookpage">
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 id="booktitle" style="color: #ffffff;" class="align-center"></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div data-role="content" id="chapters">
+
+    </div>
+</div>
+
+<div data-role="page" id="versespage">
+    <div data-role="header" style="background-color: #4CAF50"
+         class="wow fadeIn ui-header ui-bar-inherit ui-header-fixed slidedown" role="banner">
+        <h1 id="bookchapter" style="color: #ffffff;" class="align-center"></h1>
+        <a href="#leftpanel" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-menu"></i>
+        </a>
+
+        <a href="#loginpage" class="ui-btn ui-btn-icon-right" data-transition="flip">
+            <i class="zmdi zmdi-power-off" data-transition="flip"></i>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div data-role="content" id="verses">
+        <div>
+            <p><b style="color: #4CAF50">1</b>&nbsp; In the beggining God created the Heavens and the Earth.</p>
+            <hr style="opacity: 0.3">
+        </div>
+
+        <div>
+            <p><b style="color: #4CAF50">2</b>&nbsp; And the earth was without form and void.</p>
+            <hr>
+        </div>
+    </div>
+</div>
 
 </body>
 

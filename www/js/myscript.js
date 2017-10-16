@@ -575,7 +575,7 @@ function vodafone_payment() {
                 msisdn: msisdnx,
                 amount: amountx,
                 voucher_number: voucher,
-                description: 'DMobile_credit',
+                description: 'DMC',
                 user_id: "npdeywuro",
                 password: "hdgt2314",
                 username: $.cookie('username')
