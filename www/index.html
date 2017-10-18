@@ -47,7 +47,7 @@
         });
 
         document.addEventListener("backbutton", function (e) {
-            if ($.mobile.activePage.is('#loginpage')) {
+            if ($.mobile.activePage.is('#dashboard')) {
                 /*
                  Event preventDefault/stopPropagation not required as adding backbutton
                  listener itself override the default behaviour. Refer below PhoneGap link.
@@ -356,11 +356,21 @@
 
     <div data-role="content">
         <br><br>
-        <div class="nd2-card" style="background-color: white">
-            <!--<label class="align-center">Balance</label>-->
 
-            <h2 class="align-center" id="balance">GHC 3234</h2>
+        <div class="nd2-card" style="background-color: white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h2 class="align-center" id="balance">GHC 3234</h2>
+                    </div>
+                    <div class="col-xs-3">
+                        <br>
+                        <a onclick="get_balance()" class="ui-btn ui-btn-inline"><i class="zmdi zmdi-refresh zmd-2x"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <!---->
         <div class="nd2-card" style="background-color: white">
             <br>
