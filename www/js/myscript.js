@@ -12,6 +12,7 @@ var contacts_array = [];
 var duplicate = [];
 
 var new_array = [];
+var g_num='';
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -223,15 +224,31 @@ function insert(data) {
         new_array.push(data);
 
     } else {
+
+
+        var p = $("#numbers").val();
+        var warray = p.split(",");
+        var new_num='';
+
+        var num_index = warray.indexOf(data);
+        warray.splice(num_index, 1);
+
+        for(var i=0; i<warray.length; i++){
+            new_num += warray[i]+',';
+        }
+        // alert(new_num);
+        $("#numbers").val(new_num);
+
         var index = new_array.indexOf(data);
         new_array.splice(index, 1);
-        // alert("number-del: " + data);
+
     }
 }
 
 function done() {
     var numbers = '';
     var pre = $("#numbers").val();
+
     var pret = pre.trim();
 
     if (new_array.length != 0) {
@@ -240,12 +257,20 @@ function done() {
         }
     }
 
-    if (pret.length != 0) {
-        var new_string = pret + "," + numbers;
-        $("#numbers").val(new_string);
-    } else {
-        $("#numbers").val(numbers);
-    }
+
+    var new_string = pre + "," + numbers;
+
+    var cu = new_string.split(",");
+    var cud = Array.from(new Set(cu));
+
+
+    // let fruits = ['apple','banana','orange','apple','mango','banana'];
+    // let fruits_without_duplicates = Array.from(new Set(fruits));
+
+
+
+    $("#numbers").val(cud);
+
 
     change_page('#messagepage', 'pop');
 }
@@ -423,7 +448,7 @@ function get_contacts() {
     var build = '';
 
     for (var i = 0; i < contacts_array.length; i++) {
-        console.log(contacts_array[i].number);
+        // console.log(contacts_array[i].number);
 
         build += "<input onclick='select_contacts(" + contacts_array[i].number + ")' type='checkbox' id='" + contacts_array[i].id + "'>";
 
@@ -646,4 +671,8 @@ function get_balance() {
             }
         });
 }
+
+// function addcomma(){
+//     $("#number").val()+",";
+// }
 
