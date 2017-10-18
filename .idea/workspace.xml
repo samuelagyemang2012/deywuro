@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8e3cbf23-4312-41f6-86c2-b8f8ec19a829" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/myscript.js" afterPath="$PROJECT_DIR$/www/js/myscript.js" />
     </list>
     <ignored path="findme.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,8 +108,8 @@
       <file leaf-file-name="myscript.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+            <state relative-caret-position="289">
+              <caret line="242" column="24" selection-start-line="242" selection-start-column="24" selection-end-line="242" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#296#392#0" expanded="false" />
@@ -134,8 +134,8 @@
                 <element signature="n#!!block;n#containsId#0" expanded="false" />
                 <element signature="n#!!block;n#containsNumber#0" expanded="false" />
                 <element signature="n#!!block;n#make_payment#0" expanded="false" />
-                <element signature="e#12144#13094#0" expanded="false" />
-                <element signature="e#14111#15058#0" expanded="false" />
+                <element signature="e#12148#13098#0" expanded="false" />
+                <element signature="e#14115#15062#0" expanded="false" />
                 <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
                 <element signature="n#!!block;n#vodafone#0" expanded="false" />
               </folding>
@@ -213,8 +213,8 @@
         <option value="&lt;9986cd4c-5e69-4fff-9c7a-7b36239ffa4e&gt;/tigo/deywuro_callback.php" />
         <option value="&lt;9986cd4c-5e69-4fff-9c7a-7b36239ffa4e&gt;/airtel/deywuro_callback.php" />
         <option value="&lt;9986cd4c-5e69-4fff-9c7a-7b36239ffa4e&gt;/airtel/deywuro_live.php" />
-        <option value="$PROJECT_DIR$/www/js/myscript.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/myscript.js" />
       </list>
     </option>
   </component>
@@ -3720,14 +3720,7 @@
       <workItem from="1507545185229" duration="2078000" />
       <workItem from="1507735148163" duration="3488000" />
       <workItem from="1507902641423" duration="12703000" />
-      <workItem from="1508316519371" duration="2906000" />
-    </task>
-    <task id="LOCAL-00077" summary="k">
-      <created>1503916642164</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1503916642164</updated>
+      <workItem from="1508316519371" duration="3622000" />
     </task>
     <task id="LOCAL-00078" summary="k">
       <created>1503917118037</created>
@@ -4065,11 +4058,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508317458198</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="k">
+      <created>1508319437808</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1508319437808</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309980000" />
+    <option name="totallyTimeSpent" value="310696000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -4184,8 +4184,8 @@
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
             <element signature="n#!!block;n#make_payment#0" expanded="false" />
-            <element signature="e#12144#13094#0" expanded="false" />
-            <element signature="e#14111#15058#0" expanded="false" />
+            <element signature="e#12148#13098#0" expanded="false" />
+            <element signature="e#14115#15062#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
@@ -4228,8 +4228,8 @@
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
             <element signature="n#!!block;n#make_payment#0" expanded="false" />
-            <element signature="e#12144#13094#0" expanded="false" />
-            <element signature="e#14111#15058#0" expanded="false" />
+            <element signature="e#12148#13098#0" expanded="false" />
+            <element signature="e#14115#15062#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
@@ -4272,8 +4272,8 @@
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
             <element signature="n#!!block;n#make_payment#0" expanded="false" />
-            <element signature="e#12144#13094#0" expanded="false" />
-            <element signature="e#14111#15058#0" expanded="false" />
+            <element signature="e#12148#13098#0" expanded="false" />
+            <element signature="e#14115#15062#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
@@ -4316,8 +4316,8 @@
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
             <element signature="n#!!block;n#make_payment#0" expanded="false" />
-            <element signature="e#12144#13094#0" expanded="false" />
-            <element signature="e#14111#15058#0" expanded="false" />
+            <element signature="e#12148#13098#0" expanded="false" />
+            <element signature="e#14115#15062#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>
@@ -4560,8 +4560,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/myscript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+        <state relative-caret-position="289">
+          <caret line="242" column="24" selection-start-line="242" selection-start-column="24" selection-end-line="242" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#296#392#0" expanded="false" />
@@ -4586,8 +4586,8 @@
             <element signature="n#!!block;n#containsId#0" expanded="false" />
             <element signature="n#!!block;n#containsNumber#0" expanded="false" />
             <element signature="n#!!block;n#make_payment#0" expanded="false" />
-            <element signature="e#12144#13094#0" expanded="false" />
-            <element signature="e#14111#15058#0" expanded="false" />
+            <element signature="e#12148#13098#0" expanded="false" />
+            <element signature="e#14115#15062#0" expanded="false" />
             <element signature="n#!!block;n#vodafone_payment#0" expanded="false" />
             <element signature="n#!!block;n#vodafone#0" expanded="false" />
           </folding>

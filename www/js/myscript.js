@@ -240,7 +240,7 @@ function done() {
         }
     }
 
-    if (pret != null) {
+    if (pret.length == 0) {
         var new_string = pret + "," + numbers;
         $("#numbers").val(new_string);
     } else {
