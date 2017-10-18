@@ -257,7 +257,6 @@ function done() {
         }
     }
 
-
     var new_string = pre + "," + numbers;
 
     var cu = new_string.split(",");
