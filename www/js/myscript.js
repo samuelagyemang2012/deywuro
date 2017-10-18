@@ -231,6 +231,8 @@ function insert(data) {
 
 function done() {
     var numbers = '';
+    var pre = $("#numbers").val();
+    var pret = pre.trim();
 
     if (new_array.length != 0) {
         for (var i = 0; i < new_array.length; i++) {
@@ -238,9 +240,12 @@ function done() {
         }
     }
 
-    $("#numbers").val(numbers);
-
-    // new_array = [];
+    if (pret != null) {
+        var new_string = pret + "," + numbers;
+        $("#numbers").val(new_string);
+    } else {
+        $("#numbers").val(numbers);
+    }
 
     change_page('#messagepage', 'pop');
 }
