@@ -9,10 +9,12 @@ live_contacts = null;
 
 var live_ids = [];
 var contacts_array = [];
+var groups = [];
+var group_names = [];
 var duplicate = [];
 
 var new_array = [];
-var g_num='';
+var g_num = '';
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -53,11 +55,13 @@ function login() {
 
                     $.cookie('username', username);
                     $.cookie('password', password);
+                    $.cookie('user_id', response.user_id);
 
                     load_contacts();
 
                     get_stats();
 
+                    get_sms_groups();
                 }
 
                 if (response.message == "Invalid Credential!") {
@@ -194,14 +198,11 @@ function select_contacts(num) {
     var new_num = process_num(num);
 
     insert(new_num);
+}
 
-    // for (var i = 0; i < new_array.length; i++) {
-    //     test += new_array[i] + ',';
-    // }
-
-    //alert(test);
-
-    // console.log(test);
+function select_groups(num, data) {
+    insert_group(num);
+    insert_group_name(data);
 }
 
 function del(data) {
@@ -228,19 +229,72 @@ function insert(data) {
 
         var p = $("#numbers").val();
         var warray = p.split(",");
-        var new_num='';
+        var new_num = '';
 
         var num_index = warray.indexOf(data);
         warray.splice(num_index, 1);
 
-        for(var i=0; i<warray.length; i++){
-            new_num += warray[i]+',';
+        for (var i = 0; i < warray.length; i++) {
+            new_num += warray[i] + ',';
         }
         // alert(new_num);
         $("#numbers").val(new_num);
 
         var index = new_array.indexOf(data);
         new_array.splice(index, 1);
+
+    }
+}
+
+function insert_group(data) {
+
+    if (groups.indexOf(data) == -1) {
+        // alert("number-add: " + data);
+        groups.push(data);
+
+    } else {
+
+        // var p = $("#numbers").val();
+        // var warray = p.split(",");
+        // var new_num = '';
+        //
+        // var num_index = warray.indexOf(data);
+        // warray.splice(num_index, 1);
+        //
+        // for (var i = 0; i < warray.length; i++) {
+        //     new_num += warray[i] + ',';
+        // }
+        // // alert(new_num);
+        // $("#numbers").val(new_num);
+
+        var index = groups.indexOf(data);
+        groups.splice(index, 1);
+
+    }
+}
+
+function insert_group_name(data) {
+    if (group_names.indexOf(data) == -1) {
+        // alert("number-add: " + data);
+        group_names.push(data);
+
+    } else {
+
+        // var p = $("#numbers").val();
+        // var warray = p.split(",");
+        // var new_num = '';
+        //
+        // var num_index = warray.indexOf(data);
+        // warray.splice(num_index, 1);
+        //
+        // for (var i = 0; i < warray.length; i++) {
+        //     new_num += warray[i] + ',';
+        // }
+        // // alert(new_num);
+        // $("#numbers").val(new_num);
+
+        var index = group_names.indexOf(data);
+        group_names.splice(index, 1);
 
     }
 }
@@ -267,11 +321,28 @@ function done() {
     // let fruits_without_duplicates = Array.from(new Set(fruits));
 
 
-
     $("#numbers").val(cud);
 
 
     change_page('#messagepage', 'pop');
+}
+
+function group_done() {
+    var gnumbers = '';
+    var gname = '';
+
+    if (group_names.length != 0) {
+        for (var s = 0; s < group_names.length; s++) {
+            gname += group_names[s] + ',';
+        }
+    }
+
+    $("#gnumbers").val(gname);
+    // alert(gnumbers);
+    // alert(gname);
+
+    change_page("#gmessagepage", "pop");
+
 }
 
 function toast(msg, duration) {
@@ -348,7 +419,7 @@ function get_stats() {
 
 function home() {
 
-    // $("#mycontacts").html("");
+
     var cookies = $.cookie();
     for (var cookie in cookies) {
         $.removeCookie(cookie);
@@ -671,7 +742,85 @@ function get_balance() {
         });
 }
 
-// function addcomma(){
-//     $("#number").val()+",";
-// }
+function get_sms_groups() {
+    var build;
+
+    build = '';
+
+    $.post("https://deywuro.com/api/get_groups",
+        {
+            id: $.cookie('user_id'),
+        },
+
+        function (response) {
+
+
+            if (response.count > 0) {
+
+                for (var i in response.data) {
+
+                    build += "<input onclick='select_groups(" + response.data[i].id + ',' + '"' + response.data[i].name + '"' + ")' type='checkbox' id='" + response.data[i].id + "'>";
+
+                    build += "<label for='" + response.data[i].id + "'>" + response.data[i].name + "</label>";
+
+                    $("#mysmsgrouppage").html(build).enhanceWithin();
+
+                }
+
+            } else {
+                build += "<div class='align-center'>";
+                build += "<p>No SMS Groups yet</p>";
+                build += "</div>";
+
+                $("#mysmsgrouppage").html(build).enhanceWithin();
+
+            }
+        });
+
+    // change_page("#smsgrouppage", "pop");
+}
+
+function send_group_sms() {
+
+    var gnumbers, source, message;
+
+    gnumbers = '';
+
+
+    if (groups.length != 0) {
+        for (var i = 0; i < groups.length; i++) {
+            gnumbers += groups[i] + ',';
+        }
+    }
+
+    source = $("#gsource").val();
+    message = $("#gmessage").val();
+
+    // alert("ids: " + gnumbers + " source: " + source + " message:" + message);
+
+    $.post("https://deywuro.com/api/send_group_sms",
+        {
+            ids: gnumbers,
+            source: source,
+            message: message,
+            username: $.cookie('username'),
+            password: $.cookie('password')
+
+        },
+
+        function (response) {
+
+
+            if (response.contacts > 0) {
+
+                toast("Sending your message to " + response.contacts + " contacts", "3500");
+
+            } else {
+
+                toast("Sending your message to " + response.contacts + " contacts", "3500");
+            }
+        });
+}
+
+
 
