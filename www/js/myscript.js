@@ -3,18 +3,10 @@
 //    alert(navigator.contacts);
 //}, true);
 
-//array to store contacts
-var live_contacts = [];
-live_contacts = null;
-
-var live_ids = [];
 var contacts_array = [];
 var groups = [];
 var group_names = [];
-var duplicate = [];
-
 var new_array = [];
-var g_num = '';
 
 $(function () {
     $("[data-role=header]").toolbar();
@@ -821,6 +813,3 @@ function send_group_sms() {
             }
         });
 }
-
-
-
