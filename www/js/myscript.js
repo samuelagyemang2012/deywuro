@@ -26,7 +26,6 @@ function login() {
     password = $("#password").val();
 
 
-
     if (username.length == 0 || password.length == 0) {
         toast('Please enter a username and password', 5000)
     }
@@ -51,7 +50,7 @@ function login() {
                     $.cookie('password', password);
                     $.cookie('user_id', response.user_id);
 
-                    load_contacts();
+                    // load_contacts();
 
                     get_stats();
 
