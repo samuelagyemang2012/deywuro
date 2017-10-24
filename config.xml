@@ -1,19 +1,57 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.npontu.deywuro" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-  <name>deywuro-mobile</name>
-  <description>
-    A blank PhoneGap app.
-  </description>
-  <author email="support@phonegap.com" href="http://phonegap.com">
-    PhoneGap Team
-  </author>
-  <content src="index.html" />
-  <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1"/>
-  <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1"/>
-  <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3"/>
-  <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0"/>
-  <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0"/>
-  <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.npontu.deywuro" version="1.0.0" android-versionCode="10000">
+        xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Deywuro-Mobile</name>
+    <description>
+        A blank PhoneGap app.
+    </description>
+    <author email="support@npontu.com" href="https://deywuro.com/login">
+        Npontu Support Team
+    </author>
+    <content src="index.html"/>
+    <preference name="android-minSdkVersion" value="14"/>
+    <plugin name="cordova-plugin-contacts" source="npm" spec="~2.0.1"/>
+    <plugin name="cordova-plugin-device" source="npm" spec="~1.1.1"/>
+    <plugin name="cordova-plugin-globalization" source="npm" spec="~1.0.3"/>
+    <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.3.0"/>
+    <plugin name="cordova-plugin-network-information" source="npm" spec="~1.2.0"/>
+    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
 
-  <access origin="*" />
+    <icon src="logo.png"/>
+
+    <platform name="android">
+        <icon src="www/res/icon/android/drawable-ldpi-icon.png" density="ldpi"/>
+        <icon src="www/res/icon/android/drawable-mdpi-icon.png" density="mdpi"/>
+        <icon src="www/res/icon/android/drawable-hdpi-icon.png" density="hdpi"/>
+        <icon src="www/res/icon/android/drawable-xhdpi-icon.png" density="xhdpi"/>
+        <icon src="www/res/icon/android/drawable-xxhdpi-icon.png" density="xxhdpi"/>
+        <icon src="www/res/icon/android/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+        <splash src="www/res/screen/android/drawable-land-ldpi-screen.png" density="land-ldpi"/>
+        <splash src="www/res/screen/android/drawable-land-mdpi-screen.png" density="land-mdpi"/>
+        <splash src="www/res/screen/android/drawable-land-hdpi-screen.png" density="land-hdpi"/>
+        <splash src="www/res/screen/android/drawable-land-xhdpi-screen.png" density="land-xhdpi"/>
+        <splash src="www/res/screen/android/drawable-land-xxhdpi-screen.png" density="land-xxhdpi"/>
+        <splash src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" density="land-xxxhdpi"/>
+        <splash src="www/res/screen/android/drawable-port-ldpi-screen.png" density="port-ldpi"/>
+        <splash src="www/res/screen/android/drawable-port-mdpi-screen.png" density="port-mdpi"/>
+        <splash src="www/res/screen/android/drawable-port-hdpi-screen.png" density="port-hdpi"/>
+        <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+        <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+        <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+    </platform>
+    <access origin="*"/>
+
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+    <platform name="android">
+        <allow-intent href="market:*"/>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*"/>
+        <allow-intent href="itms-apps:*"/>
+    </platform>
 </widget>
