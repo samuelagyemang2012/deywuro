@@ -25,6 +25,8 @@ function login() {
     username = $("#username").val();
     password = $("#password").val();
 
+
+
     if (username.length == 0 || password.length == 0) {
         toast('Please enter a username and password', 5000)
     }
