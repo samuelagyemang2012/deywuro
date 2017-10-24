@@ -50,7 +50,7 @@ function login() {
                     $.cookie('password', password);
                     $.cookie('user_id', response.user_id);
 
-                    // load_contacts();
+                    load_contacts();
 
                     get_stats();
 
